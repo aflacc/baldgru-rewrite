@@ -1,0 +1,23 @@
+{
+	"songs": [
+		["Baldspicable", "bgru", [49, 64, 99]],
+		["Baldozer", "bgru", [30, 29, 38]],
+		["Dealtastic", "gandolfo", [35, 13, 64]]
+	],
+
+	"weekCharacters": [
+		"bg",
+		"bfcool",
+		"gfcool"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "",
+	"weekBefore": "tutorial",
+	"weekName": "Bald Gru",
+	"difficulties": "Normal",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="picogopi.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="pico down instance 10000" x="228" y="2" width="217" height="206" frameX="-4" frameY="-4" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down instance 10001" x="228" y="2" width="217" height="206" frameX="-4" frameY="-4" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down instance 10002" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10003" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10004" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10005" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10006" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10007" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10008" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10009" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10010" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10011" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down instance 10012" x="2" y="2" width="224" height="205" frameX="0" frameY="0" frameWidth="224" frameHeight="210"/>
+	<SubTexture name="pico down miss instance 10000" x="228" y="2" width="217" height="206" frameX="0" frameY="-1" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10001" x="447" y="2" width="216" height="211" frameX="0" frameY="0" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10002" x="447" y="2" width="216" height="211" frameX="0" frameY="0" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10003" x="665" y="2" width="217" height="208" frameX="0" frameY="0" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10004" x="665" y="2" width="217" height="208" frameX="0" frameY="0" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10005" x="884" y="2" width="215" height="207" frameX="-1" frameY="-1" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10006" x="884" y="2" width="215" height="207" frameX="-1" frameY="-1" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10007" x="1101" y="2" width="215" height="206" frameX="-1" frameY="-2" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10008" x="1101" y="2" width="215" height="206" frameX="-1" frameY="-2" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10009" x="1318" y="2" width="215" height="207" frameX="-1" frameY="-1" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10010" x="1318" y="2" width="215" height="207" frameX="-1" frameY="-1" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10011" x="1101" y="2" width="215" height="206" frameX="-1" frameY="-2" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico down miss instance 10012" x="1101" y="2" width="215" height="206" frameX="-1" frameY="-2" frameWidth="217" frameHeight="211"/>
+	<SubTexture name="pico idle instance 10000" x="1535" y="2" width="228" height="197"/>
+	<SubTexture name="pico idle instance 10001" x="1535" y="2" width="228" height="197"/>
+	<SubTexture name="pico idle instance 10002" x="1765" y="2" width="228" height="197"/>
+	<SubTexture name="pico idle instance 10003" x="1765" y="2" width="228" height="197"/>
+	<SubTexture name="pico idle instance 10004" x="2" y="215" width="228" height="197"/>
+	<SubTexture name="pico idle instance 10005" x="2" y="215" width="228" height="197"/>
+	<SubTexture name="pico left instance 10000" x="458" y="215" width="223" height="204" frameX="0" frameY="0" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left instance 10001" x="458" y="215" width="223" height="204" frameX="0" frameY="0" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left instance 10002" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10003" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10004" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10005" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10006" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10007" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10008" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10009" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10010" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10011" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left instance 10012" x="232" y="215" width="224" height="201" frameX="-2" frameY="-2" frameWidth="226" frameHeight="204"/>
+	<SubTexture name="pico left miss instance 10000" x="458" y="215" width="223" height="204" frameX="0" frameY="0" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10001" x="683" y="215" width="220" height="202" frameX="-2" frameY="-3" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10002" x="683" y="215" width="220" height="202" frameX="-2" frameY="-3" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10003" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10004" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10005" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10006" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10007" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10008" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10009" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10010" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10011" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico left miss instance 10012" x="905" y="215" width="219" height="204" frameX="-4" frameY="-2" frameWidth="223" frameHeight="206"/>
+	<SubTexture name="pico right instance 10000" x="1126" y="215" width="222" height="208" frameX="-8" frameY="0" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10001" x="1126" y="215" width="222" height="208" frameX="-8" frameY="0" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10002" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10003" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10004" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10005" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10006" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10007" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10008" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10009" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10010" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10011" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right instance 10012" x="1350" y="215" width="232" height="195" frameX="0" frameY="-8" frameWidth="232" frameHeight="208"/>
+	<SubTexture name="pico right miss instance 10000" x="1584" y="215" width="222" height="208" frameX="0" frameY="0" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10001" x="1808" y="215" width="228" height="202" frameX="-2" frameY="-7" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10002" x="1808" y="215" width="228" height="202" frameX="-2" frameY="-7" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10003" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10004" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10005" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10006" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10007" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10008" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10009" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10010" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico right miss instance 10011" x="2" y="425" width="224" height="199" frameX="-4" frameY="-8" frameWidth="230" frameHeight="209"/>
+	<SubTexture name="pico up instance 10000" x="449" y="425" width="218" height="212" frameX="0" frameY="0" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up instance 10001" x="449" y="425" width="218" height="212" frameX="0" frameY="0" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up instance 10002" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10003" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10004" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10005" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10006" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10007" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10008" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10009" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10010" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10011" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up instance 10012" x="228" y="425" width="219" height="209" frameX="-1" frameY="-6" frameWidth="220" frameHeight="215"/>
+	<SubTexture name="pico up miss instance 10000" x="449" y="425" width="218" height="212" frameX="0" frameY="0" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10001" x="669" y="425" width="219" height="206" frameX="-1" frameY="-10" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10002" x="669" y="425" width="219" height="206" frameX="-1" frameY="-10" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10003" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10004" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10005" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10006" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10007" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10008" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10009" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10010" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10011" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+	<SubTexture name="pico up miss instance 10012" x="890" y="425" width="214" height="208" frameX="-3" frameY="-7" frameWidth="220" frameHeight="216"/>
+</TextureAtlas>

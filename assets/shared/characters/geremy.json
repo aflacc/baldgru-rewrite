@@ -1,0 +1,113 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				120,
+				-23
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "germleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-137
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "germdown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				63,
+				149
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "germup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				114,
+				-36
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "germright",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				70,
+				66
+			],
+			"anim": "death",
+			"fps": 24,
+			"name": "death",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-1,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "halt",
+			"loop": true,
+			"name": "geremy halt instance "
+		},
+		{
+			"offsets": [
+				-1,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "enter",
+			"loop": false,
+			"name": "geremy halt enter instance "
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/geremy",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "geremy",
+	"flip_x": false,
+	"healthbar_colors": [
+		158,
+		46,
+		46
+	],
+	"camera_position": [
+		-60,
+		-130
+	],
+	"sing_duration": 6.1,
+	"scale": 0.75,
+	"_editor_isPlayer": false
+}

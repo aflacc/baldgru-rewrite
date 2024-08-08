@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="luigiman.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 31 instance 10000" x="4" y="4" width="339" height="134"/>
+	<SubTexture name="Symbol 31 instance 10001" x="4" y="4" width="339" height="134"/>
+	<SubTexture name="Symbol 31 instance 10002" x="4" y="146" width="339" height="134"/>
+	<SubTexture name="Symbol 31 instance 10003" x="4" y="146" width="339" height="134"/>
+	<SubTexture name="Symbol 31 instance 10004" x="4" y="288" width="339" height="134"/>
+	<SubTexture name="Symbol 31 instance 10005" x="4" y="288" width="339" height="134"/>
+</TextureAtlas>

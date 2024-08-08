@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fire.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="credit machine light on instance 10000" x="4" y="4" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10001" x="890" y="4" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10002" x="1776" y="4" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10003" x="2662" y="4" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10004" x="4" y="895" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10005" x="890" y="895" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10006" x="1776" y="895" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10007" x="2662" y="895" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10008" x="4" y="1786" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10009" x="890" y="1786" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10010" x="1776" y="1786" width="878" height="883"/>
+	<SubTexture name="credit machine light on instance 10011" x="2662" y="1786" width="878" height="883"/>
+</TextureAtlas>

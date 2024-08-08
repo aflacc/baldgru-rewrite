@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lod.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lod icon instance 10000" x="4" y="4" width="134" height="196" frameX="0" frameY="0" frameWidth="134" frameHeight="197"/>
+	<SubTexture name="lod icon instance 10001" x="4" y="4" width="134" height="196" frameX="0" frameY="0" frameWidth="134" frameHeight="197"/>
+	<SubTexture name="lod icon instance 10002" x="146" y="4" width="134" height="197"/>
+	<SubTexture name="lod icon instance 10003" x="146" y="4" width="134" height="197"/>
+	<SubTexture name="lod icon instance 10004" x="288" y="4" width="134" height="196" frameX="0" frameY="0" frameWidth="134" frameHeight="197"/>
+	<SubTexture name="lod icon instance 10005" x="288" y="4" width="134" height="196" frameX="0" frameY="0" frameWidth="134" frameHeight="197"/>
+</TextureAtlas>

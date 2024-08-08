@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="borda.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="acrtion bubble instance 10000" x="4" y="4" width="518" height="617"/>
+	<SubTexture name="acrtion bubble instance 10001" x="4" y="4" width="518" height="617"/>
+	<SubTexture name="acrtion bubble instance 10002" x="526" y="4" width="515" height="614" frameX="0" frameY="-2" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10003" x="1045" y="4" width="515" height="614" frameX="0" frameY="-2" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10004" x="1564" y="4" width="514" height="613" frameX="0" frameY="-3" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10005" x="2082" y="4" width="514" height="613" frameX="0" frameY="-3" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10006" x="2600" y="4" width="516" height="614" frameX="0" frameY="-2" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10007" x="2600" y="4" width="516" height="614" frameX="0" frameY="-2" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10008" x="3120" y="4" width="514" height="613" frameX="0" frameY="-3" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10009" x="4" y="625" width="514" height="613" frameX="0" frameY="-3" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10010" x="522" y="625" width="514" height="613" frameX="0" frameY="-3" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10011" x="1040" y="625" width="514" height="613" frameX="0" frameY="-3" frameWidth="518" frameHeight="617"/>
+	<SubTexture name="acrtion bubble instance 10012" x="2082" y="4" width="514" height="613" frameX="0" frameY="-3" frameWidth="518" frameHeight="617"/>
+</TextureAtlas>

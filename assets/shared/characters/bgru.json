@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				284,
+				17
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "singLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				150,
+				-272
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "singDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				155
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "singUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				308,
+				52
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "dox",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-61,
+				11
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "singRIGHT"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/bald_gru",
+	"position": [
+		-20,
+		30
+	],
+	"healthicon": "bgru",
+	"flip_x": false,
+	"healthbar_colors": [
+		72,
+		72,
+		89
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

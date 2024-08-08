@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tv_settings.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="settings hover0000" x="4" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0001" x="644" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0002" x="1284" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0003" x="4" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0004" x="644" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0005" x="1284" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0006" x="4" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0007" x="644" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0008" x="1284" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0009" x="4" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0010" x="644" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0011" x="1284" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0012" x="4" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0013" x="644" y="4" width="632" height="481"/>
+	<SubTexture name="settings hover0014" x="1284" y="4" width="632" height="481"/>
+	<SubTexture name="settings select0000" x="4" y="493" width="722" height="462" frameX="0" frameY="-16" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0001" x="4" y="493" width="722" height="462" frameX="0" frameY="-16" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0002" x="734" y="493" width="684" height="467" frameX="-34" frameY="-12" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0003" x="734" y="493" width="684" height="467" frameX="-34" frameY="-12" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0004" x="4" y="968" width="680" height="473" frameX="-35" frameY="-7" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0005" x="4" y="968" width="680" height="473" frameX="-35" frameY="-7" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0006" x="692" y="968" width="653" height="480" frameX="-57" frameY="-1" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0007" x="692" y="968" width="653" height="480" frameX="-57" frameY="-1" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0008" x="1353" y="968" width="652" height="481" frameX="-58" frameY="0" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0009" x="1353" y="968" width="652" height="481" frameX="-58" frameY="0" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0010" x="1353" y="968" width="652" height="481" frameX="-58" frameY="0" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0011" x="1353" y="968" width="652" height="481" frameX="-58" frameY="0" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0012" x="1353" y="968" width="652" height="481" frameX="-58" frameY="0" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0013" x="1353" y="968" width="652" height="481" frameX="-58" frameY="0" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings select0014" x="1353" y="968" width="652" height="481" frameX="-58" frameY="0" frameWidth="722" frameHeight="481"/>
+	<SubTexture name="settings unselected0000" x="4" y="1457" width="652" height="481"/>
+</TextureAtlas>

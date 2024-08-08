@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BGfront minons.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="crowd instance 10000" x="4" y="4" width="2327" height="901" frameX="-36" frameY="-12" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10001" x="4" y="4" width="2327" height="901" frameX="-36" frameY="-12" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10002" x="2335" y="4" width="2338" height="906" frameX="-28" frameY="0" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10003" x="4677" y="4" width="2338" height="906" frameX="-28" frameY="0" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10004" x="4" y="914" width="2400" height="900" frameX="-10" frameY="-6" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10005" x="4" y="914" width="2400" height="900" frameX="-10" frameY="-6" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10006" x="2408" y="914" width="2424" height="899" frameX="-3" frameY="-6" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10007" x="2408" y="914" width="2424" height="899" frameX="-3" frameY="-6" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10008" x="4836" y="914" width="2432" height="898" frameX="0" frameY="-7" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10009" x="4836" y="914" width="2432" height="898" frameX="0" frameY="-7" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10010" x="4836" y="914" width="2432" height="898" frameX="0" frameY="-7" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10011" x="4" y="1818" width="2432" height="899" frameX="0" frameY="-7" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10012" x="4" y="1818" width="2432" height="899" frameX="0" frameY="-7" frameWidth="2432" frameHeight="913"/>
+	<SubTexture name="crowd instance 10013" x="4" y="1818" width="2432" height="899" frameX="0" frameY="-7" frameWidth="2432" frameHeight="913"/>
+</TextureAtlas>

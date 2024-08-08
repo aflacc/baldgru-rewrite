@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dealion4.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dealion 4 full0000" x="4" y="4" width="24" height="26" frameX="-95" frameY="-536" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0001" x="36" y="4" width="31" height="35" frameX="-98" frameY="-486" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0002" x="75" y="4" width="56" height="58" frameX="-104" frameY="-404" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0003" x="139" y="4" width="66" height="68" frameX="-135" frameY="-319" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0004" x="213" y="4" width="120" height="120" frameX="-148" frameY="-239" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0005" x="341" y="4" width="227" height="217" frameX="-156" frameY="-139" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0006" x="341" y="4" width="227" height="217" frameX="-156" frameY="-139" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0007" x="576" y="4" width="621" height="468" frameX="0" frameY="0" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0008" x="576" y="4" width="621" height="468" frameX="0" frameY="0" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0009" x="1205" y="4" width="410" height="399" frameX="-105" frameY="-34" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0010" x="1623" y="4" width="349" height="331" frameX="-135" frameY="-68" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0011" x="4" y="480" width="342" height="323" frameX="-139" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0012" x="4" y="480" width="342" height="323" frameX="-138" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0013" x="4" y="480" width="342" height="323" frameX="-138" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0014" x="4" y="480" width="342" height="323" frameX="-138" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0015" x="4" y="480" width="342" height="323" frameX="-138" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0016" x="4" y="480" width="342" height="323" frameX="-138" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0017" x="354" y="480" width="344" height="325" frameX="-137" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0018" x="354" y="480" width="344" height="325" frameX="-137" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0019" x="354" y="480" width="344" height="325" frameX="-137" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0020" x="706" y="480" width="346" height="325" frameX="-136" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0021" x="706" y="480" width="346" height="325" frameX="-136" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0022" x="706" y="480" width="346" height="325" frameX="-136" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0023" x="706" y="480" width="346" height="325" frameX="-136" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0024" x="1060" y="480" width="384" height="333" frameX="-123" frameY="-67" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0025" x="1060" y="480" width="384" height="333" frameX="-123" frameY="-67" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0026" x="1452" y="480" width="366" height="331" frameX="-127" frameY="-68" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0027" x="1452" y="480" width="366" height="331" frameX="-127" frameY="-68" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0028" x="1452" y="480" width="366" height="331" frameX="-127" frameY="-68" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0029" x="4" y="821" width="348" height="327" frameX="-135" frameY="-70" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0030" x="4" y="821" width="348" height="327" frameX="-135" frameY="-70" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0031" x="4" y="821" width="348" height="327" frameX="-135" frameY="-70" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0032" x="354" y="480" width="344" height="325" frameX="-137" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0033" x="354" y="480" width="344" height="325" frameX="-137" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0034" x="360" y="821" width="342" height="325" frameX="-138" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0035" x="360" y="821" width="342" height="325" frameX="-138" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0036" x="360" y="821" width="342" height="325" frameX="-138" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0037" x="360" y="821" width="342" height="325" frameX="-138" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0038" x="360" y="821" width="342" height="325" frameX="-138" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0039" x="360" y="821" width="342" height="325" frameX="-138" frameY="-71" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0040" x="4" y="480" width="342" height="323" frameX="-139" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0041" x="4" y="480" width="342" height="323" frameX="-139" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0042" x="4" y="480" width="342" height="323" frameX="-139" frameY="-72" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0043" x="710" y="821" width="338" height="319" frameX="-141" frameY="-74" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0044" x="1056" y="821" width="332" height="313" frameX="-144" frameY="-77" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0045" x="1396" y="821" width="146" height="152" frameX="-237" frameY="-151" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0046" x="1550" y="821" width="108" height="104" frameX="-258" frameY="-144" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0047" x="1666" y="821" width="108" height="24" frameX="-258" frameY="-98" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0048" x="1782" y="821" width="108" height="25" frameX="-258" frameY="-92" frameWidth="621" frameHeight="562"/>
+	<SubTexture name="dealion 4 full0049" x="1898" y="821" width="0" height="0" frameX="-104" frameY="-39" frameWidth="621" frameHeight="562"/>
+</TextureAtlas>

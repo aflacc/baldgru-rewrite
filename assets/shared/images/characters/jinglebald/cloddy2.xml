@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cloddy2.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="londfrond down instance 10000" x="4" y="4" width="607" height="685" frameX="0" frameY="-8" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10001" x="4" y="4" width="607" height="685" frameX="0" frameY="-8" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10002" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10003" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10004" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10005" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10006" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10007" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10008" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10009" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10010" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10011" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond down instance 10012" x="615" y="4" width="598" height="693" frameX="-6" frameY="0" frameWidth="607" frameHeight="693"/>
+	<SubTexture name="londfrond instance 10000" x="1217" y="4" width="586" height="729" frameX="0" frameY="-14" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10001" x="1217" y="4" width="586" height="729" frameX="0" frameY="-14" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10002" x="1807" y="4" width="584" height="731" frameX="-1" frameY="-12" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10003" x="1807" y="4" width="584" height="731" frameX="-1" frameY="-12" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10004" x="2395" y="4" width="580" height="735" frameX="-3" frameY="-6" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10005" x="2395" y="4" width="580" height="735" frameX="-3" frameY="-6" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10006" x="2395" y="4" width="580" height="735" frameX="-3" frameY="-6" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10007" x="2979" y="4" width="580" height="740" frameX="-3" frameY="-1" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10008" x="2979" y="4" width="580" height="740" frameX="-3" frameY="-1" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10009" x="2979" y="4" width="580" height="740" frameX="-3" frameY="-1" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10010" x="4" y="748" width="580" height="741" frameX="-3" frameY="0" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10011" x="4" y="748" width="580" height="741" frameX="-3" frameY="0" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond instance 10012" x="4" y="748" width="580" height="741" frameX="-3" frameY="0" frameWidth="586" frameHeight="743"/>
+	<SubTexture name="londfrond left instance 10000" x="588" y="748" width="585" height="744" frameX="0" frameY="0" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10001" x="588" y="748" width="585" height="744" frameX="0" frameY="0" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10002" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10003" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10004" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10005" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10006" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10007" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10008" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10009" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10010" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10011" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond left instance 10012" x="1177" y="748" width="585" height="743" frameX="-1" frameY="-1" frameWidth="586" frameHeight="744"/>
+	<SubTexture name="londfrond right instance 10000" x="1766" y="748" width="577" height="750"/>
+	<SubTexture name="londfrond right instance 10001" x="1766" y="748" width="577" height="750"/>
+	<SubTexture name="londfrond right instance 10002" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10003" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10004" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10005" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10006" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10007" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10008" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10009" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10010" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10011" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond right instance 10012" x="2347" y="748" width="577" height="746" frameX="0" frameY="-1" frameWidth="577" frameHeight="750"/>
+	<SubTexture name="londfrond up instance 10000" x="2928" y="748" width="563" height="759" frameX="0" frameY="0" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10001" x="2928" y="748" width="563" height="759" frameX="0" frameY="0" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10002" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10003" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10004" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10005" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10006" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10007" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10008" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10009" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10010" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10011" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+	<SubTexture name="londfrond up instance 10012" x="3495" y="748" width="572" height="755" frameX="-1" frameY="-4" frameWidth="573" frameHeight="759"/>
+</TextureAtlas>

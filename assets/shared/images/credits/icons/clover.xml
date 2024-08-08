@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="clover.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="clover cicon instance 10000" x="4" y="4" width="238" height="296"/>
+	<SubTexture name="clover cicon instance 10001" x="4" y="4" width="238" height="296"/>
+	<SubTexture name="clover cicon instance 10002" x="250" y="4" width="237" height="296" frameX="-1" frameY="0" frameWidth="238" frameHeight="296"/>
+	<SubTexture name="clover cicon instance 10003" x="250" y="4" width="237" height="296" frameX="-1" frameY="0" frameWidth="238" frameHeight="296"/>
+	<SubTexture name="clover cicon instance 10004" x="495" y="4" width="237" height="296" frameX="-1" frameY="0" frameWidth="238" frameHeight="296"/>
+	<SubTexture name="clover cicon instance 10005" x="495" y="4" width="237" height="296" frameX="-1" frameY="0" frameWidth="238" frameHeight="296"/>
+</TextureAtlas>

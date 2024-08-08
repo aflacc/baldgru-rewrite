@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				5,
+				-9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "londfrond left"
+		},
+		{
+			"offsets": [
+				10,
+				-60
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "londfrond down"
+		},
+		{
+			"offsets": [
+				0,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "londfrond up"
+		},
+		{
+			"offsets": [
+				-14,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "londfrond right"
+		},
+		{
+			"offsets": [
+				0,
+				-11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "londfrond instance"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/jinglebald/cloddy2",
+	"position": [
+		-180,
+		-30
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		150,
+		-130
+	],
+	"sing_duration": 2.50000000000001,
+	"scale": 1
+}

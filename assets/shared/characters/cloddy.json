@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				-1
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "loddy idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-223,
+				108
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "high",
+			"indices": [],
+			"name": "loddy two high"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				23,
+				-72
+			],
+			"anim": "grumble1",
+			"fps": 24,
+			"name": "loddy grumble1 instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				34
+			],
+			"anim": "two",
+			"fps": 30,
+			"name": "loddy two instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-21,
+				23
+			],
+			"anim": "grumble",
+			"fps": 26,
+			"name": "loddy grumble instance",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-20,
+				28
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "loddy up"
+		},
+		{
+			"offsets": [
+				-10,
+				10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "loddy right"
+		},
+		{
+			"offsets": [
+				20,
+				-40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "loddy down"
+		},
+		{
+			"offsets": [
+				2,
+				-24
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "loddy left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/jinglebald/cloddy",
+	"position": [
+		120,
+		40
+	],
+	"healthicon": "loddy",
+	"flip_x": false,
+	"healthbar_colors": [
+		235,
+		235,
+		235
+	],
+	"camera_position": [
+		-180,
+		-160
+	],
+	"sing_duration": 1.50000000000001,
+	"scale": 1
+}

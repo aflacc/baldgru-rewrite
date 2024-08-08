@@ -1,0 +1,45 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-220
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "gf idle"
+		},
+		{
+			"offsets": [
+				-2,
+				-205
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "teleport",
+			"indices": [],
+			"name": "gf teleport"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/gfcool",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-150,
+		270
+	],
+	"sing_duration": 4,
+	"scale": 1.3
+}

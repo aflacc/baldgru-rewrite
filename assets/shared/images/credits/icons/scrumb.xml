@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scrumb.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="scrumb icon instance 10000" x="4" y="4" width="191" height="245"/>
+	<SubTexture name="scrumb icon instance 10001" x="4" y="4" width="191" height="245"/>
+	<SubTexture name="scrumb icon instance 10002" x="203" y="4" width="190" height="245" frameX="0" frameY="0" frameWidth="191" frameHeight="245"/>
+	<SubTexture name="scrumb icon instance 10003" x="203" y="4" width="190" height="245" frameX="0" frameY="0" frameWidth="191" frameHeight="245"/>
+	<SubTexture name="scrumb icon instance 10004" x="4" y="257" width="190" height="245" frameX="0" frameY="0" frameWidth="191" frameHeight="245"/>
+	<SubTexture name="scrumb icon instance 10005" x="4" y="257" width="190" height="245" frameX="0" frameY="0" frameWidth="191" frameHeight="245"/>
+</TextureAtlas>

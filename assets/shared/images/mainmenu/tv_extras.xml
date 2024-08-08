@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tv_extras.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="extras select0000" x="4" y="4" width="509" height="362" frameX="0" frameY="-6" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0001" x="4" y="4" width="509" height="362" frameX="0" frameY="-6" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0002" x="521" y="4" width="461" height="365" frameX="-47" frameY="-3" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0003" x="521" y="4" width="461" height="365" frameX="-47" frameY="-3" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0004" x="990" y="4" width="473" height="366" frameX="-34" frameY="-2" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0005" x="990" y="4" width="473" height="366" frameX="-34" frameY="-2" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0006" x="1471" y="4" width="442" height="368" frameX="-64" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0007" x="1471" y="4" width="442" height="368" frameX="-64" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0008" x="4" y="380" width="443" height="368" frameX="-63" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0009" x="4" y="380" width="443" height="368" frameX="-63" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0010" x="4" y="380" width="443" height="368" frameX="-63" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0011" x="4" y="380" width="443" height="368" frameX="-63" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0012" x="4" y="380" width="443" height="368" frameX="-63" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras select0013" x="4" y="380" width="443" height="368" frameX="-63" frameY="0" frameWidth="509" frameHeight="368"/>
+	<SubTexture name="extras hover0000" x="455" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0001" x="907" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0002" x="1359" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0003" x="455" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0004" x="907" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0005" x="1359" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0006" x="455" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0007" x="907" y="380" width="444" height="368"/>
+	<SubTexture name="extras hover0008" x="1359" y="380" width="444" height="368"/>
+	<SubTexture name="extras unselected0000" x="4" y="756" width="442" height="368"/>
+</TextureAtlas>

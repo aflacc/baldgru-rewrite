@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="aflac.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="aflac icon instance 10000" x="4" y="4" width="223" height="211"/>
+	<SubTexture name="aflac icon instance 10001" x="4" y="4" width="223" height="211"/>
+	<SubTexture name="aflac icon instance 10002" x="235" y="4" width="223" height="211"/>
+	<SubTexture name="aflac icon instance 10003" x="235" y="4" width="223" height="211"/>
+	<SubTexture name="aflac icon instance 10004" x="4" y="223" width="223" height="211"/>
+	<SubTexture name="aflac icon instance 10005" x="4" y="223" width="223" height="211"/>
+</TextureAtlas>

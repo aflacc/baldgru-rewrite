@@ -1,0 +1,23 @@
+"Gbigwins" => "Bald gru is the BEST game you've never played! Or, the darkest game you\ncan't play. Big wins.",
+"Glemons" => "When life gives you freaking combustible lemons, you SQUIRT 'em right\nback into life's eyes!",
+"Gwonder" => "According to a poll, most minons' favorite game is.. Upper Bro Wonder 2!",
+"Gchafed" =>
+"If you were to take off my headphones, my head would look freaking AWESOME,\nlet me tell you that much. It would look so cool, so, it wouldn't look chafed.",
+"Gchromebook" => "Don't forget to charge dat chromebook.",
+"Gchuddy" => "chuddy... flavored.. mush..",
+"Gchuddyalt" => "Chuddy flavored mush.",
+"Gdeltamath" =>
+"Did you know, that the actual reason why this mod was made in the first\nplace, was becaus- wait, fuck, I gotta finish my DeltaMath. Ok, be right back.",
+"Gmech" => "Did you know Bald Gru is just a mech? Check the FLA file for more.",
+"Gblackops3guy" => "I'm kinda freaking like black ops 3 guy, because when holy chunguses rain,\nI buy!",
+"Gcopyrightinfringement" => "There was a parody of bald gru's debut movie, indescribable you, named\n'despicable me!'",
+"Gactivity" => "I loved playing Jungle Queen & Electrician as a kid. In fact, it's the\nmost popular outdoor activity among minons!",
+"Glore" => "Did you know bald gru was once a minon himself?",
+"Gjumbojuice" => "Despite popular belief, the artist of this mod is actually made out of\nmiracle mayo and jumbo juice.",
+"Gjumbojosh" => "Despite popular belief, the artist of this mod is actually made out of\nmiracle mayo and jumbo josh- Juice. Shit.",
+"Ghorse" => "Hello Neigheigheigheigheigh-bor! That's if Hello Neighbor was a horse.",
+"Gnefaro" => "Nefaro once tried making a commentary channel, but nobody watched him\nbecause his microphone was always covered in phlegm.",
+"Gpray" => "If you pray hard enough you can beat any song.",
+"Gincoherent" => "*Incoherent* I'm sorry, I had something stuck in my throat.",
+"Gballingru" => "Bald Gru tried getting the world record for most three pointers in 1\n minute, but he got disqualified.. because his hoop had no rim!",
+"Gwin" => "WHO won?! WHO'S next?! YOU decide!"

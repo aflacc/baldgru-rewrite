@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="conveyor_belt.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="conveyor move left instance 10000" x="4" y="4" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10001" x="1184" y="4" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10002" x="2364" y="4" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10003" x="4" y="240" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10004" x="1184" y="240" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10005" x="2364" y="240" width="1174" height="228"/>
+	<SubTexture name="conveyor move left instance 10006" x="4" y="476" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10007" x="1184" y="476" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10008" x="2364" y="476" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10009" x="4" y="712" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10010" x="1184" y="712" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+	<SubTexture name="conveyor move left instance 10011" x="2364" y="712" width="1172" height="228" frameX="0" frameY="0" frameWidth="1174" frameHeight="228"/>
+</TextureAtlas>

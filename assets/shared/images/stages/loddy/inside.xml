@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bglod2.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bg fireplace instance 10000" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10001" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10002" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10003" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10004" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10005" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10006" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10007" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10008" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10009" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10010" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10011" x="4" y="4" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10012" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10013" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10014" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10015" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10016" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10017" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10018" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10019" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10020" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10021" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10022" x="4" y="863" width="1393" height="855"/>
+	<SubTexture name="bg fireplace instance 10023" x="4" y="863" width="1393" height="855"/>
+</TextureAtlas>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="iz.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="iz icon instance 10000" x="4" y="4" width="209" height="231"/>
+	<SubTexture name="iz icon instance 10001" x="4" y="4" width="209" height="231"/>
+	<SubTexture name="iz icon instance 10002" x="221" y="4" width="209" height="231"/>
+	<SubTexture name="iz icon instance 10003" x="221" y="4" width="209" height="231"/>
+	<SubTexture name="iz icon instance 10004" x="4" y="243" width="209" height="231"/>
+	<SubTexture name="iz icon instance 10005" x="4" y="243" width="209" height="231"/>
+</TextureAtlas>

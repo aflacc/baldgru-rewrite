@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ranks.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rank0000" x="4" y="4" width="111" height="119" frameX="0" frameY="-2" frameWidth="117" frameHeight="127"/>
+	<SubTexture name="rank0001" x="123" y="4" width="114" height="116" frameX="-3" frameY="-7" frameWidth="117" frameHeight="127"/>
+	<SubTexture name="rank0002" x="245" y="4" width="111" height="113" frameX="0" frameY="-6" frameWidth="117" frameHeight="127"/>
+	<SubTexture name="rank0003" x="364" y="4" width="100" height="112" frameX="-6" frameY="-7" frameWidth="117" frameHeight="127"/>
+	<SubTexture name="rank0004" x="4" y="131" width="107" height="122" frameX="-3" frameY="-4" frameWidth="117" frameHeight="127"/>
+	<SubTexture name="rank0005" x="119" y="131" width="112" height="116" frameX="0" frameY="-8" frameWidth="117" frameHeight="127"/>
+	<SubTexture name="rank0006" x="239" y="131" width="101" height="127" frameX="-2" frameY="0" frameWidth="117" frameHeight="127"/>
+</TextureAtlas>

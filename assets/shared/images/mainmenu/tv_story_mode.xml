@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tv_story_mode.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="story_mode hover0000" x="4" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0001" x="476" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0002" x="948" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0003" x="4" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0004" x="476" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0005" x="948" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0006" x="4" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0007" x="476" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0008" x="948" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0009" x="4" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0010" x="476" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0011" x="948" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0012" x="4" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0013" x="476" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode hover0014" x="948" y="4" width="464" height="428"/>
+	<SubTexture name="story_mode select0000" x="1420" y="4" width="523" height="422" frameX="0" frameY="-8" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0001" x="1420" y="4" width="523" height="422" frameX="0" frameY="-8" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0002" x="4" y="440" width="491" height="424" frameX="-3" frameY="-6" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0003" x="4" y="440" width="491" height="424" frameX="-3" frameY="-6" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0004" x="503" y="440" width="466" height="427" frameX="-5" frameY="-1" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0005" x="503" y="440" width="466" height="427" frameX="-5" frameY="-1" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0006" x="977" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0007" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0008" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0009" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0010" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0011" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0012" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0013" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode select0014" x="1449" y="440" width="464" height="428" frameX="-5" frameY="0" frameWidth="523" frameHeight="430"/>
+	<SubTexture name="story_mode unselected0000" x="4" y="876" width="462" height="429"/>
+	<SubTexture name="story_mode unselected0001" x="4" y="876" width="462" height="429"/>
+	<SubTexture name="story_mode unselected0002" x="4" y="876" width="462" height="429"/>
+	<SubTexture name="story_mode unselected0003" x="4" y="876" width="462" height="429"/>
+	<SubTexture name="story_mode unselected0004" x="4" y="876" width="462" height="429"/>
+	<SubTexture name="story_mode unselected0005" x="4" y="876" width="462" height="429"/>
+	<SubTexture name="story_mode unselected0006" x="4" y="876" width="462" height="429"/>
+	<SubTexture name="story_mode unselected0007" x="4" y="876" width="462" height="429"/>
+</TextureAtlas>

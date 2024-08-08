@@ -1,0 +1,25 @@
+{
+	"songs": [
+		["Yolked", "geremy", [168, 20, 99]],
+		["Lazy River", "martello", [23, 117, 66]],
+		["Maudade", "dumau", [39, 37, 105]],
+		["Jingle Bald", "loddy", [137, 200, 204]]
+		
+	],
+
+	"weekCharacters": [
+		"bg",
+		"bfcool",
+		"gfcool"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "",
+	"weekBefore": "tutorial",
+	"weekName": "Bald Gru",
+	"difficulties": "Normal",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

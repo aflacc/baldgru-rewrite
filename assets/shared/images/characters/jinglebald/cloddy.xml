@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cloddy.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="loddy down instance 10000" x="4" y="4" width="661" height="619" frameX="0" frameY="-5" frameWidth="661" frameHeight="624"/>
+	<SubTexture name="loddy down instance 10001" x="669" y="4" width="661" height="619" frameX="0" frameY="-5" frameWidth="661" frameHeight="624"/>
+	<SubTexture name="loddy down instance 10002" x="1334" y="4" width="646" height="624" frameX="-7" frameY="0" frameWidth="661" frameHeight="624"/>
+	<SubTexture name="loddy down instance 10003" x="1984" y="4" width="646" height="624" frameX="-7" frameY="0" frameWidth="661" frameHeight="624"/>
+	<SubTexture name="loddy grumble instance 10000" x="2634" y="4" width="545" height="688" frameX="-14" frameY="0" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10001" x="2634" y="4" width="545" height="688" frameX="-14" frameY="0" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10002" x="3183" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10003" x="3183" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10004" x="3762" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10005" x="4341" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10006" x="4920" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10007" x="4920" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10008" x="5499" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10009" x="5499" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10010" x="6078" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10011" x="6657" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10012" x="7236" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10013" x="7236" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10014" x="4" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10015" x="4" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10016" x="583" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10017" x="1162" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10018" x="1741" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10019" x="1741" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10020" x="2320" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10021" x="2320" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10022" x="2899" y="696" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10023" x="4341" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10024" x="4920" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble instance 10025" x="4920" y="4" width="575" height="680" frameX="0" frameY="-7" frameWidth="575" frameHeight="688"/>
+	<SubTexture name="loddy grumble1 instance 10000" x="3478" y="696" width="665" height="583" frameX="0" frameY="-10" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10001" x="3478" y="696" width="665" height="583" frameX="0" frameY="-10" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10002" x="4147" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10003" x="4797" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10004" x="5447" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10005" x="6097" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10006" x="6747" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10007" x="6747" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10008" x="7397" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10009" x="4" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10010" x="654" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10011" x="5447" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10012" x="1304" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10013" x="1304" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10014" x="1954" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10015" x="2604" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10016" x="6097" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10017" x="654" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10018" x="3254" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10019" x="3254" y="1380" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10020" x="4147" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10021" x="4797" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10022" x="5447" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10023" x="6097" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10024" x="6747" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy grumble1 instance 10025" x="6747" y="696" width="646" height="593" frameX="-9" frameY="0" frameWidth="665" frameHeight="593"/>
+	<SubTexture name="loddy idle instance 10000" x="3904" y="1380" width="630" height="651" frameX="-1" frameY="-13" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10001" x="3904" y="1380" width="630" height="651" frameX="-1" frameY="-13" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10002" x="4538" y="1380" width="616" height="661" frameX="-8" frameY="-4" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10003" x="5158" y="1380" width="616" height="661" frameX="-8" frameY="-4" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10004" x="5778" y="1380" width="613" height="664" frameX="-10" frameY="-1" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10005" x="5778" y="1380" width="613" height="664" frameX="-10" frameY="-1" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10006" x="6395" y="1380" width="613" height="663" frameX="-10" frameY="-2" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10007" x="6395" y="1380" width="613" height="663" frameX="-10" frameY="-2" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10008" x="7012" y="1380" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10009" x="7012" y="1380" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10010" x="7012" y="1380" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10011" x="4" y="2048" width="617" height="661" frameX="-8" frameY="-4" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10012" x="625" y="2048" width="634" height="646" frameX="0" frameY="-18" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10013" x="625" y="2048" width="634" height="646" frameX="0" frameY="-18" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10014" x="1263" y="2048" width="615" height="657" frameX="-9" frameY="-8" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10015" x="1882" y="2048" width="615" height="657" frameX="-9" frameY="-8" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10016" x="2501" y="2048" width="613" height="665" frameX="-10" frameY="0" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10017" x="2501" y="2048" width="613" height="665" frameX="-10" frameY="0" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10018" x="3118" y="2048" width="613" height="664" frameX="-10" frameY="-1" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10019" x="3118" y="2048" width="613" height="664" frameX="-10" frameY="-1" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10020" x="3735" y="2048" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10021" x="3735" y="2048" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10022" x="3735" y="2048" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10023" x="4352" y="2048" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10024" x="4352" y="2048" width="613" height="662" frameX="-10" frameY="-3" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy idle instance 10025" x="4969" y="2048" width="616" height="661" frameX="-8" frameY="-4" frameWidth="634" frameHeight="665"/>
+	<SubTexture name="loddy left instance 10000" x="5589" y="2048" width="613" height="637" frameX="0" frameY="-4" frameWidth="615" frameHeight="641"/>
+	<SubTexture name="loddy left instance 10001" x="6206" y="2048" width="613" height="637" frameX="0" frameY="-4" frameWidth="615" frameHeight="641"/>
+	<SubTexture name="loddy left instance 10002" x="6823" y="2048" width="614" height="641" frameX="-1" frameY="0" frameWidth="615" frameHeight="641"/>
+	<SubTexture name="loddy left instance 10003" x="6823" y="2048" width="614" height="641" frameX="-1" frameY="0" frameWidth="615" frameHeight="641"/>
+	<SubTexture name="loddy right instance 10000" x="7441" y="2048" width="614" height="675" frameX="-3" frameY="0" frameWidth="617" frameHeight="675"/>
+	<SubTexture name="loddy right instance 10001" x="4" y="2727" width="614" height="675" frameX="-3" frameY="0" frameWidth="617" frameHeight="675"/>
+	<SubTexture name="loddy right instance 10002" x="622" y="2727" width="616" height="670" frameX="0" frameY="-5" frameWidth="617" frameHeight="675"/>
+	<SubTexture name="loddy right instance 10003" x="622" y="2727" width="616" height="670" frameX="0" frameY="-5" frameWidth="617" frameHeight="675"/>
+	<SubTexture name="loddy two high instance 10000" x="1242" y="2727" width="172" height="773" frameX="-1" frameY="0" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10001" x="1242" y="2727" width="172" height="773" frameX="-1" frameY="0" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10002" x="1418" y="2727" width="175" height="767" frameX="0" frameY="-5" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10003" x="1597" y="2727" width="175" height="763" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10004" x="1776" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10005" x="1955" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10006" x="2134" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10007" x="2134" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10008" x="2313" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10009" x="2313" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10010" x="2313" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10011" x="2134" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two high instance 10012" x="2134" y="2727" width="175" height="764" frameX="0" frameY="-9" frameWidth="175" frameHeight="773"/>
+	<SubTexture name="loddy two instance 10000" x="2492" y="2727" width="647" height="698" frameX="-4" frameY="0" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10001" x="2492" y="2727" width="647" height="698" frameX="-4" frameY="0" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10002" x="3143" y="2727" width="656" height="692" frameX="-2" frameY="-6" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10003" x="3803" y="2727" width="656" height="689" frameX="-2" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10004" x="4463" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10005" x="5125" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10006" x="5787" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10007" x="5787" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10008" x="6449" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10009" x="6449" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10010" x="6449" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10011" x="5787" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy two instance 10012" x="5787" y="2727" width="658" height="689" frameX="0" frameY="-9" frameWidth="658" frameHeight="698"/>
+	<SubTexture name="loddy up instance 10000" x="7111" y="2727" width="564" height="693" frameX="-7" frameY="0" frameWidth="579" frameHeight="693"/>
+	<SubTexture name="loddy up instance 10001" x="4" y="3504" width="564" height="693" frameX="-7" frameY="0" frameWidth="579" frameHeight="693"/>
+	<SubTexture name="loddy up instance 10002" x="572" y="3504" width="579" height="684" frameX="0" frameY="-9" frameWidth="579" frameHeight="693"/>
+	<SubTexture name="loddy up instance 10003" x="1155" y="3504" width="579" height="684" frameX="0" frameY="-9" frameWidth="579" frameHeight="693"/>
+</TextureAtlas>

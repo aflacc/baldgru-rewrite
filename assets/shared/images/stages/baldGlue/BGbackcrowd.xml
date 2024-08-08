@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BGbackcrowd.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="front crowd1 instance 10000" x="4" y="4" width="2070" height="443" frameX="-1" frameY="0" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10001" x="4" y="4" width="2070" height="443" frameX="-1" frameY="0" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10002" x="4" y="451" width="2075" height="451" frameX="0" frameY="-4" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10003" x="4" y="451" width="2075" height="451" frameX="0" frameY="-4" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10004" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10005" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10006" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10007" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10008" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10009" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10010" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10011" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10012" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+	<SubTexture name="front crowd1 instance 10013" x="4" y="906" width="2075" height="448" frameX="0" frameY="-9" frameWidth="2075" frameHeight="458"/>
+</TextureAtlas>

@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Gandolfo idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				264,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Gandolfo left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-55
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Gandolfo down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				158
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Gandolfo up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				-14
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Gandolfo right",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Ggandolfo",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "gandolfo",
+	"flip_x": false,
+	"healthbar_colors": [
+		100,
+		94,
+		111
+	],
+	"camera_position": [
+		-180,
+		-70
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

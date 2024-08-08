@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				41,
+				4
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "bf death first",
+			"indices": []
+		},
+		{
+			"offsets": [
+				41,
+				-668
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "bf death beat"
+		},
+		{
+			"offsets": [
+				42,
+				-668
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "bf death press"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfcool_death",
+	"position": [
+		-960,
+		-160
+	],
+	"healthicon": "bfcool",
+	"flip_x": true,
+	"healthbar_colors": [
+		74,
+		115,
+		155
+	],
+	"camera_position": [
+		30,
+		250
+	],
+	"sing_duration": 4,
+	"scale": 1.2
+}
