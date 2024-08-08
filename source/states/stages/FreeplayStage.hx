@@ -1,5 +1,6 @@
 package states.stages;
 
+import objects.Note;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.display.FlxBackdrop;
 import backend.WeekData;
@@ -13,6 +14,7 @@ import states.stages.objects.*;
 // I'm sorry
 class FreeplayStage extends BaseStage
 {
+	var drain = 0.023;
 	var freeplayGroup:FlxSpriteGroup;
 	var rankStuff:Array<Float> = [
 		1.0, // P
@@ -66,7 +68,9 @@ class FreeplayStage extends BaseStage
 
 	public static var whatShouldTheScoreSay:Float = 0;
 	public static var whatShouldTheRankSay:Float = 0;
+
 	var scroll:FlxBackdrop;
+
 	override function create()
 	{
 		// var jackBlack:FlxSprite = new FlxSprite().loadGraphic(Paths.image("jackingoff"));
@@ -218,7 +222,7 @@ class FreeplayStage extends BaseStage
 		add(sketchTV);
 
 		// No! you're not supposed to be here! You are singing the song!
-		geremy = new FlxSprite(-38, /*220*/FlxG.height + 10);
+		geremy = new FlxSprite(-38, /*220*/ FlxG.height + 10);
 		geremy.antialiasing = ClientPrefs.data.antialiasing;
 		geremy.frames = Paths.getSparrowAtlas("freeplay/fpgerm");
 		geremy.animation.addByPrefix("wait", "jeremy idle", 24, true);
@@ -274,9 +278,16 @@ class FreeplayStage extends BaseStage
 		updateTexts();
 	}
 
+	override function opponentNoteHit(note:Note)
+	{
+		if (game.health > 0.02)
+		{
+			game.health -= 0.0023;
+		}
+	}
+
 	override function createPreHUD()
 	{
-		
 		// FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK
 		blur = new BlurFilter(0, 0);
 		blur.quality = openfl.filters.BitmapFilterQuality.HIGH;
@@ -288,26 +299,26 @@ class FreeplayStage extends BaseStage
 	override function createPost()
 	{
 		// Use this function to layer things above characters!
-			PlayState.instance.timeBar.visible = false;
+		PlayState.instance.timeBar.visible = false;
 		PlayState.instance.timeTxt.visible = false;
 	}
 
 	override function beatHit()
 	{
-
 		// This looks a bit too strange in gameplay to use.
-		//scroll.velocity.set(0, 120);
-		//FlxTween.tween(scroll.velocity,{y: 20},Conductor.crochet / 1000, {ease: FlxEase.quadOut});
+		// scroll.velocity.set(0, 120);
+		// FlxTween.tween(scroll.velocity,{y: 20},Conductor.crochet / 1000, {ease: FlxEase.quadOut});
 		speaker.animation.play("Idle", true);
-		if (curBeat == 134) {
+		if (curBeat == 134)
+		{
 			FlxTween.num(5, 0, 0.75, {ease: FlxEase.quadOut}, function(nubmer)
-				{
-					bluramount = nubmer;
-				});
-				FlxTween.tween(game.dad,{y: FlxG.height + 20}, 0.9, {ease: FlxEase.quintIn});
-				FlxTween.tween(geremy,{y: 220}, 1, {ease: FlxEase.quintInOut, startDelay: 0.4});
-				FlxTween.tween(game.camHUD,{alpha: 0}, 0.5, {ease: FlxEase.quintInOut, startDelay: 0.8});
-				
+			{
+				bluramount = nubmer;
+			});
+			FlxTween.tween(game.dad, {y: FlxG.height + 20}, 0.9, {ease: FlxEase.quintIn});
+			FlxTween.tween(geremy, {y: 220}, 1, {ease: FlxEase.quintInOut, startDelay: 0.4});
+			FlxTween.tween(game.camHUD, {alpha: 0}, 0.5, {ease: FlxEase.quintInOut, startDelay: 0.8});
+
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxTransitionableState.skipNextTransOut = true;
 		}
@@ -322,7 +333,7 @@ class FreeplayStage extends BaseStage
 				{
 					bluramount = nubmer;
 				});
-				FlxTween.tween(game.camHUD,{alpha: 1},1.5);
+				FlxTween.tween(game.camHUD, {alpha: 1}, 1.5);
 			case TWO: // num 1
 			case ONE: // num 2
 			case GO: // num 3
@@ -339,34 +350,35 @@ class FreeplayStage extends BaseStage
 		PlayState.instance.camGame.scroll.set(0, 0);
 		// Code here
 	}
-	
+
 	var _drawDistance:Int = 4;
 	var _lastVisibles:Array<Int> = [];
+
 	public function updateTexts(elapsed:Float = 0.0)
+	{
+		lerpSelected = FlxMath.lerp(curSelected, lerpSelected, Math.exp(-elapsed * 9.6));
+		for (i in _lastVisibles)
 		{
-			lerpSelected = FlxMath.lerp(curSelected, lerpSelected, Math.exp(-elapsed * 9.6));
-			for (i in _lastVisibles)
-			{
-				grpSongs.members[i].visible = grpSongs.members[i].active = false;
-				iconArray[i].visible = iconArray[i].active = false;
-			}
-			_lastVisibles = [];
-	
-			var min:Int = Math.round(Math.max(0, Math.min(songs.length, lerpSelected - _drawDistance)));
-			var max:Int = Math.round(Math.max(0, Math.min(songs.length, lerpSelected + _drawDistance)));
-			for (i in min...max)
-			{
-				var item:Alphabet = grpSongs.members[i];
-				item.visible = item.active = true;
-				item.x = ((item.targetY - lerpSelected) * item.distancePerItem.x) + item.startPosition.x;
-				item.y = ((item.targetY - lerpSelected) * 1.3 * item.distancePerItem.y) + item.startPosition.y;
-	
-				var icon:HealthIcon = iconArray[i];
-				icon.visible = icon.active = true;
-				_lastVisibles.push(i);
-			}
+			grpSongs.members[i].visible = grpSongs.members[i].active = false;
+			iconArray[i].visible = iconArray[i].active = false;
 		}
-	
+		_lastVisibles = [];
+
+		var min:Int = Math.round(Math.max(0, Math.min(songs.length, lerpSelected - _drawDistance)));
+		var max:Int = Math.round(Math.max(0, Math.min(songs.length, lerpSelected + _drawDistance)));
+		for (i in min...max)
+		{
+			var item:Alphabet = grpSongs.members[i];
+			item.visible = item.active = true;
+			item.x = ((item.targetY - lerpSelected) * item.distancePerItem.x) + item.startPosition.x;
+			item.y = ((item.targetY - lerpSelected) * 1.3 * item.distancePerItem.y) + item.startPosition.y;
+
+			var icon:HealthIcon = iconArray[i];
+			icon.visible = icon.active = true;
+			_lastVisibles.push(i);
+		}
+	}
+
 	function refreshRank(rate:Float):Int
 	{
 		for (i in 0...rankStuff.length)

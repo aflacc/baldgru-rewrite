@@ -144,7 +144,7 @@ class LoddyStage extends BaseStage
 
 	override function createPost()
 	{
-		game.isCameraOnForcedPos = true;
+		PlayState.isCameraOnForcedPos = true;
 		leftHealth.color = FlxColor.fromRGB(game.dad.healthColorArray[0], game.dad.healthColorArray[1], game.dad.healthColorArray[2]);
 
 		rightHealth.color = FlxColor.fromRGB(PlayState.instance.boyfriend.healthColorArray[0], PlayState.instance.boyfriend.healthColorArray[1],

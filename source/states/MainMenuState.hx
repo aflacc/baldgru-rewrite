@@ -49,7 +49,7 @@ class MainMenuState extends MusicBeatState
 			"position" => [-187, 660],
 			"unselected" => [0, 0],
 			"hover" => [0, 0],
-			"select" => [20, 0],
+			"select" => [9, 0],
 			"broken" => [0, 0]
 		],
 		"extras" => [

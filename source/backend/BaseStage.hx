@@ -66,6 +66,7 @@ class BaseStage extends FlxBasic
 	public function create() {}
 	public function createPreHUD() {}
 	public function createPost() {}
+	public function opponentNoteHit(note:Note) {}
 	//public function update(elapsed:Float) {}
 	public function countdownTick(count:Countdown, num:Int) {}
 

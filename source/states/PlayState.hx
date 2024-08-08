@@ -2916,6 +2916,7 @@ class PlayState extends MusicBeatState
 		
 		var result:Dynamic = callOnLuas('opponentNoteHit', [notes.members.indexOf(note), Math.abs(note.noteData), note.noteType, note.isSustainNote]);
 		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('opponentNoteHit', [note]);
+		stagesFunc(function(stage:BaseStage) stage.opponentNoteHit(note));
 
 		if (!note.isSustainNote) invalidateNote(note);
 	}
