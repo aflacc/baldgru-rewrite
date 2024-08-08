@@ -79,7 +79,7 @@ class MainMenuState extends MusicBeatState
 	var menuClickBoxes:FlxSpriteGroup;
 	var freeplayEnabled:Bool = false; // todo: add a check to see if player has completed the story week
 	var menuSprites:Array<FlxSprite> = [];
-
+var freeplayTV:FlxSprite; // pointer
 	var magenta:FlxSprite;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
@@ -91,11 +91,12 @@ class MainMenuState extends MusicBeatState
 	var isNight:Bool = false;
 	var baldWeek:Array<WeekData> = [];
 
-
-	public static function nightCheck():Bool {
+	public static function nightCheck():Bool
+	{
 		var curHour = Date.now().getHours();
 		return (curHour <= 4 || curHour >= 20);
 	}
+
 	override function create()
 	{
 		Paths.clearStoredMemory();
@@ -106,7 +107,8 @@ class MainMenuState extends MusicBeatState
 		Mods.pushGlobalMods();
 		#end
 		Mods.loadTopMod();
-		if (!FlxG.sound.music.playing) {
+		if (!FlxG.sound.music.playing)
+		{
 			FlxG.sound.playMusic(Paths.music(MainMenuState.nightCheck() ? 'nightTheme' : 'freakyMenu'), 0);
 		}
 
@@ -231,6 +233,7 @@ class MainMenuState extends MusicBeatState
 					else
 					{
 						tv.animation.play("broken", true);
+						freeplayTV = tv;
 					}
 				}
 				else
@@ -391,6 +394,22 @@ class MainMenuState extends MusicBeatState
 			holdUp.visible = false;
 			popup = false;
 			selectedSomethin = false;
+		}
+		else if (controls.ACCEPT && popup)
+		{
+			Highscore.resetWeek("story", 0);
+			Highscore.resetSong("baldspicable");
+			Highscore.resetSong("baldozer");
+			Highscore.resetSong("dealtastic");
+
+			freeplayTV.animation.play("broken",true);
+
+			resetBG.visible = false;
+			resetText.visible = false;
+			holdUp.visible = false;
+			popup = false;
+			selectedSomethin = false;
+
 		}
 		if (FlxG.keys.justPressed.F7)
 		{
