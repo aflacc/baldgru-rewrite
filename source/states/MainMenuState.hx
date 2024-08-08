@@ -129,6 +129,7 @@ class MainMenuState extends MusicBeatState
 		var baldFile:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[0]);
 		baldWeek.push(baldFile);
 		WeekData.setDirectoryFromWeek(baldFile);
+		Difficulty.loadFromWeek();
 
 		hudCamera = new FlxCamera();
 		hudCamera.bgColor.alpha = 0;
@@ -308,16 +309,6 @@ class MainMenuState extends MusicBeatState
 			FlxTween.tween(versionShit, {alpha: 0.5}, 1, {ease: FlxEase.sineInOut});
 		});
 		add(versionShit);
-		/*var fnfVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
-			fnfVer.scrollFactor.set();
-			fnfVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-			fnfVer.alpha = 0;
-			new FlxTimer().start(7, function(_)
-			{
-				FlxTween.tween(fnfVer, {alpha: 1}, 1, {ease: FlxEase.sineInOut});
-			});
-			add(fnfVer); */
-		// changeItem();
 		initialized = true;
 		FlxG.mouse.visible = true;
 		var sprite = new FlxSprite().loadGraphic(Paths.image('bald gru cursor')); // 'alt cursor'
@@ -510,10 +501,6 @@ class MainMenuState extends MusicBeatState
 							MusicBeatState.switchState(new MasterEditorMenu());
 						case "story_mode":
 							selectedSomethin = true;
-							// FlxG.sound.play(Paths.sound('confirmMenu'));
-							//	spr.playAnim('accepted', true);
-							// spr.specialAnim = true;
-							// MusicBeatState.switchState(new StoryMenuState());
 							var baldArray:Array<String> = ["Baldspicable", "Baldozer", "Dealtastic"];
 
 							PlayState.storyPlaylist = baldArray;

@@ -462,61 +462,11 @@ class FreeplayState extends MusicBeatState
 			persistentUpdate = false;
 			openSubState(new GameplayChangersSubstate());
 		}
-			/*else if (FlxG.keys.justPressed.SPACE)
-				{
-					if (instPlaying != curSelected /*&& !player.playingMusic)
-					{
-						destroyFreeplayVocals();
-						FlxG.sound.music.volume = 0;
-
-						Mods.currentModDirectory = songs[curSelected].folder;
-						var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
-						PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
-						if (PlayState.SONG.needsVoices)
-						{
-							vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
-							FlxG.sound.list.add(vocals);
-							vocals.persist = true;
-							vocals.looped = true;
-						}
-						else if (vocals != null)
-						{
-							vocals.stop();
-							vocals.destroy();
-							vocals = null;
-						}
-
-						FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 0.8);
-						if (vocals != null) // Sync vocals to Inst
-						{
-							vocals.play();
-							vocals.volume = 0.8;
-						}
-						instPlaying = curSelected;
-
-						player.playingMusic = true;
-						player.curTime = 0;
-						player.switchPlayMusic();
-					}
-					// else if (instPlaying == curSelected /*&& player.playingMusic */ // )
-			// {
-			//	player.pauseOrResume(player.paused);
-			// }
-		// }*/
 		else if (controls.ACCEPT /*&& !player.playingMusic*/)
 		{
 			persistentUpdate = false;
 			var songLowercase:String = Paths.formatToSongPath(songs[curSelected].songName);
 			var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
-			/*#if MODS_ALLOWED
-				if(!FileSystem.exists(Paths.modsJson(songLowercase + '/' + poop)) && !FileSystem.exists(Paths.json(songLowercase + '/' + poop))) {
-				#else
-				if(!OpenFlAssets.exists(Paths.json(songLowercase + '/' + poop))) {
-				#end
-					poop = songLowercase;
-					curDifficulty = 1;
-					trace('Couldnt find file');
-			}*/
 			trace(poop);
 
 			try
