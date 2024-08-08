@@ -79,7 +79,6 @@ class MainMenuState extends MusicBeatState
 	var menuClickBoxes:FlxSpriteGroup;
 	var freeplayEnabled:Bool = false; // todo: add a check to see if player has completed the story week
 	var menuSprites:Array<FlxSprite> = [];
-var freeplayTV:FlxSprite; // pointer
 	var magenta:FlxSprite;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
@@ -233,7 +232,6 @@ var freeplayTV:FlxSprite; // pointer
 					else
 					{
 						tv.animation.play("broken", true);
-						freeplayTV = tv;
 					}
 				}
 				else
@@ -402,7 +400,9 @@ var freeplayTV:FlxSprite; // pointer
 			Highscore.resetSong("baldozer");
 			Highscore.resetSong("dealtastic");
 
-			freeplayTV.animation.play("broken",true);
+			//menuSprites[menuOrder.indexOf("freeplay")].animation.play("broken",true);
+			MusicBeatState.switchState(new MainMenuState()); // Just refresh the thing
+			initialized = false;
 
 			resetBG.visible = false;
 			resetText.visible = false;
