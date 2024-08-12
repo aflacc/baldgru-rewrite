@@ -14,6 +14,7 @@ import states.TitleState;
 	public var distractions:Bool = true;
 	public var cutscenes:Bool = true;
 	public var ruther:Bool = false;
+	public var crust:Bool = false;
 
 	public var fullscreen:Bool = false;
 

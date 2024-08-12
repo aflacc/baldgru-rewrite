@@ -24,7 +24,22 @@ class BaldGruSettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Cutscenes', 'If checked, cutscenes will in fact play.', 'cutscenes', 'bool');
+		option.onChange = function()
+		{
+			if (!ClientPrefs.data.cutscenes)
+				FlxG.sound.play(Paths.sound('settings/booooriiiing'), 1.6);
+		};
 		addOption(option);
+		if (FlxG.random.bool(10) || ClientPrefs.data.crust)
+		{
+			var option:Option = new Option('Crust holding 18 pencils', 'If checked, Crust holds up 18 pencils to you.', 'crust', 'bool');
+			option.onChange = function()
+			{
+				if (ClientPrefs.data.crust)
+					FlxG.sound.play(Paths.sound('settings/pencils'), 1.6);
+			};
+			addOption(option);
+		}
 
 		if (FlxG.random.bool(20) || ClientPrefs.data.ruther)
 		{

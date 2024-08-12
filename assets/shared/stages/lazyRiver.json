@@ -1,0 +1,15 @@
+{
+	"directory": "martelloWeek",
+	"defaultZoom": 0.65,
+	"isPixelStage": false,
+
+	"boyfriend": [960, -50],
+	"girlfriend": [820, 40],
+	"opponent": [-340, 100],
+	"hide_girlfriend": false,
+
+	"camera_boyfriend": [ 20, 20],
+	"camera_opponent": [120, -40],
+	"camera_girlfriend": [0, -300],
+	"camera_speed": 0.5
+}

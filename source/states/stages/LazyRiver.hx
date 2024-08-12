@@ -1,123 +1,66 @@
 package states.stages;
 
+import flixel.addons.display.FlxBackdrop;
+import substates.GameOverSubstate;
 import states.stages.objects.*;
 
-class Template extends BaseStage
+class LazyRiver extends BaseStage
 {
-	// If you're moving your stage from PlayState to a stage file,
-	// you might have to rename some variables if they're missing, for example: camZooming -> game.camZooming
-
+	// The original stage code for this was actually disgusting. I'm sorry but thats just the truth.
 	override function create()
 	{
-		// Spawn your stage sprites here.
-		// Characters are not ready yet on this function, so you can't add things above them yet.
-		// Use createPost() if that's what you want to do.
+		GameOverSubstate.loopSoundName = "lazyriver-gameover-loop";
+		GameOverSubstate.endSoundName = 'lazyriver-gameover-end';
+
+		var bg:BGSprite = new BGSprite('stages/lazyriver/MC_Sky', -830, -200, 0.1, 0.1);
+		bg.scale.set(1, 1.1);
+		add(bg);
+
+		var mg2:BGSprite = new BGSprite("stages/lazyriver/MC_middleground2", 280, 75, 0.3, 0.3);
+		mg2.velocity.set(-2,0); // I don't even think this works
+		add(mg2);
+
+		var mg:BGSprite = new BGSprite("stages/lazyriver/MC_middleground", 280, 75, 0.35, 0.35);
+		mg.velocity.set(-4,0);
+		add(mg);
+		var clouds:FlxBackdrop = new FlxBackdrop(Paths.image("stages/lazyriver/MC_clouds"), X, 400, 0);
+		clouds.scrollFactor.set(0.4, 0.4);
+		clouds.velocity.set(-5, 0);
+		clouds.antialiasing = ClientPrefs.data.antialiasing;
+		clouds.y = -250;
+		add(clouds);
+
+		var rocks:FlxBackdrop = new FlxBackdrop(Paths.image("stages/lazyriver/mc_foreground_rocks"), X, -18);
+		rocks.y = 240;
+		rocks.scrollFactor.set(0.9, 0.9);
+		rocks.velocity.set(-40, 0);
+		rocks.antialiasing = ClientPrefs.data.antialiasing;
+		add(rocks);
+
+		var water:FlxBackdrop = new FlxBackdrop(Paths.image("stages/lazyriver/mc_foreground_water"), X, -18);
+		water.y = 480;
+		water.scrollFactor.set(1, 1);
+		water.velocity.set(-40, 0);
+		water.antialiasing = ClientPrefs.data.antialiasing;
+		add(water);
 	}
-	
+
 	override function createPost()
 	{
-		// Use this function to layer things above characters!
+		var waterRocks:FlxBackdrop = new FlxBackdrop(Paths.image("stages/lazyriver/mc_waterRocks"), X, -18);
+		waterRocks.y = 720;
+		waterRocks.scrollFactor.set(1.1, 1.1);
+		waterRocks.velocity.set(-40, 0);
+		waterRocks.antialiasing = ClientPrefs.data.antialiasing;
+		add(waterRocks);
 	}
+
+	var sine:Float = 0;
 
 	override function update(elapsed:Float)
 	{
-		// Code here
-	}
-
-	
-	override function countdownTick(count:backend.BaseStage.Countdown, num:Int)
-	{
-		switch(count)
-		{
-			case THREE: //num 0
-			case TWO: //num 1
-			case ONE: //num 2
-			case GO: //num 3
-			case START: //num 4
-		}
-	}
-
-	// Steps, Beats and Sections:
-	//    curStep, curDecStep
-	//    curBeat, curDecBeat
-	//    curSection
-	override function stepHit()
-	{
-		// Code here
-	}
-	override function beatHit()
-	{
-		// Code here
-	}
-	override function sectionHit()
-	{
-		// Code here
-	}
-
-	// Substates for pausing/resuming tweens and timers
-	override function closeSubState()
-	{
-		if(paused)
-		{
-			//timer.active = true;
-			//tween.active = true;
-		}
-	}
-
-	override function openSubState(SubState:flixel.FlxSubState)
-	{
-		if(paused)
-		{
-			//timer.active = false;
-			//tween.active = false;
-		}
-	}
-
-	// For events
-	override function eventCalled(eventName:String, value1:String, value2:String, flValue1:Null<Float>, flValue2:Null<Float>, strumTime:Float)
-	{
-		switch(eventName)
-		{
-			case "My Event":
-		}
-	}
-	override function eventPushed(event:objects.Note.EventNote)
-	{
-		// used for preloading assets used on events that doesn't need different assets based on its values
-		switch(event.event)
-		{
-			case "My Event":
-				//precacheImage('myImage') //preloads images/myImage.png
-				//precacheSound('mySound') //preloads sounds/mySound.ogg
-				//precacheMusic('myMusic') //preloads music/myMusic.ogg
-		}
-	}
-	override function eventPushedUnique(event:objects.Note.EventNote)
-	{
-		// used for preloading assets used on events where its values affect what assets should be preloaded
-		switch(event.event)
-		{
-			case "My Event":
-				switch(event.value1)
-				{
-					// If value 1 is "blah blah", it will preload these assets:
-					case 'blah blah':
-						//precacheImage('myImageOne') //preloads images/myImageOne.png
-						//precacheSound('mySoundOne') //preloads sounds/mySoundOne.ogg
-						//precacheMusic('myMusicOne') //preloads music/myMusicOne.ogg
-
-					// If value 1 is "coolswag", it will preload these assets:
-					case 'coolswag':
-						//precacheImage('myImageTwo') //preloads images/myImageTwo.png
-						//precacheSound('mySoundTwo') //preloads sounds/mySoundTwo.ogg
-						//precacheMusic('myMusicTwo') //preloads music/myMusicTwo.ogg
-					
-					// If value 1 is not "blah blah" or "coolswag", it will preload these assets:
-					default:
-						//precacheImage('myImageThree') //preloads images/myImageThree.png
-						//precacheSound('mySoundThree') //preloads sounds/mySoundThree.ogg
-						//precacheMusic('myMusicThree') //preloads music/myMusicThree.ogg
-				}
-		}
+		sine = (sine + elapsed) % (Math.PI * 4);
+		if (game.dad != null)
+			game.dad.y = 100 - 170 + (Math.sin(sine) * 8);
 	}
 }

@@ -26,9 +26,9 @@
 	- [ ] Game Over
 	- [ ] Background
 	- [ ] Background (Summer)
-	- [ ] bfcool summer
-	- [ ] gfcool summer (the floatie)
-	- [ ] martello
+	- [x] bfcool summer
+	- [x] gfcool summer (the floatie)
+	- [x] martello
 	- [ ] Popsicle Gimmick (Make it functional with story week songs!!)
 - [ ] maudade
 	- [ ] Game Over

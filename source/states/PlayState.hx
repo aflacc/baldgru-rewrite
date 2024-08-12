@@ -385,6 +385,7 @@ class PlayState extends MusicBeatState
 			case 'baldGlue': new states.stages.BaldGru.BaldGlue();
 			case 'dealtastic': new states.stages.Dealtastic();
 			case 'freeplay': new states.stages.FreeplayStage();
+			case 'lazyRiver': new states.stages.LazyRiver();
 		}
 
 		if(isPixelStage) {
@@ -634,6 +635,14 @@ class PlayState extends MusicBeatState
 		cachePopUpScore();
 
 		super.create();
+		if (ClientPrefs.data.crust) {
+			var crust:FlxSprite = new FlxSprite().loadGraphic(Paths.image("crust holding 18 pencils"));
+			crust.setGraphicSize(FlxG.width, FlxG.height);
+			crust.screenCenter();
+			crust.cameras = [camOther];
+			crust.alpha = 0.5;
+			add(crust);
+		}
 		Paths.clearUnusedMemory();
 
 		if(eventNotes.length < 1) checkEventNote();

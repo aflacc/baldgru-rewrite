@@ -1,6 +1,7 @@
 package states.stages;
 
 //
+import substates.GameOverSubstate;
 import flixel.input.FlxInput;
 import flixel.input.keyboard.FlxKey;
 import states.stages.Loddy.LoddyStage;
@@ -68,6 +69,8 @@ class BaldGlue extends BaseStage
 
 	override function create()
 	{
+		GameOverSubstate.loopSoundName = "baldgru-gameover-loop";
+		GameOverSubstate.endSoundName = 'baldgru-gameover-end';
 		var bg:FlxSprite = new FlxSprite(-300, -290).loadGraphic(Paths.image("stages/baldGlue/BG_background"));
 		bg.scrollFactor.set(0.4, 0.4);
 		bg.scale.set(1.15, 1.15);

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bfsumma death.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bf dead loop instance 10000" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10001" x="348" y="4" width="347" height="409"/>
+	<SubTexture name="bf dead loop instance 10002" x="348" y="4" width="347" height="409"/>
+	<SubTexture name="bf dead loop instance 10003" x="699" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10004" x="1043" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10005" x="1043" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10006" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10007" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10008" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10009" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10010" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10011" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10012" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10013" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead loop instance 10014" x="4" y="4" width="340" height="399" frameX="-4" frameY="-5" frameWidth="347" frameHeight="409"/>
+	<SubTexture name="bf dead press instance 10000" x="1387" y="4" width="339" height="399" frameX="-1" frameY="0" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10001" x="4" y="417" width="340" height="397" frameX="0" frameY="-1" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10002" x="4" y="417" width="340" height="397" frameX="0" frameY="-1" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10003" x="348" y="417" width="329" height="382" frameX="-2" frameY="-10" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10004" x="681" y="417" width="262" height="307" frameX="-38" frameY="-79" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10005" x="947" y="417" width="257" height="311" frameX="-38" frameY="-79" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10006" x="1208" y="417" width="162" height="237" frameX="-95" frameY="-150" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10007" x="1208" y="417" width="162" height="237" frameX="-95" frameY="-150" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10008" x="1374" y="417" width="75" height="217" frameX="-138" frameY="-169" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10009" x="1453" y="417" width="75" height="173" frameX="-138" frameY="-213" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10010" x="1532" y="417" width="59" height="146" frameX="-147" frameY="-244" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10011" x="1595" y="417" width="59" height="143" frameX="-147" frameY="-244" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10012" x="1658" y="417" width="22" height="138" frameX="-168" frameY="-249" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10013" x="1684" y="417" width="19" height="22" frameX="-172" frameY="-364" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10014" x="1707" y="417" width="17" height="30" frameX="-173" frameY="-360" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10015" x="1707" y="417" width="17" height="30" frameX="-173" frameY="-360" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10016" x="1728" y="417" width="17" height="24" frameX="-173" frameY="-363" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10017" x="1728" y="417" width="17" height="24" frameX="-173" frameY="-363" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10018" x="1684" y="417" width="19" height="22" frameX="-172" frameY="-364" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10019" x="1684" y="417" width="19" height="22" frameX="-172" frameY="-364" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10020" x="1707" y="417" width="17" height="30" frameX="-173" frameY="-360" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10021" x="1728" y="417" width="17" height="24" frameX="-173" frameY="-363" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10022" x="1728" y="417" width="17" height="24" frameX="-173" frameY="-363" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10023" x="1684" y="417" width="19" height="22" frameX="-172" frameY="-364" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10024" x="1684" y="417" width="19" height="22" frameX="-172" frameY="-364" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dead press instance 10025" x="1707" y="417" width="17" height="30" frameX="-173" frameY="-360" frameWidth="340" frameHeight="399"/>
+	<SubTexture name="bf dying instance 10000" x="1749" y="417" width="248" height="304" frameX="-51" frameY="-79" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10001" x="1749" y="417" width="248" height="304" frameX="-51" frameY="-79" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10002" x="4" y="818" width="248" height="305" frameX="-53" frameY="-78" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10003" x="256" y="818" width="248" height="305" frameX="-53" frameY="-78" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10004" x="508" y="818" width="248" height="330" frameX="-51" frameY="-64" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10005" x="760" y="818" width="341" height="402"/>
+	<SubTexture name="bf dying instance 10006" x="1105" y="818" width="341" height="402"/>
+	<SubTexture name="bf dying instance 10007" x="1450" y="818" width="340" height="399" frameX="0" frameY="0" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10008" x="1450" y="818" width="340" height="399" frameX="0" frameY="0" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10009" x="1450" y="818" width="340" height="399" frameX="0" frameY="0" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10010" x="1450" y="818" width="340" height="399" frameX="0" frameY="0" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10011" x="1450" y="818" width="340" height="399" frameX="0" frameY="0" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10012" x="1450" y="818" width="340" height="399" frameX="0" frameY="0" frameWidth="341" frameHeight="402"/>
+	<SubTexture name="bf dying instance 10013" x="1450" y="818" width="340" height="399" frameX="0" frameY="0" frameWidth="341" frameHeight="402"/>
+</TextureAtlas>

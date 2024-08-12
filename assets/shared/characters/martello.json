@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-14,
+				-73
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "martello left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				23,
+				-339
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "martello down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-71,
+				47
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "martello up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-91,
+				-25
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "martello right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "martello idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "",
+			"indices": [],
+			"name": ""
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/martello",
+	"position": [
+		-100,
+		-270
+	],
+	"healthicon": "martello",
+	"flip_x": false,
+	"healthbar_colors": [
+		146,
+		203,
+		174
+	],
+	"camera_position": [
+		120,
+		370
+	],
+	"sing_duration": 5.2,
+	"scale": 1
+}
