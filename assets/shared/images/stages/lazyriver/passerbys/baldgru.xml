@@ -4,6 +4,10 @@
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="baldgru0000" x="4" y="4" width="635" height="226"/>
 	<SubTexture name="baldgru0001" x="4" y="4" width="635" height="226"/>
-	<SubTexture name="baldgru0002" x="4" y="238" width="635" height="226"/>
-	<SubTexture name="baldgru0003" x="4" y="238" width="635" height="226"/>
+	<SubTexture name="baldgru0002" x="4" y="4" width="635" height="226"/>
+	<SubTexture name="baldgru0003" x="4" y="4" width="635" height="226"/>
+	<SubTexture name="baldgru0004" x="4" y="238" width="634" height="226" frameX="-1" frameY="0" frameWidth="635" frameHeight="226"/>
+	<SubTexture name="baldgru0005" x="4" y="238" width="634" height="226" frameX="-1" frameY="0" frameWidth="635" frameHeight="226"/>
+	<SubTexture name="baldgru0006" x="4" y="238" width="634" height="226" frameX="-1" frameY="0" frameWidth="635" frameHeight="226"/>
+	<SubTexture name="baldgru0007" x="4" y="238" width="634" height="226" frameX="-1" frameY="0" frameWidth="635" frameHeight="226"/>
 </TextureAtlas>
