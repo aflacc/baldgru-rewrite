@@ -1,5 +1,6 @@
 package states.stages;
 
+import flixel.graphics.FlxGraphic;
 import objects.Note;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.display.FlxBackdrop;
@@ -70,6 +71,8 @@ class FreeplayStage extends BaseStage
 	public static var whatShouldTheRankSay:Float = 0;
 
 	var scroll:FlxBackdrop;
+
+	var imageGrp:FlxSpriteGroup;
 
 	override function create()
 	{
@@ -294,6 +297,10 @@ class FreeplayStage extends BaseStage
 		PlayState.instance.camGame.filters = [blur];
 		PlayState.instance.dadGroup.cameras = [game.camHUD];
 		PlayState.instance.dad.setPosition(280, FlxG.height - (PlayState.instance.dad.height * 0.7));
+
+		imageGrp = new FlxSpriteGroup();
+		imageGrp.cameras = [game.camHUD];
+		add(imageGrp);
 	}
 
 	override function createPost()
@@ -303,24 +310,159 @@ class FreeplayStage extends BaseStage
 		PlayState.instance.timeTxt.visible = false;
 	}
 
+	function flashImage(path:FlxGraphic, time:Float)
+	{
+		var fuck:FlxSprite = new FlxSprite().loadGraphic(path);
+		fuck.setGraphicSize(FlxG.width, FlxG.height);
+		fuck.screenCenter();
+		fuck.antialiasing = ClientPrefs.data.antialiasing;
+		imageGrp.add(fuck);
+		FlxTween.tween(fuck, {alpha: 0}, time, {
+			ease: FlxEase.sineIn,
+			startDelay: 0.3,
+			onComplete: function(_)
+			{
+				fuck.destroy();
+			}
+		});
+	}
+
+	var fuck2:FlxSprite;
+
+	function fadeImage(?time:Float = 1, ?path:FlxGraphic = null)
+	{
+		var shit:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
+		shit.setGraphicSize(FlxG.width, FlxG.height);
+		shit.screenCenter();
+		shit.antialiasing = ClientPrefs.data.antialiasing;
+		shit.alpha = 0;
+		var fuck3 = new FlxSprite().loadGraphic(path);
+		fuck3.setGraphicSize(FlxG.width, FlxG.height);
+		fuck3.screenCenter();
+		fuck3.antialiasing = ClientPrefs.data.antialiasing;
+		fuck3.alpha = 0;
+		imageGrp.add(fuck3);
+		imageGrp.add(shit);
+		FlxTween.tween(shit, {alpha: 1}, time, {
+			ease: FlxEase.sineIn,
+			onComplete: function(_)
+			{
+				if (fuck2 != null)
+					fuck2.destroy();
+				fuck3.alpha = 1;
+				fuck2 = fuck3;
+				FlxTween.tween(shit, {alpha: 0}, time, {
+					ease: FlxEase.sineIn,
+					onComplete: function(_)
+					{
+						shit.destroy();
+					}
+				});
+			}
+		});
+	}
+
+	// Changes the
+	function changeImage(path:FlxGraphic)
+	{
+		if (fuck2 != null)
+		{
+			fuck2.loadGraphic(path);
+		}
+	}
+
+	var poseOfMany:FlxSprite;
+
 	override function beatHit()
 	{
-		// This looks a bit too strange in gameplay to use.
-		// scroll.velocity.set(0, 120);
-		// FlxTween.tween(scroll.velocity,{y: 20},Conductor.crochet / 1000, {ease: FlxEase.quadOut});
 		speaker.animation.play("Idle", true);
-		if (curBeat == 134)
-		{
-			FlxTween.num(5, 0, 0.75, {ease: FlxEase.quadOut}, function(nubmer)
-			{
-				bluramount = nubmer;
-			});
-			FlxTween.tween(game.dad, {y: FlxG.height + 20}, 0.9, {ease: FlxEase.quintIn});
-			FlxTween.tween(geremy, {y: 220}, 1, {ease: FlxEase.quintInOut, startDelay: 0.4});
-			FlxTween.tween(game.camHUD, {alpha: 0}, 0.5, {ease: FlxEase.quintInOut, startDelay: 0.8});
 
-			FlxTransitionableState.skipNextTransIn = true;
-			FlxTransitionableState.skipNextTransOut = true;
+		if (PlayState.SONG.song.toLowerCase() == "yolked")
+		{
+			switch (curBeat)
+			{
+				case 20: // flash
+					flashImage(Paths.image("stages/yolked/pose1"), 1);
+				case 36: // flash
+					flashImage(Paths.image("stages/yolked/pose2"), 1);
+				case 52: // flash
+					flashImage(Paths.image("stages/yolked/pose3"), 1);
+				case 64: // sad story #1 (fade here!
+					fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory1"));
+				case 80: // sad story #2
+					fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory2"));
+				case 94: // sad story #3 (blink) (no fade)
+					changeImage(Paths.image("stages/yolked/sadstory3"));
+				case 98: // fade to white, fade to bf
+					fadeImage(Conductor.crochet * 0.001, null);
+				case 103: // left geremy
+					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/popupright"));
+					popup.antialiasing = ClientPrefs.data.antialiasing;
+					popup.setPosition(FlxG.width + popup.width, -popup.height);
+					imageGrp.add(popup);
+					FlxTween.tween(popup, {x: FlxG.width - popup.width, y: 0}, 0.3, {
+						ease: FlxEase.circOut,
+						onComplete: function(_)
+						{
+							FlxTween.tween(popup, {x: FlxG.width + popup.width, y: -popup.height}, 0.5, {
+								ease: FlxEase.circIn,
+								startDelay: 0.2
+							});
+						}
+					});
+				case 107: // right geremy
+					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/popupleft"));
+					popup.antialiasing = ClientPrefs.data.antialiasing;
+					popup.setPosition(-popup.width, FlxG.height + popup.height);
+					imageGrp.add(popup);
+					FlxTween.tween(popup, {x: 0, y: FlxG.height - popup.height}, 0.3, {
+						ease: FlxEase.circOut,
+						onComplete: function(_)
+						{
+							FlxTween.tween(popup, {x: -popup.width, y: FlxG.height + popup.height}, 0.5, {
+								ease: FlxEase.circIn,
+								startDelay: 0.2
+							});
+						}
+					});
+				case 110: // pose enter (down)
+					// 1280, 317
+					poseOfMany = new FlxSprite().loadGraphic(Paths.image("stages/yolked/cool"), true, 1280, 317);
+					for (i in 0...5)
+					{
+						poseOfMany.animation.add(Std.string(i), [i], 0);
+					}
+					poseOfMany.animation.play("0", true);
+					poseOfMany.screenCenter(); // center both for something awesome
+					var waitwhatthefuckisthemiddle = poseOfMany.y; // the something awesome
+					poseOfMany.y = FlxG.height + 10;
+					imageGrp.add(poseOfMany);
+					FlxTween.tween(poseOfMany, {y: waitwhatthefuckisthemiddle}, Conductor.crochet * 0.002, {ease: FlxEase.quadOut});
+
+				case 112: // pose change
+					poseOfMany.animation.play("1", true);
+				case 113: // pose change
+					poseOfMany.animation.play("2", true);
+				case 114: // pose change
+					poseOfMany.animation.play("3", true);
+				case 115: // pose change
+					poseOfMany.animation.play("4", true);
+				case 116: // pose leave (up)
+					FlxTween.tween(poseOfMany, {y: -poseOfMany.height}, Conductor.crochet * 0.002, {ease: FlxEase.quadIn});
+			}
+			if (curBeat == 134)
+			{
+				FlxTween.num(5, 0, 0.75, {ease: FlxEase.quadOut}, function(nubmer)
+				{
+					bluramount = nubmer;
+				});
+				FlxTween.tween(game.dad, {y: FlxG.height + 20}, 0.9, {ease: FlxEase.quintIn});
+				FlxTween.tween(geremy, {y: 220}, 1, {ease: FlxEase.quintInOut, startDelay: 0.4});
+				FlxTween.tween(game.camHUD, {alpha: 0}, 0.5, {ease: FlxEase.quintInOut, startDelay: 0.8});
+
+				FlxTransitionableState.skipNextTransIn = true;
+				FlxTransitionableState.skipNextTransOut = true;
+			}
 		}
 	}
 

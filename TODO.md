@@ -24,7 +24,7 @@
 		- [ ] ^^ FIX BECAUSE IT DOESNT WORK RIGHT NOW for sOME REASON!! FUCK!!!
 - [ ] lazy river
 	- [ ] Game Over
-	- [ ] Background
+	- [x] Background
 	- [ ] Background (Summer)
 	- [x] bfcool summer
 	- [x] gfcool summer (the floatie)

@@ -1,33 +1,34 @@
 {
 	"animations": [
 		{
+			"loop": true,
 			"offsets": [
 				0,
 				-220
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "gf idle"
+			"fps": 24,
+			"name": "gf idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				-205
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "teleport",
-			"indices": [],
-			"name": "gf teleport"
+			"fps": 24,
+			"name": "gf teleport",
+			"indices": []
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/gfcool",
 	"position": [
-		0,
-		0
+		60,
+		180
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -38,8 +39,9 @@
 	],
 	"camera_position": [
 		-150,
-		270
+		250
 	],
 	"sing_duration": 4,
-	"scale": 1.3
+	"scale": 1.3,
+	"_editor_isPlayer": false
 }
