@@ -3,5 +3,7 @@
 	<!-- Created with Adobe Animate version 24.0.4.28 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="baldgru0000" x="4" y="4" width="635" height="226"/>
-	<SubTexture name="baldgru0001" x="4" y="238" width="635" height="226"/>
+	<SubTexture name="baldgru0001" x="4" y="4" width="635" height="226"/>
+	<SubTexture name="baldgru0002" x="4" y="238" width="635" height="226"/>
+	<SubTexture name="baldgru0003" x="4" y="238" width="635" height="226"/>
 </TextureAtlas>
