@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="beef.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="beef0000" x="4" y="4" width="317" height="216" frameX="0" frameY="0" frameWidth="319" frameHeight="216"/>
+	<SubTexture name="beef0001" x="4" y="228" width="316" height="216" frameX="-3" frameY="0" frameWidth="319" frameHeight="216"/>
+</TextureAtlas>

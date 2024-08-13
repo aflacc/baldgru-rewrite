@@ -7,6 +7,9 @@ import states.stages.objects.*;
 class LazyRiver extends BaseStage
 {
 	// The original stage code for this was actually disgusting. I'm sorry but thats just the truth.
+	var passerby:FlxSprite;
+	var passerbyGrp:FlxSpriteGroup; // Layering purposes
+
 	override function create()
 	{
 		GameOverSubstate.loopSoundName = "lazyriver-gameover-loop";
@@ -17,11 +20,11 @@ class LazyRiver extends BaseStage
 		add(bg);
 
 		var mg2:BGSprite = new BGSprite("stages/lazyriver/MC_middleground2", 280, 75, 0.3, 0.3);
-		mg2.velocity.set(-2,0); // I don't even think this works
+		mg2.velocity.set(-2, 0); // I don't even think this works
 		add(mg2);
 
 		var mg:BGSprite = new BGSprite("stages/lazyriver/MC_middleground", 280, 75, 0.35, 0.35);
-		mg.velocity.set(-4,0);
+		mg.velocity.set(-4, 0);
 		add(mg);
 		var clouds:FlxBackdrop = new FlxBackdrop(Paths.image("stages/lazyriver/MC_clouds"), X, 400, 0);
 		clouds.scrollFactor.set(0.4, 0.4);
@@ -43,6 +46,9 @@ class LazyRiver extends BaseStage
 		water.velocity.set(-40, 0);
 		water.antialiasing = ClientPrefs.data.antialiasing;
 		add(water);
+
+		passerbyGrp = new FlxSpriteGroup();
+		add(passerbyGrp);
 	}
 
 	override function createPost()
@@ -56,11 +62,46 @@ class LazyRiver extends BaseStage
 	}
 
 	var sine:Float = 0;
+	var passerbySine:Float = 0;
 
 	override function update(elapsed:Float)
 	{
+		passerbySine = passerbySine + elapsed;
+		if (passerby != null)
+		{
+			passerby.offset.set(0, Math.sin(passerbySine) * 4);
+			if (passerby.x <= -900 - passerby.width) {
+				passerby.destroy();
+				passerby = null;
+			}
+		}
 		sine = (sine + elapsed) % (Math.PI * 4);
+
 		if (game.dad != null)
 			game.dad.y = 100 - 170 + (Math.sin(sine) * 8);
+	}
+
+	var passerbys:Array<String> = ["baldgru", "beef"];
+
+	override function beatHit()
+	{
+		// Beats are frequent so like.. 5% is fair
+		// also, never thought i would write a "if thing IS null" LOL
+		if (passerby == null && FlxG.random.bool(5))
+		{
+			trace('boo');
+			passerby = new FlxSprite();
+			// I'm really good at naming variables..
+			var boob = FlxG.random.getObject(passerbys);
+			passerby.frames = Paths.getSparrowAtlas("stages/lazyriver/passerbys/" + boob);
+			passerby.animation.addByPrefix("loop", boob, 24, true);
+			passerby.animation.play('loop', true);
+			passerby.x = FlxG.width * 2;
+			passerby.antialiasing = ClientPrefs.data.antialiasing;
+			passerby.origin.set(0,passerby.height);
+			passerby.y = 400 + FlxG.random.int(0,25);
+			passerby.velocity.set(-70,0);
+			passerbyGrp.add(passerby);
+		}
 	}
 }

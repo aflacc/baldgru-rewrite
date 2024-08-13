@@ -1,7 +1,7 @@
 ![[outpurt.gif]]
 - [ ] Credits
-- [ ] bfcool
-- [ ] gfcool
+- [x] bfcool
+- [x] gfcool
 - [ ] THE HUD I FORGOT TO ADD THE HUD IM SO FUCKING STUPID
 - [x] baldspicable
 - [ ] baldozer
@@ -21,8 +21,8 @@
 	- [x] Halt Screen
 	- [x] Geremy
 	- [x] make freeplay unlock after the week is completed and this song is completed
-		- [ ] ^^ FIX BECAUSE IT DOESNT WORK RIGHT NOW for sOME REASON!! FUCK!!!
-- [ ] lazy river
+		- [x] ^^ FIX BECAUSE IT DOESNT WORK RIGHT NOW for sOME REASON!! FUCK!!!
+- [x] lazy river
 	- [ ] Game Over
 	- [x] Background
 	- [ ] Background (Summer)
