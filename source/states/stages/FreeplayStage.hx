@@ -395,7 +395,7 @@ class FreeplayStage extends BaseStage
 					changeImage(Paths.image("stages/yolked/sadstory3"));
 				case 98: // fade to white, fade to bf
 					fadeImage(Conductor.crochet * 0.001, null);
-				case 103: // left geremy
+				case 102: // left geremy
 					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/popupright"));
 					popup.antialiasing = ClientPrefs.data.antialiasing;
 					popup.setPosition(FlxG.width + popup.width, -popup.height);
@@ -410,7 +410,7 @@ class FreeplayStage extends BaseStage
 							});
 						}
 					});
-				case 107: // right geremy
+				case 106: // right geremy
 					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/popupleft"));
 					popup.antialiasing = ClientPrefs.data.antialiasing;
 					popup.setPosition(-popup.width, FlxG.height + popup.height);
