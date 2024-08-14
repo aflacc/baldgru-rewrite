@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="harvester.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="harvester0000" x="4" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0001" x="4" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0002" x="4" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0003" x="4" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0004" x="619" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0005" x="619" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0006" x="619" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0007" x="619" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0008" x="1234" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0009" x="1234" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0010" x="1234" y="4" width="607" height="492"/>
+	<SubTexture name="harvester0011" x="1234" y="4" width="607" height="492"/>
+</TextureAtlas>

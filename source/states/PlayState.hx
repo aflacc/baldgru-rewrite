@@ -266,6 +266,7 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		isCameraOnForcedPos = false; // It's marked as static now so this needs to be manually reset each time.. Such is the costs of yolked..
 		//trace('Playback Rate: ' + playbackRate);
 		Paths.clearStoredMemory();
 
