@@ -23,6 +23,7 @@ class LazyRiver extends BaseStage
 		mg2.velocity.set(-2, 0); // I don't even think this works
 		add(mg2);
 
+
 		var mg:BGSprite = new BGSprite("stages/lazyriver/MC_middleground", 280, 75, 0.35, 0.35);
 		mg.velocity.set(-4, 0);
 		add(mg);
@@ -94,7 +95,7 @@ class LazyRiver extends BaseStage
 			passerby = new FlxSprite();
 			// I'm really good at naming variables..
 			var boob = FlxG.random.getObject(passerbys);
-			trace('boob' + boob);// funny
+			trace('boo! its the ' + boob);// funny
 			passerby.frames = Paths.getSparrowAtlas("stages/lazyriver/passerbys/" + boob);
 			passerby.animation.addByPrefix("loop", boob, 24, true);
 			passerby.animation.play('loop', true);

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SDbg2.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 16 instance 10000" x="4" y="4" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10001" x="4" y="4" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10002" x="4" y="4" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10003" x="4" y="534" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10004" x="4" y="534" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10005" x="4" y="534" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10006" x="4" y="534" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10007" x="4" y="1064" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10008" x="4" y="1064" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10009" x="4" y="1064" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10010" x="4" y="1064" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10011" x="4" y="4" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10012" x="4" y="4" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10013" x="4" y="4" width="2470" height="526"/>
+	<SubTexture name="Symbol 16 instance 10014" x="4" y="4" width="2470" height="526"/>
+</TextureAtlas>

@@ -1,4 +1,3 @@
-![[outpurt.gif]]
 - [ ] Credits
 - [x] bfcool
 - [x] gfcool
@@ -25,10 +24,10 @@
 - [x] lazy river
 	- [ ] Game Over
 	- [x] Background
-	- [ ] Background (Summer)
 	- [x] bfcool summer
 	- [x] gfcool summer (the floatie)
 	- [x] martello
+	- [ ] Background (Summer)
 	- [ ] Popsicle Gimmick (Make it functional with story week songs!!)
 - [ ] maudade
 	- [ ] Game Over
