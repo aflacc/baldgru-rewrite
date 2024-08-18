@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-8,
+				22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "sonic dead drink"
+		},
+		{
+			"offsets": [
+				18,
+				7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "sonic deady"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				-80
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "sonic dead loop",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/sonic_dead",
+	"position": [
+		-460,
+		-20
+	],
+	"healthicon": "sonic",
+	"flip_x": true,
+	"healthbar_colors": [
+		58,
+		91,
+		222
+	],
+	"camera_position": [
+		-400,
+		-610
+	],
+	"sing_duration": 6.1,
+	"scale": 1.3
+}

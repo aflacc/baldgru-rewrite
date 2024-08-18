@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-89,
+				-38
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "sonic down alt"
+		},
+		{
+			"offsets": [
+				338,
+				-36
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "sonic left alt"
+		},
+		{
+			"offsets": [
+				-35,
+				69
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "sonic up alt"
+		},
+		{
+			"offsets": [
+				-91,
+				-56
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "sonic down missing instance"
+		},
+		{
+			"offsets": [
+				20,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "sonic up missing instance"
+		},
+		{
+			"offsets": [
+				173,
+				-19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "sonic right missing instance"
+		},
+		{
+			"offsets": [
+				316,
+				-28
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "sonic left missing instance"
+		},
+		{
+			"offsets": [
+				378,
+				91
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "table",
+			"indices": [],
+			"name": "sonic throw table instance"
+		},
+		{
+			"offsets": [
+				161,
+				-17
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "sonic right alt"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "sonic alt idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/sonic_cocky",
+	"position": [
+		-48,
+		-22
+	],
+	"healthicon": "sonic",
+	"flip_x": true,
+	"healthbar_colors": [
+		58,
+		91,
+		222
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

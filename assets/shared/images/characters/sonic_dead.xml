@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sonic dead.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sonic dead drink instance 10000" x="2" y="2" width="874" height="721" frameX="0" frameY="-78" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10001" x="878" y="2" width="865" height="721" frameX="-10" frameY="-78" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10002" x="878" y="2" width="865" height="721" frameX="-10" frameY="-78" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10003" x="878" y="2" width="865" height="721" frameX="-10" frameY="-78" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10004" x="1745" y="2" width="794" height="721" frameX="-86" frameY="-78" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10005" x="2541" y="2" width="700" height="718" frameX="-192" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10006" x="2541" y="2" width="700" height="718" frameX="-192" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10007" x="3243" y="2" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10008" x="3945" y="2" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10009" x="4647" y="2" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10010" x="5349" y="2" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10011" x="6051" y="2" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10012" x="6753" y="2" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10013" x="7455" y="2" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10014" x="2" y="725" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10015" x="704" y="725" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10016" x="1406" y="725" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10017" x="2108" y="725" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10018" x="2810" y="725" width="700" height="718" frameX="-191" frameY="-84" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10019" x="3512" y="725" width="503" height="740" frameX="-445" frameY="0" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10020" x="4017" y="725" width="503" height="740" frameX="-445" frameY="0" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10021" x="4522" y="725" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10022" x="5030" y="725" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10023" x="5538" y="725" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10024" x="6046" y="725" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10025" x="6554" y="725" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10026" x="7062" y="725" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10027" x="7570" y="725" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10028" x="2" y="1467" width="506" height="738" frameX="-443" frameY="-2" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10029" x="510" y="1467" width="874" height="721" frameX="0" frameY="-78" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead drink instance 10030" x="510" y="1467" width="874" height="721" frameX="244" frameY="-11" frameWidth="949" frameHeight="802"/>
+	<SubTexture name="sonic dead loop instance 10000" x="1386" y="1467" width="872" height="717" frameX="0" frameY="-4" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10001" x="1386" y="1467" width="872" height="717" frameX="0" frameY="-4" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10002" x="2260" y="1467" width="874" height="717" frameX="-1" frameY="-4" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10003" x="2260" y="1467" width="874" height="717" frameX="-1" frameY="-4" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10004" x="3136" y="1467" width="874" height="720" frameX="-4" frameY="-1" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10005" x="4012" y="1467" width="872" height="721" frameX="-9" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10006" x="4012" y="1467" width="872" height="721" frameX="-9" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10007" x="4012" y="1467" width="872" height="721" frameX="-9" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10008" x="4886" y="1467" width="871" height="721" frameX="-11" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10009" x="4886" y="1467" width="871" height="721" frameX="-11" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10010" x="4886" y="1467" width="871" height="721" frameX="-11" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10011" x="4886" y="1467" width="871" height="721" frameX="-11" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10012" x="4886" y="1467" width="871" height="721" frameX="-11" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic dead loop instance 10013" x="4886" y="1467" width="871" height="721" frameX="-11" frameY="0" frameWidth="882" frameHeight="721"/>
+	<SubTexture name="sonic deady instance 10000" x="5759" y="1467" width="735" height="654" frameX="-258" frameY="-21" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10001" x="5759" y="1467" width="735" height="654" frameX="-258" frameY="-21" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10002" x="6496" y="1467" width="847" height="788" frameX="-200" frameY="0" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10003" x="7345" y="1467" width="479" height="714" frameX="-409" frameY="-74" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10004" x="2" y="2257" width="483" height="723" frameX="-414" frameY="-65" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10005" x="2" y="2257" width="483" height="723" frameX="-414" frameY="-65" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10006" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10007" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10008" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10009" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10010" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10011" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10012" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10013" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10014" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10015" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10016" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10017" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10018" x="487" y="2257" width="483" height="721" frameX="-413" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10019" x="972" y="2257" width="482" height="721" frameX="-416" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10020" x="972" y="2257" width="482" height="721" frameX="-416" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10021" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10022" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10023" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10024" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10025" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10026" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10027" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10028" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10029" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10030" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10031" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10032" x="1456" y="2257" width="482" height="721" frameX="-415" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10033" x="1940" y="2257" width="481" height="721" frameX="-410" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10034" x="1940" y="2257" width="481" height="721" frameX="-410" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10035" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10036" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10037" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10038" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10039" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10040" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10041" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10042" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10043" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10044" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10045" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10046" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10047" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10048" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10049" x="2423" y="2257" width="481" height="721" frameX="-411" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10050" x="2906" y="2257" width="478" height="716" frameX="-412" frameY="-72" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10051" x="2906" y="2257" width="478" height="716" frameX="-412" frameY="-72" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10052" x="3386" y="2257" width="477" height="717" frameX="-414" frameY="-71" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10053" x="3386" y="2257" width="477" height="717" frameX="-414" frameY="-71" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10054" x="3865" y="2257" width="494" height="717" frameX="-397" frameY="-71" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10055" x="3865" y="2257" width="494" height="717" frameX="-397" frameY="-71" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10056" x="4361" y="2257" width="892" height="718" frameX="0" frameY="-70" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10057" x="5255" y="2257" width="877" height="718" frameX="-15" frameY="-70" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10058" x="6134" y="2257" width="881" height="721" frameX="-15" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10059" x="7017" y="2257" width="881" height="721" frameX="-15" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10060" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10061" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10062" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10063" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10064" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10065" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10066" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10067" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10068" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+	<SubTexture name="sonic deady instance 10069" x="2" y="2982" width="882" height="721" frameX="-14" frameY="-67" frameWidth="1047" frameHeight="788"/>
+</TextureAtlas>

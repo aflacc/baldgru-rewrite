@@ -1,22 +1,99 @@
 package states.stages;
 
+import substates.GameOverSubstate;
 import states.stages.objects.*;
 
+// GEN Z IS TRYING TO CANCEL SONIC DUMAU?
 class Maudade extends BaseStage
 {
-	// If you're moving your stage from PlayState to a stage file,
-	// you might have to rename some variables if they're missing, for example: camZooming -> game.camZooming
+	// mau-dah-gee
+	var lyricsText:FlxText;
+	var lyricsBack:FlxSprite;
+
+	// this songs memory usage scares the fuck out of me BEEF WHAT THE FUCK WHY IS EVERYTHING SO MASSIVE
 
 	override function create()
 	{
-		// Spawn your stage sprites here.
-		// Characters are not ready yet on this function, so you can't add things above them yet.
-		// Use createPost() if that's what you want to do.
+		GameOverSubstate.loopSoundName = "maudade-gameover-loop";
+		GameOverSubstate.endSoundName = 'maudade-gameover-end';
+
+		var bg:BGSprite = new BGSprite('stages/maudade/SDsky', -560, -280, 0.1, 0.1);
+		add(bg);
+		var clouds:BGSprite = new BGSprite('stages/maudade/SDclouds', -340, -60, 0.15, 0.15);
+		add(clouds);
+		var ocean:BGSprite = new BGSprite('stages/maudade/SDOcean', -660, 250, 0.2, 0.1);
+		add(ocean);
+		var beach:BGSprite = new BGSprite('stages/maudade/SDbg2', -670, 270, 0.35, 0.15, ["Symbol 16"], true);
+		add(beach);
+		var islands:BGSprite = new BGSprite('stages/maudade/SDbg1', -670, 160, 0.2, 0.1, ["Symbol 11"], true);
+		add(islands);
+		var backFog:BGSprite = new BGSprite('stages/maudade/BackFog', -550, 80, 0.25, 0.15);
+		backFog.alpha = 0.85;
+		add(backFog);
+		var mountain:BGSprite = new BGSprite('stages/maudade/SDmountain', 50, -120, 0.35, 0.15, ["Symbol 12"], true);
+		add(mountain);
+		var floor:BGSprite = new BGSprite('stages/maudade/SDfloor', -920, 845, 1, 0.8);
+		floor.scale.set(1.25, 1.25);
+		add(floor);
 	}
-	
+
+	var introBlack:FlxSprite;
+	var introBanner:FlxSprite;
+	var introRio:FlxSprite;
+	var introZone:FlxSprite;
+	var introAct:FlxSprite;
+
+	var fog:BGSprite;
+
 	override function createPost()
 	{
+		fog = new BGSprite('stages/maudade/fog', -1200, 140, 1, 0.8, ["Symbol 1"], true);
+		addBehindBF(fog);
 		// Use this function to layer things above characters!
+		lyricsBack = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
+		lyricsBack.visible = false;
+		lyricsBack.alpha = 0.5;
+		lyricsBack.cameras = [game.camHUD];
+		add(lyricsBack);
+		lyricsText = new FlxText(0, FlxG.height * 0.7, 0, "", 32);
+		lyricsText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		lyricsText.borderSize = 1.25;
+		lyricsText.screenCenter(X);
+		lyricsText.cameras = [game.camHUD];
+		add(lyricsText);
+
+		introBlack = new FlxSprite(-100, -100).makeGraphic(FlxG.width + 200, FlxG.height + 200, FlxColor.BLACK);
+		introBlack.screenCenter();
+		introBlack.cameras = [game.camHUD];
+		add(introBlack);
+
+		introBanner = new FlxSprite(240, -800).loadGraphic(Paths.image("stages/maudade/sonicIntro/sonic3"));
+		introBanner.scale.set(0.8, 0.8);
+		introBanner.antialiasing = ClientPrefs.data.antialiasing;
+		introBanner.cameras = [game.camHUD];
+		add(introBanner);
+
+		introRio = new FlxSprite(1280, 300).loadGraphic(Paths.image("stages/maudade/sonicIntro/rio_de_janeiro"));
+		introRio.antialiasing = ClientPrefs.data.antialiasing;
+		introRio.scale.set(0.7, 0.7);
+		introRio.cameras = [game.camHUD];
+		add(introRio);
+
+		introZone = new FlxSprite(1662, 410).loadGraphic(Paths.image("stages/maudade/sonicIntro/zone"));
+		introZone.antialiasing = ClientPrefs.data.antialiasing;
+		introZone.scale.set(0.7, 0.7);
+		introZone.cameras = [game.camHUD];
+		add(introZone);
+
+		introAct = new FlxSprite(1722, 520).loadGraphic(Paths.image("stages/maudade/sonicIntro/act1"));
+		introAct.antialiasing = ClientPrefs.data.antialiasing;
+		introAct.scale.set(0.7, 0.7);
+		introAct.cameras = [game.camHUD];
+		add(introAct);
+
+		if (game.dad != null)
+		{
+		}
 	}
 
 	override function update(elapsed:Float)
@@ -24,100 +101,95 @@ class Maudade extends BaseStage
 		// Code here
 	}
 
-	
 	override function countdownTick(count:backend.BaseStage.Countdown, num:Int)
 	{
-		switch(count)
+		switch (count)
 		{
-			case THREE: //num 0
-			case TWO: //num 1
-			case ONE: //num 2
-			case GO: //num 3
-			case START: //num 4
+			case THREE: // num 0
+				// do this early so the intro card doesnt lag
+				if (PlayState.deathCounter > 0)
+				{
+					PlayState.instance.triggerEvent("Change Character", "bf", "sonic_dumb", 0);
+				}
+			case TWO: // num 1
+				FlxTween.tween(introBanner, {y: -120}, 0.25, {
+					onComplete: function(_)
+					{
+						FlxTween.tween(introRio, {x: 480}, 0.25, {
+							onComplete: function(_)
+							{
+								FlxTween.tween(introAct, {x: 922}, 0.25);
+							}
+						});
+					}
+				});
+			case ONE: // num 2
+			case GO: // num 3
+				game.dad.idleSuffix = "-alt";
+				game.dad.recalculateDanceIdle();
+				game.dad.dance();
+			case START: // num 4
+				// new FlxTimer().start(Conductor.crochet * 0.001, function(_)
+				// {
+				FlxTween.tween(introBlack, {alpha: 0}, 0.5);
+				FlxTween.tween(introBanner, {x: -800}, 0.2);
+				FlxTween.tween(introRio, {x: 1280}, 0.2);
+				FlxTween.tween(introZone, {x: 1662}, 0.2);
+				FlxTween.tween(introAct, {x: 1722}, 0.2);
+				// });
 		}
 	}
 
-	// Steps, Beats and Sections:
-	//    curStep, curDecStep
-	//    curBeat, curDecBeat
-	//    curSection
 	override function stepHit()
 	{
-		// Code here
+		switch (curStep)
+		{
+			case 54: // Throw up (if died once)
+				if (PlayState.deathCounter > 0)
+				{
+					// This h.. doesnt work.. weird but like it works if i put the event back into the json so its all good!: )
+					PlayState.instance.triggerEvent("Play Animation", "bf", "vomit", 4821.42857142857);
+				}
+		}
 	}
+
 	override function beatHit()
 	{
-		// Code here
-	}
-	override function sectionHit()
-	{
-		// Code here
-	}
-
-	// Substates for pausing/resuming tweens and timers
-	override function closeSubState()
-	{
-		if(paused)
+		switch (curBeat)
 		{
-			//timer.active = true;
-			//tween.active = true;
+			case 70:
+				FlxTween.tween(fog, {alpha: 0}, 2.5);
+			case 28: // swithc to sonic (If died at least once)
+
+				if (PlayState.deathCounter > 0)
+				{
+					PlayState.instance.triggerEvent("Change Character", "bf", "sonic", 10000);
+				}
+			case 684:
+				var dead:FlxSprite = new FlxSprite().makeGraphic(FlxG.width + 800, FlxG.height + 800, FlxColor.BLACK);
+				dead.screenCenter();
+				dead.scrollFactor.set(0, 0);
+				dead.alpha = 0;
+				addBehindDad(dead);
+				FlxTween.tween(dead, {alpha: 1}, Conductor.crochet * 0.002);
 		}
 	}
 
-	override function openSubState(SubState:flixel.FlxSubState)
-	{
-		if(paused)
-		{
-			//timer.active = false;
-			//tween.active = false;
-		}
-	}
-
-	// For events
 	override function eventCalled(eventName:String, value1:String, value2:String, flValue1:Null<Float>, flValue2:Null<Float>, strumTime:Float)
 	{
-		switch(eventName)
+		switch (eventName)
 		{
-			case "My Event":
-		}
-	}
-	override function eventPushed(event:objects.Note.EventNote)
-	{
-		// used for preloading assets used on events that doesn't need different assets based on its values
-		switch(event.event)
-		{
-			case "My Event":
-				//precacheImage('myImage') //preloads images/myImage.png
-				//precacheSound('mySound') //preloads sounds/mySound.ogg
-				//precacheMusic('myMusic') //preloads music/myMusic.ogg
-		}
-	}
-	override function eventPushedUnique(event:objects.Note.EventNote)
-	{
-		// used for preloading assets used on events where its values affect what assets should be preloaded
-		switch(event.event)
-		{
-			case "My Event":
-				switch(event.value1)
-				{
-					// If value 1 is "blah blah", it will preload these assets:
-					case 'blah blah':
-						//precacheImage('myImageOne') //preloads images/myImageOne.png
-						//precacheSound('mySoundOne') //preloads sounds/mySoundOne.ogg
-						//precacheMusic('myMusicOne') //preloads music/myMusicOne.ogg
-
-					// If value 1 is "coolswag", it will preload these assets:
-					case 'coolswag':
-						//precacheImage('myImageTwo') //preloads images/myImageTwo.png
-						//precacheSound('mySoundTwo') //preloads sounds/mySoundTwo.ogg
-						//precacheMusic('myMusicTwo') //preloads music/myMusicTwo.ogg
-					
-					// If value 1 is not "blah blah" or "coolswag", it will preload these assets:
-					default:
-						//precacheImage('myImageThree') //preloads images/myImageThree.png
-						//precacheSound('mySoundThree') //preloads sounds/mySoundThree.ogg
-						//precacheMusic('myMusicThree') //preloads music/myMusicThree.ogg
-				}
+			case "Lyrics":
+				lyricsBack.visible = (value1 != "");
+				lyricsText.text = value1;
+                lyricsText.applyMarkup(value1,
+                [
+                    new FlxTextFormatMarkerPair(new FlxTextFormat(FlxColor.RED), "*")
+                ]
+            );
+				lyricsText.screenCenter(X);
+				lyricsBack.scale.set(lyricsText.width + 16, lyricsText.height + 16);
+				lyricsBack.setPosition(lyricsText.x + (lyricsText.width / 2), lyricsText.y + (lyricsText.height / 2));
 		}
 	}
 }

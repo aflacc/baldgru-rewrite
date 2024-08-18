@@ -9,6 +9,9 @@ class Dealtastic extends BaseStage
 	// the rush is starting, code is less rewritten and more just ported from the existing code..
 	// I'm being rushed...
 	// You don't rush perfection!
+	var lyricsText:FlxText;
+	var lyricsBack:FlxSprite;
+
 	override function create()
 	{
 		GameOverSubstate.loopSoundName = "baldgru-gameover-loop";
@@ -30,6 +33,18 @@ class Dealtastic extends BaseStage
 
 	override function createPost()
 	{
+		game.boyfriendGroup.visible = false;
+		lyricsBack = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
+		lyricsBack.visible = false;
+		lyricsBack.alpha = 0.5;
+		lyricsBack.cameras = [game.camHUD];
+		add(lyricsBack);
+		lyricsText = new FlxText(0, FlxG.height * 0.7, 0, "", 32);
+		lyricsText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		lyricsText.borderSize = 1.25;
+		lyricsText.screenCenter(X);
+		lyricsText.cameras = [game.camHUD];
+		add(lyricsText);
 	}
 
 	override function update(elapsed:Float)
@@ -92,7 +107,15 @@ class Dealtastic extends BaseStage
 	{
 		switch (eventName)
 		{
-			case "My Event":
+			case "Play Animation":
+				game.boyfriendGroup.visible = true;
+			case "Lyrics":
+				lyricsBack.visible = (value1 != "");
+				lyricsText.text = value1;
+				lyricsText.applyMarkup(value1, [new FlxTextFormatMarkerPair(new FlxTextFormat(FlxColor.RED), "*")]);
+				lyricsText.screenCenter(X);
+				lyricsBack.scale.set(lyricsText.width + 16, lyricsText.height + 16);
+				lyricsBack.setPosition(lyricsText.x + (lyricsText.width / 2), lyricsText.y + (lyricsText.height / 2));
 		}
 	}
 
@@ -118,17 +141,17 @@ class Dealtastic extends BaseStage
 				{
 					// If value 1 is "blah blah", it will preload these assets:
 					case 'blah blah':
-					// precacheImage('myImageOne') //preloads images/myImageOne.png
-					// precacheSound('mySoundOne') //preloads sounds/mySoundOne.ogg
-					// precacheMusic('myMusicOne') //preloads music/myMusicOne.ogg
+						// precacheImage('myImageOne') //preloads images/myImageOne.png
+						// precacheSound('mySoundOne') //preloads sounds/mySoundOne.ogg
+						// precacheMusic('myMusicOne') //preloads music/myMusicOne.ogg
 
-					// If value 1 is "coolswag", it will preload these assets:
+						// If value 1 is "coolswag", it will preload these assets:
 					case 'coolswag':
-					// precacheImage('myImageTwo') //preloads images/myImageTwo.png
-					// precacheSound('mySoundTwo') //preloads sounds/mySoundTwo.ogg
-					// precacheMusic('myMusicTwo') //preloads music/myMusicTwo.ogg
+						// precacheImage('myImageTwo') //preloads images/myImageTwo.png
+						// precacheSound('mySoundTwo') //preloads sounds/mySoundTwo.ogg
+						// precacheMusic('myMusicTwo') //preloads music/myMusicTwo.ogg
 
-					// If value 1 is not "blah blah" or "coolswag", it will preload these assets:
+						// If value 1 is not "blah blah" or "coolswag", it will preload these assets:
 					default:
 						// precacheImage('myImageThree') //preloads images/myImageThree.png
 						// precacheSound('mySoundThree') //preloads sounds/mySoundThree.ogg

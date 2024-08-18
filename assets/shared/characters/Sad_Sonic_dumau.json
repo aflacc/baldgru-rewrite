@@ -1,0 +1,102 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Sadge SD instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				-7
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Sadge SD left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-137,
+				-218
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Sadge SD down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				67,
+				39
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Sadge SD up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-77,
+				-40
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Sadge SD right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				239,
+				112
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "death",
+			"indices": [],
+			"name": "sadge getting hit"
+		},
+		{
+			"offsets": [
+				239,
+				112
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathloop",
+			"indices": [],
+			"name": "sadge getting hit instanceA"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/sadge_dumau",
+	"position": [
+		-75,
+		240
+	],
+	"healthicon": "dumau",
+	"flip_x": false,
+	"healthbar_colors": [
+		106,
+		104,
+		155
+	],
+	"camera_position": [
+		0,
+		120
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

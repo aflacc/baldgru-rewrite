@@ -1,0 +1,179 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "sonic dumau idle"
+		},
+		{
+			"offsets": [
+				54,
+				-8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "sonic dumau left"
+		},
+		{
+			"offsets": [
+				54,
+				-26
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "sonic dumau down"
+		},
+		{
+			"offsets": [
+				4,
+				162
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "sonic dumau up"
+		},
+		{
+			"offsets": [
+				-35,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "sonic dumau right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				9,
+				7
+			],
+			"anim": "turn",
+			"fps": 24,
+			"name": "sonic dumau turn instance",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				7,
+				13
+			],
+			"anim": "talking",
+			"fps": 24,
+			"name": "sonic dumau talking",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				38,
+				73
+			],
+			"anim": "laughing",
+			"fps": 24,
+			"name": "sonic dumau laughing",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				151,
+				308
+			],
+			"anim": "hit",
+			"fps": 24,
+			"name": "sonic dumau hit",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-57,
+				1
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "sonic dumau turned down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-61,
+				2
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "sonic dumau turned instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-55,
+				2
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "sonic dumau turned left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-67,
+				8
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "sonic dumau turned right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-62,
+				11
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "sonic dumau turned up",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/sonic_dumau",
+	"position": [
+		0,
+		400
+	],
+	"healthicon": "dumau",
+	"flip_x": false,
+	"healthbar_colors": [
+		106,
+		104,
+		155
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 7.99999999999999,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

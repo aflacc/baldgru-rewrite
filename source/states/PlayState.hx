@@ -387,6 +387,7 @@ class PlayState extends MusicBeatState
 			case 'dealtastic': new states.stages.Dealtastic();
 			case 'freeplay': new states.stages.FreeplayStage();
 			case 'lazyRiver': new states.stages.LazyRiver();
+			case 'maudade': new states.stages.Maudade();
 		}
 
 		if(isPixelStage) {

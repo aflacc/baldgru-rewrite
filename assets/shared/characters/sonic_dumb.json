@@ -1,0 +1,45 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "sonic dumb idle"
+		},
+		{
+			"offsets": [
+				230,
+				-5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "vomit",
+			"indices": [],
+			"name": "sonic dumb vomit"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/sonic_dumb",
+	"position": [
+		-75,
+		-115
+	],
+	"healthicon": "sonic",
+	"flip_x": true,
+	"healthbar_colors": [
+		58,
+		91,
+		222
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
