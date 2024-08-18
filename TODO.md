@@ -29,7 +29,7 @@
 	- [x] martello
 	- [ ] Background (Summer)
 	- [ ] Popsicle Gimmick (Make it functional with story week songs!!)
-- [ ] maudade
+- [x] maudade
 	- [ ] Game Over
 - [ ] jingle bald
 	- [ ] Death cutsc.
