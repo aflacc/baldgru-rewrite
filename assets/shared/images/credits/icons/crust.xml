@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="crust.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="crust0000" x="4" y="4" width="183" height="241"/>
+	<SubTexture name="crust0001" x="4" y="4" width="183" height="241"/>
+	<SubTexture name="crust0002" x="195" y="4" width="183" height="241"/>
+	<SubTexture name="crust0003" x="195" y="4" width="183" height="241"/>
+	<SubTexture name="crust0004" x="4" y="253" width="183" height="241"/>
+	<SubTexture name="crust0005" x="4" y="253" width="183" height="241"/>
+</TextureAtlas>

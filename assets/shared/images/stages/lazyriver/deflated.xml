@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="deflated.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gf idle copy instance 10000" x="4" y="4" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10001" x="4" y="4" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10002" x="4" y="4" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10003" x="4" y="4" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10004" x="4" y="79" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10005" x="4" y="79" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10006" x="4" y="79" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10007" x="4" y="79" width="531" height="67"/>
+	<SubTexture name="gf idle copy instance 10008" x="4" y="154" width="530" height="67" frameX="0" frameY="0" frameWidth="531" frameHeight="67"/>
+	<SubTexture name="gf idle copy instance 10009" x="4" y="154" width="530" height="67" frameX="0" frameY="0" frameWidth="531" frameHeight="67"/>
+	<SubTexture name="gf idle copy instance 10010" x="4" y="154" width="530" height="67" frameX="0" frameY="0" frameWidth="531" frameHeight="67"/>
+	<SubTexture name="gf idle copy instance 10011" x="4" y="154" width="530" height="67" frameX="0" frameY="0" frameWidth="531" frameHeight="67"/>
+</TextureAtlas>

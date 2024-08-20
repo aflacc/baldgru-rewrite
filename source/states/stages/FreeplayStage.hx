@@ -296,10 +296,10 @@ class FreeplayStage extends BaseStage
 		blur.quality = openfl.filters.BitmapFilterQuality.HIGH;
 		PlayState.instance.camGame.filters = [blur];
 		PlayState.instance.dadGroup.cameras = [game.camHUD];
-		PlayState.instance.dad.setPosition(280, FlxG.height - (PlayState.instance.dad.height * 0.7));
+		PlayState.instance.dad.setPosition(280, FlxG.height - (PlayState.instance.dad.height * 0.8));
 
 		imageGrp = new FlxSpriteGroup();
-		imageGrp.cameras = [game.camHUD];
+		imageGrp.cameras = [game.camOther];
 		add(imageGrp);
 	}
 
@@ -372,6 +372,7 @@ class FreeplayStage extends BaseStage
 	}
 
 	var poseOfMany:FlxSprite;
+	var shit:FlxSprite;
 
 	override function beatHit()
 	{
@@ -388,15 +389,33 @@ class FreeplayStage extends BaseStage
 				case 52: // flash
 					flashImage(Paths.image("stages/yolked/pose3"), 1);
 				case 64: // sad story #1 (fade here!
-					fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory1"));
+					fadeImage(Conductor.crochet * 0.004, null);
+				// fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory1"));
+				case 68:
+					var lol:FlxSprite = new FlxSprite().makeGraphic(1280, 720, FlxColor.WHITE);
+					lol.screenCenter(X);
+					lol.cameras = [game.camOther];
+					add(lol);
+					PlayState.instance.startVideo("yolkedSadStory", false, function()
+					{
+						FlxTween.tween(lol, {alpha: 0}, Conductor.crochet * 0.002, {
+							onComplete: function(_)
+							{
+								lol.destroy();
+							}
+						});
+					});
+					PlayState.instance.inCutscene = false;
 				case 80: // sad story #2
-					fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory2"));
+					// fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory2"));
 				case 94: // sad story #3 (blink) (no fade)
-					changeImage(Paths.image("stages/yolked/sadstory3"));
+					// changeImage(Paths.image("stages/yolked/sadstory3"));
 				case 98: // fade to white, fade to bf
 					fadeImage(Conductor.crochet * 0.001, null);
 				case 102: // left geremy
-					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/popupright"));
+					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/right"), true, 435, 500);
+					popup.animation.add("f", [0, 1, 2], 24, true);
+					popup.animation.play("f");
 					popup.antialiasing = ClientPrefs.data.antialiasing;
 					popup.setPosition(FlxG.width + popup.width, -popup.height);
 					imageGrp.add(popup);
@@ -411,7 +430,9 @@ class FreeplayStage extends BaseStage
 						}
 					});
 				case 106: // right geremy
-					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/popupleft"));
+					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/left"), true, 480, 470);
+					popup.animation.add("f", [0, 1, 2], 24, true);
+					popup.animation.play("f");
 					popup.antialiasing = ClientPrefs.data.antialiasing;
 					popup.setPosition(-popup.width, FlxG.height + popup.height);
 					imageGrp.add(popup);
@@ -427,7 +448,15 @@ class FreeplayStage extends BaseStage
 					});
 				case 110: // pose enter (down)
 					// 1280, 317
-					poseOfMany = new FlxSprite().loadGraphic(Paths.image("stages/yolked/cool"), true, 1280, 317);
+					shit = new FlxSprite().loadGraphic(Paths.image("stages/yolked/squiggle"), true, 1280, 132);
+					shit.animation.add("b", [0, 1, 2], 24, true);
+					shit.animation.play("b");
+					shit.screenCenter();
+					var waitwhatthefuckisthemiddle2 = shit.y; // the something awesome
+					shit.y = FlxG.height + 10;
+					imageGrp.add(shit);
+					FlxTween.tween(shit, {y: waitwhatthefuckisthemiddle2}, Conductor.crochet * 0.002, {ease: FlxEase.quadOut});
+					poseOfMany = new FlxSprite().loadGraphic(Paths.image("stages/yolked/poses"), true, 309, 305);
 					for (i in 0...5)
 					{
 						poseOfMany.animation.add(Std.string(i), [i], 0);
@@ -449,6 +478,7 @@ class FreeplayStage extends BaseStage
 					poseOfMany.animation.play("4", true);
 				case 116: // pose leave (up)
 					FlxTween.tween(poseOfMany, {y: -poseOfMany.height}, Conductor.crochet * 0.002, {ease: FlxEase.quadIn});
+					FlxTween.tween(shit, {y: -shit.height}, Conductor.crochet * 0.002, {ease: FlxEase.quadIn});
 			}
 			if (curBeat == 134)
 			{

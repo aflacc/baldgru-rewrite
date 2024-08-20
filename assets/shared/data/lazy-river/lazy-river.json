@@ -3420,6 +3420,7 @@
 		"needsVoices": true,
 		"stage": "lazyRiver",
 		"speed": 2.2,
-		"bpm": 118
+		"bpm": 118,
+		"gameOverSound": "death/lazyriver_gameover"
 	}
 }

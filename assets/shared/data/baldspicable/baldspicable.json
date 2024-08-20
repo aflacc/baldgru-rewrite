@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "bfcool",
-		"gameOverSound": "bfcool-death",
+		"gameOverSound": "death/bfcool-death",
 		"events": [
 			[
 				0,

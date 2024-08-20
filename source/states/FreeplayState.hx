@@ -472,6 +472,11 @@ class FreeplayState extends MusicBeatState
 			try
 			{
 				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+				if (ClientPrefs.data.summerMode) {
+					if (songLowercase == "lazy-river") {
+						PlayState.SONG = Song.loadFromJson('lazy-summer', 'lazy-summer');
+					}
+				}
 				PlayState.isStoryMode = false;
 				PlayState.storyDifficulty = curDifficulty;
 
@@ -504,7 +509,7 @@ class FreeplayState extends MusicBeatState
 				chargeremy.playAnim("idle", true);
 				add(chargeremy);
 				FlxTween.tween(geremy, {y: FlxG.height + 10}, 0.2, {ease: FlxEase.quartIn});
-				FlxTween.tween(chargeremy, {y: FlxG.height - (chargeremy.height * 0.7)}, 0.65, {
+				FlxTween.tween(chargeremy, {y: FlxG.height - (chargeremy.height * 0.8)}, 0.65, {
 					ease: FlxEase.quintOut
 				});
 

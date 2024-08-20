@@ -66,7 +66,7 @@ class GeremySubState extends MusicBeatSubstate
 		add(geremyWarning);
 		add(pressEnter);
 
-		FlxTween.tween(geremy, {y: FlxG.height - (geremy.height * 0.7)}, 1.2, {
+		FlxTween.tween(geremy, {y: FlxG.height - (geremy.height * 0.8)}, 1.2, {
 			ease: FlxEase.quintOut
 		});
 		FlxTween.tween(halt, {y: 96}, 1.5, {

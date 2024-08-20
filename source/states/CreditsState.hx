@@ -19,7 +19,7 @@ class CreditsState extends MusicBeatState
 			"bb",
 			'Even Day Director, Music of the Bald Variety, Voice of Geremy and Sonic Do Mau',
 			'https://twitter.com/burritobaptizer',
-			null
+			'burrito'
 		],
 		[
 			"aflac",
@@ -71,11 +71,25 @@ class CreditsState extends MusicBeatState
 			null
 		],
 		[
+			'PhantomFear',
+			'phantomfear',
+			'Ending cutscene help',
+			'https://twitter.com/PhantomFearOP',
+			null
+		],
+		[
+			'Crust',
+			'crust',
+			'Additional Art',
+			'https://janitorcrust.newgrounds.com/',
+			'i really like earthbund'
+		],
+		[
 			'Daddy Dearest',
 			'daddydearest',
 			'Hi! I\'m Daddy Dearest! I play the role of Daddy Dearest in this FNF Mod! Hope you enjoy it, haha!     ',
 			'https://twitter.com/DearestGamingYT',
-			null
+			'daddy dearest dies to death'
 		]
 	];
 	var curSelection:Int = 0;

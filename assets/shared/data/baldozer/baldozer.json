@@ -7473,7 +7473,7 @@
 			}
 		],
 		"player2": "bgru",
-		"gameOverSound": "bfcool-death",
+		"gameOverSound": "death/bfcool-death",
 		"player3": null,
 		"gameOverLoop": "baldgru-gameover-loop",
 		"gameOverChar": "bfcool_dead",

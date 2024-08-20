@@ -84,6 +84,11 @@ class BaseStage extends FlxBasic
 	public function closeSubState() {}
 	public function openSubState(SubState:FlxSubState) {}
 
+	public function onPause() {}
+	public function onResume() {}
+
+	
+
 	//Bullshit
 	public function goodNoteHit(note:Note) {}
 	public function noteMiss(note:Note) {}

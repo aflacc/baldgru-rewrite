@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="phantomfear.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="phantomfear0000" x="4" y="4" width="268" height="240"/>
+	<SubTexture name="phantomfear0001" x="4" y="4" width="268" height="240"/>
+	<SubTexture name="phantomfear0002" x="280" y="4" width="268" height="240"/>
+	<SubTexture name="phantomfear0003" x="280" y="4" width="268" height="240"/>
+	<SubTexture name="phantomfear0004" x="556" y="4" width="268" height="240"/>
+	<SubTexture name="phantomfear0005" x="556" y="4" width="268" height="240"/>
+</TextureAtlas>

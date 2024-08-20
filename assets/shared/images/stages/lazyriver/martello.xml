@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="martello.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 18 instance 10000" x="4" y="4" width="556" height="768" frameX="-42" frameY="-30" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10001" x="4" y="4" width="556" height="768" frameX="-42" frameY="-30" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10002" x="568" y="4" width="569" height="779" frameX="-33" frameY="-19" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10003" x="568" y="4" width="569" height="779" frameX="-33" frameY="-19" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10004" x="1145" y="4" width="566" height="798" frameX="-43" frameY="0" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10005" x="1719" y="4" width="566" height="798" frameX="-43" frameY="0" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10006" x="2293" y="4" width="585" height="763" frameX="-27" frameY="-35" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10007" x="2293" y="4" width="585" height="763" frameX="-27" frameY="-35" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10008" x="2886" y="4" width="605" height="768" frameX="-13" frameY="-30" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10009" x="2886" y="4" width="605" height="768" frameX="-13" frameY="-30" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10010" x="4" y="810" width="633" height="715" frameX="0" frameY="-83" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10011" x="4" y="810" width="633" height="715" frameX="0" frameY="-83" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10012" x="645" y="810" width="579" height="709" frameX="-34" frameY="-89" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10013" x="645" y="810" width="579" height="709" frameX="-34" frameY="-89" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10014" x="1232" y="810" width="563" height="740" frameX="-42" frameY="-58" frameWidth="633" frameHeight="798"/>
+	<SubTexture name="Symbol 18 instance 10015" x="1803" y="810" width="563" height="740" frameX="-42" frameY="-58" frameWidth="633" frameHeight="798"/>
+</TextureAtlas>

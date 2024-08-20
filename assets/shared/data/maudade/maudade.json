@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "sonic",
-		"gameOverSound": "maudade_gameover",
+		"gameOverSound": "death/maudade_gameover",
 		"events": [
 			[
 				0,
