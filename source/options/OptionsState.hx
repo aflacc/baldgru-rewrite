@@ -1,5 +1,6 @@
 package options;
 
+import backend.Song;
 import states.FreeplayState;
 import states.MainMenuState;
 import backend.StageData;
@@ -20,6 +21,8 @@ class OptionsState extends MusicBeatState
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
 	public static var onPlayState:Bool = false;
+
+	public var summerActive:Bool = false;
 
 	function openSelectedSubstate(label:String)
 	{
@@ -48,6 +51,7 @@ class OptionsState extends MusicBeatState
 
 	override function create()
 	{
+		summerActive = ClientPrefs.data.summerMode;
 		#if DISCORD_ALLOWED
 		DiscordClient.changePresence("Options Menu", null);
 		#end
@@ -107,12 +111,18 @@ class OptionsState extends MusicBeatState
 		if (controls.BACK)
 		{
 			FlxG.sound.play(Paths.sound('cancelMenu'));
-			if (onPlayState) // This will cause issues with summer mode, and I'd rather not just disable the option in pause menu
+			if (onPlayState) // stupid code
 			{
 				FlxG.sound.playMusic(Paths.music(MainMenuState.nightCheck() ? 'nightTheme' : 'freakyMenu'));
-				if (!PlayState.isStoryMode)
+				if (PlayState.SONG.song.toLowerCase().replace(" ", "-") == (ClientPrefs.data.summerMode ? "lazy-river" : "lazy-summer"))
 				{
-					MusicBeatState.switchState(new FreeplayState());
+					var song = ClientPrefs.data.summerMode ? "lazy-summer" : "lazy-river";
+					PlayState.SONG = Song.loadFromJson(song, song);
+					PlayState.isStoryMode = false;
+					PlayState.storyDifficulty = 0;
+					StageData.loadDirectory(PlayState.SONG);
+					LoadingState.loadAndSwitchState(new PlayState());
+					FlxG.sound.music.volume = 0;
 				}
 				else
 				{

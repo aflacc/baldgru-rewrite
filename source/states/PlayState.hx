@@ -940,6 +940,8 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
+	// Starts and then immediatly ends a video
+
 	function startAndEnd()
 	{
 		if (endingSong)
@@ -1632,7 +1634,7 @@ class PlayState extends MusicBeatState
 					targetAlpha = 0.35;
 			}
 
-			var babyArrow:StrumNote = new StrumNote(strumLineX, strumLineY, i, player);
+			var babyArrow:StrumNote = new StrumNote(strumLineX, strumLineY, i, (SONG.song.toLowerCase() == "dealtastic" && !ClientPrefs.data.middleScroll) ? (player + 1) % 2 : player);
 			babyArrow.downScroll = ClientPrefs.data.downScroll;
 			if (!isStoryMode && !skipArrowStartTween)
 			{

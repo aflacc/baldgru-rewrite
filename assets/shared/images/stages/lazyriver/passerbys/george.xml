@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="george_0000-sheet.png">
+  <!-- silly funny :3 -->
+  <SubTexture name="george0000" x="0" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+  <SubTexture name="george0001" x="0" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+  <SubTexture name="george0002" x="0" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+  <SubTexture name="george0003" x="0" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+  <SubTexture name="george0004" x="411" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+  <SubTexture name="george0005" x="411" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+  <SubTexture name="george0006" x="411" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+  <SubTexture name="george0007" x="411" y="0" width="406" height="454" frameX="-242" frameY="-209" frameWidth="932" frameHeight="795"/>
+</TextureAtlas>

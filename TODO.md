@@ -1,4 +1,5 @@
-- [ ] Credits
+
+- [x] Credits
 - [x] bfcool
 - [x] gfcool
 - [ ] THE HUD I FORGOT TO ADD THE HUD IM SO FUCKING STUPID
@@ -6,13 +7,13 @@
 - [ ] baldozer
 	- [x] loddy
 	- [ ] ending cutscene
-- [ ] dealtastic
+- [x] dealtastic
 	- [x] Background
 	- [x] Characters
-	- [ ] Events
-	- [ ] dealions
+	- [x] Events
+	- [x] dealions
 	- [x] make bald gru use gf notes instead of whatever the hell it currently uses
-- [ ] yolked
+- [x] yolked
 	- [x] Background
 	- [ ] Death
 	- [x] Camera Focus on geremy :)
@@ -21,17 +22,17 @@
 	- [x] Geremy
 	- [x] make freeplay unlock after the week is completed and this song is completed
 		- [x] ^^ FIX BECAUSE IT DOESNT WORK RIGHT NOW for sOME REASON!! FUCK!!!
-- [x] lazy river
-	- [ ] Game Over
+- [ ] lazy river
+	- [x] Game Over
 	- [x] Background
+	- [x] Background (Summer)
 	- [x] bfcool summer
 	- [x] gfcool summer (the floatie)
 	- [x] martello
-	- [ ] Background (Summer)
 	- [ ] Popsicle Gimmick (Make it functional with story week songs!!)
 - [x] maudade
-	- [ ] Game Over
-- [ ] jingle bald
+	- [x] Game Over
+- [x] jingle bald
 	- [ ] Death cutsc.
 - [x] main menu
 - [x] freeplay

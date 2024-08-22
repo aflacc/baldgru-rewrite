@@ -1,19 +1,14 @@
 package states.editors;
 
+import flixel.addons.display.FlxBackdrop;
 import backend.WeekData;
 import objects.Character;
 import states.MainMenuState;
 import states.FreeplayState;
 
-class MasterEditorMenu extends MusicBeatState
+class MasterEditorMenu extends MusicBeatSubstate
 {
-	var options:Array<String> = [
-		'Test State',
-		'Chart Editor',
-		'Character Editor',
-		'Note Splash Debug',
-		"I dont care give me freeplay"
-	];
+	var options:Array<String> = ['Test State', 'Chart Editor', 'Character Editor', "Freeplay"];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
 	private var directories:Array<String> = [null];
 
@@ -23,18 +18,34 @@ class MasterEditorMenu extends MusicBeatState
 
 	override function create()
 	{
-		FlxG.camera.bgColor = FlxColor.BLACK;
+		//FlxG.camera.bgColor = FlxColor.BLACK;
+
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("Editors Main Menu", null);
 		#end
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		//var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		//bg.scrollFactor.set();
+		//bg.color = 0xFF353535;
+		//add(bg);
+		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width,FlxG.height,FlxColor.BLACK);
 		bg.scrollFactor.set();
-		bg.color = 0xFF353535;
+		bg.alpha = 0;
+		FlxTween.tween(bg, {alpha: 0.45}, 0.5);
 		add(bg);
 
+		var cars:FlxBackdrop = new FlxBackdrop(Paths.image("ppcatarmy"));
+		cars.alpha = 0;
+		cars.velocity.set(-50, 10);
+		cars.scale.set(4, 4);
+		add(cars);
+		
+		// we love easter eggs
+		FlxTween.tween(cars, {alpha: 0.05}, 10, {startDelay: 10});
+		// Heavy traffic
 		grpTexts = new FlxTypedGroup<Alphabet>();
+		//grpTexts.
 		add(grpTexts);
 
 		for (i in 0...options.length)
@@ -42,6 +53,8 @@ class MasterEditorMenu extends MusicBeatState
 			var leText:Alphabet = new Alphabet(90, 320, options[i], true);
 			leText.isMenuItem = true;
 			leText.targetY = i;
+			leText.scrollFactor.set();
+			leText.distancePerItem = new FlxPoint(20, 60);
 			grpTexts.add(leText);
 			leText.snapToPosition();
 		}
@@ -54,7 +67,7 @@ class MasterEditorMenu extends MusicBeatState
 		directoryTxt = new FlxText(textBG.x, textBG.y + 4, FlxG.width, '', 32);
 		directoryTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER);
 		directoryTxt.scrollFactor.set();
-		add(directoryTxt);
+		//add(directoryTxt);
 
 		for (folder in Mods.getModDirectories())
 		{
@@ -68,7 +81,7 @@ class MasterEditorMenu extends MusicBeatState
 		#end
 		changeSelection();
 
-		FlxG.mouse.visible = false;
+		///FlxG.mouse.visible = false;
 		super.create();
 	}
 
@@ -95,14 +108,15 @@ class MasterEditorMenu extends MusicBeatState
 
 		if (controls.BACK)
 		{
-			MusicBeatState.switchState(new MainMenuState());
+			// MusicBeatState.switchState(new MainMenuState());
+			close();
 		}
 
 		if (controls.ACCEPT)
 		{
 			switch (options[curSelected])
 			{
-				case 'I dont care give me freeplay':
+				case 'I dont care give me freeplay' | 'Freeplay':
 					MusicBeatState.switchState(new FreeplayState());
 				case 'Test State':
 					MusicBeatState.switchState(new TestState());

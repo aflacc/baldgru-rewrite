@@ -10,9 +10,21 @@ import objects.HealthIcon;
 import openfl.filters.BlurFilter;
 import flixel.system.FlxAssets.FlxShader;
 import states.stages.objects.*;
-
+#if VIDEOS_ALLOWED
+#if (hxCodec >= "3.0.0")
+import hxcodec.flixel.FlxVideo as VideoHandler;
+#elseif (hxCodec >= "2.6.1")
+import hxcodec.VideoHandler as VideoHandler;
+#elseif (hxCodec == "2.6.0")
+import VideoHandler;
+#else
+import vlc.MP4Handler as VideoHandler;
+#end
+#end
 // Stage thats like a fake freeplay menu
 // I'm sorry
+// https://www.youtube.com/live/qezP8R03_jg?si=B5GCPPDwLKyrHdGb&t=28671
+// hi penkaru
 class FreeplayStage extends BaseStage
 {
 	var drain = 0.023;
@@ -137,6 +149,14 @@ class FreeplayStage extends BaseStage
 		add(tvBg);
 		// pattern offset is -51.5
 		// :)
+
+		// precache the cutscene.. stupid method but everybody says this is how you do it.. so i wont judge
+		#if VIDEOS_ALLOWED
+		var filepath:String = Paths.video("yolkedSadStory");
+		var video:VideoHandler = new VideoHandler();
+		video.play(filepath);
+		video.dispose();
+		#end
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);

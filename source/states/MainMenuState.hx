@@ -1,5 +1,6 @@
 package states;
 
+import flixel.FlxSubState;
 import backend.Highscore;
 import backend.Song;
 import backend.WeekData;
@@ -93,7 +94,7 @@ class MainMenuState extends MusicBeatState
 	public static function nightCheck():Bool
 	{
 		var curHour = Date.now().getHours();
-		return (curHour <= 4 || curHour >= 20);
+		return (curHour <= 5 || curHour >= 19);
 	}
 
 	override function create()
@@ -365,7 +366,26 @@ class MainMenuState extends MusicBeatState
 		resetText.visible = false;
 		add(resetText);
 
+		FlxG.camera.scroll.set(cameraPoint.x
+			+ (FlxG.mouse.screenX - FlxG.width / 2) / 16
+			- FlxG.width / 2,
+			cameraPoint.y
+			+ (FlxG.mouse.screenY - FlxG.height / 2) / 24);
 		// FlxG.camera.follow(camFollow, null, 9);
+	}
+
+	override function openSubState(SubState:FlxSubState)
+	{
+		//persistentUpdate = false;
+		selectedSomethin = true;
+		super.openSubState(SubState);
+	}
+
+	override function closeSubState()
+	{
+		//persistentUpdate = true;
+		selectedSomethin = false;
+		super.closeSubState();
 	}
 
 	var selectedSomethin:Bool = false;
@@ -400,7 +420,7 @@ class MainMenuState extends MusicBeatState
 			Highscore.resetSong("baldozer");
 			Highscore.resetSong("dealtastic");
 
-			//menuSprites[menuOrder.indexOf("freeplay")].animation.play("broken",true);
+			// menuSprites[menuOrder.indexOf("freeplay")].animation.play("broken",true);
 			MusicBeatState.switchState(new MainMenuState()); // Just refresh the thing
 			initialized = false;
 
@@ -409,7 +429,6 @@ class MainMenuState extends MusicBeatState
 			holdUp.visible = false;
 			popup = false;
 			selectedSomethin = false;
-
 		}
 		if (FlxG.keys.justPressed.F7)
 		{
@@ -468,6 +487,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.scroll.set(FlxMath.lerp(FlxG.camera.scroll.x, cameraPoint.x + (FlxG.mouse.screenX - FlxG.width / 2) / 16 - FlxG.width / 2, 9 * elapsed),
 			FlxMath.lerp(FlxG.camera.scroll.y, cameraPoint.y + (FlxG.mouse.screenY - FlxG.height / 2) / 24, 9 * elapsed));
+
 		if (FlxG.sound.music.volume < 0.8 && !selectedSomethin)
 		{
 			FlxG.sound.music.volume += 0.5 * elapsed;
@@ -544,8 +564,9 @@ class MainMenuState extends MusicBeatState
 			#if desktop
 			if (controls.justPressed('debug_1'))
 			{
-				selectedSomethin = true;
-				MusicBeatState.switchState(new MasterEditorMenu());
+				//selectedSomethin = true;
+				openSubState(new MasterEditorMenu());
+				//MusicBeatState.switchState(new MasterEditorMenu());
 			}
 			#end
 		}

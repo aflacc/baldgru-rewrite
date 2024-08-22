@@ -1,5 +1,6 @@
 package states.stages;
 
+import flixel.util.FlxSort;
 import flixel.addons.display.FlxBackdrop;
 import substates.GameOverSubstate;
 import states.stages.objects.*;
@@ -7,7 +8,7 @@ import states.stages.objects.*;
 class LazyRiver extends BaseStage
 {
 	// The original stage code for this was actually disgusting. I'm sorry but thats just the truth.
-	var passerby:FlxSprite;
+	// var passerby:FlxSprite;
 	var passerbyGrp:FlxSpriteGroup; // Layering purposes
 
 	// SUMMER!!!
@@ -16,6 +17,10 @@ class LazyRiver extends BaseStage
 
 	override function create()
 	{
+		for (i in 0...passerbys.length)
+		{
+			activePasserbys[i] = false;
+		}
 		GameOverSubstate.loopSoundName = "lazyriver-gameover-loop";
 		GameOverSubstate.endSoundName = 'lazyriver-gameover-end';
 
@@ -83,63 +88,104 @@ class LazyRiver extends BaseStage
 	override function update(elapsed:Float)
 	{
 		passerbySine = passerbySine + elapsed;
-		if (passerby != null)
+		passerbyGrp.forEach(function(passerby:FlxSprite)
 		{
-			passerby.offset.set(0, Math.sin(passerbySine) * 4);
-			if ((passerby.ID == 0 && passerby.x <= -500 - passerby.width) || (passerby.ID == 1 && passerby.x >= FlxG.width * 2))
+			if (passerby != null)
 			{
-				trace("destroying");
-				passerby.destroy();
-				passerby = null;
+				passerby.offset.set(0, Math.sin(passerbySine) * 4);
+				if ((passerby.ID > 0 && passerby.x <= -500 - passerby.width) || (passerby.ID < 0 && passerby.x >= FlxG.width * 2))
+				{
+					trace("destroying");
+					var eyedee = Math.abs(passerby.ID) - 1;
+					activePasserbys[Std.int(eyedee)] = false;
+					passerby.destroy();
+					passerbyGrp.remove(passerby, true);
+					timeoutBeats += 4; // just cuz sometimes it
+				}
 			}
-		}
+		});
+		// sort them vertically, this is I think the only code from the scrapped v2 code (v2 IS NOT CANCELLED) that im gonna use lol
+		passerbyGrp.sort(FlxSort.byY, FlxSort.DESCENDING);
+
 		sine = (sine + elapsed) % (Math.PI * 4);
 
 		if (game.dad != null)
 			game.dad.y = 100 - 170 + (Math.sin(sine) * 8);
 	}
 
-	var passerbys:Array<String> = ["baldgru", "beef", "harvester"];
+	var passerbys:Array<String> = ["baldgru", "beef", "harvester", "george"];
+	var activePasserbys:Array<Bool> = [];
+
+	var timeoutBeats = 4;
 
 	override function beatHit()
 	{
-		// characters take forever to cross so 33% is fair
-		// also, never thought i would write a "if thing IS null" LOL
-		if (passerby == null && FlxG.random.bool(33))
+		if (timeoutBeats <= 0)
 		{
-			passerby = new FlxSprite();
+			var passerby = new FlxSprite();
 			// I'm really good at naming variables..
-			var boob = FlxG.random.getObject(passerbys);
-			trace('boo! its the ' + boob); // funny
-			passerby.frames = Paths.getSparrowAtlas("stages/lazyriver/passerbys/" + boob);
-			passerby.animation.addByPrefix("loop", boob, 24, true);
-			passerby.animation.play('loop', true);
-			switch (boob)
+			var active = [for (i in 0...passerbys.length) if (activePasserbys[i]) i];
+			// butt = FlxG.random.getObject(passerbys, [for (i in 0...passerbys.length) activePasserbys[i] ? 1 : 0]);
+			if (active.length != passerbys.length)
 			{
-				case "baldgru": // characters going up the river
-					passerby.x = -700 - passerby.width;
-					passerby.velocity.set(40, 0);
-					passerby.ID = 1;
-				case null: // characters going down the river (not just floating)
-					passerby.x = FlxG.width * 2;
-					passerby.velocity.set(-75, 0);
-					passerby.ID = 0;
-				default: // characters floating by (stationary)
-					passerby.x = FlxG.width * 2;
-					passerby.velocity.set(-60, 0);
-					passerby.ID = 0;
-			}
-			passerby.antialiasing = ClientPrefs.data.antialiasing;
-			passerby.origin.set(0, passerby.height);
-			passerby.y = 400 + FlxG.random.int(0, 25);
+				var butt = FlxG.random.int(0, passerbys.length - 1, active);
 
-			// offsets
-			switch (boob)
-			{
-				case 'harvester':
-					passerby.y -= 140;
+				if (!activePasserbys[butt])
+				{
+					var boob = passerbys[butt];
+					// var boob = FlxG.random.getObject(passerbys, [for (i in 0...passerbys.length) activePasserbys[i] ? 1 : 0]);
+					//	var boob = butt; // haha
+					trace('boo! its the ' + boob); // funny
+					passerby.frames = Paths.getSparrowAtlas("stages/lazyriver/passerbys/" + boob);
+					passerby.animation.addByPrefix("loop", boob, 24, true);
+					passerby.animation.play('loop', true);
+					passerby.ID = butt + 1; // I hate the number 0
+					activePasserbys[butt] = true;
+					switch (boob)
+					{
+						case "baldgru": // characters going up the river
+							passerby.x = -700 - passerby.width;
+							passerby.velocity.set(40, 0);
+							passerby.ID *= -1;
+						case "george": // characters going down the river (not just floating)
+							passerby.x = FlxG.width * 2;
+							passerby.velocity.set(-75, 0);
+						// passerby.ID *= 1;
+						default: // characters floating by (stationary)
+							passerby.x = FlxG.width * 2;
+							passerby.velocity.set(-60, 0);
+							// passerby.ID = 0;
+					}
+					passerby.antialiasing = ClientPrefs.data.antialiasing;
+					passerby.origin.set(0, passerby.height);
+					passerby.y = 400 + FlxG.random.int(0, 25);
+
+					// offsets
+					switch (boob)
+					{
+						case "beef":
+							passerby.y += 20;
+						case 'harvester':
+							passerby.y -= 140;
+						case 'george':
+							passerby.y -= 210;
+					}
+					passerbyGrp.add(passerby);
+					timeoutBeats = FlxG.random.int(40, 64);
+
+					trace([for (i in 0...passerbys.length) if (activePasserbys[i]) i]);
+				}
+				else
+				{
+					trace("cant spawn " + passerbys[butt] + "! it exists!");
+				}
+			} else {
+				trace("STOPP FIGHTING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			}
-			passerbyGrp.add(passerby);
+		}
+		else
+		{
+			timeoutBeats--;
 		}
 	}
 

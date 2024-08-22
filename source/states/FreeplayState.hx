@@ -472,8 +472,10 @@ class FreeplayState extends MusicBeatState
 			try
 			{
 				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-				if (ClientPrefs.data.summerMode) {
-					if (songLowercase == "lazy-river") {
+				if (ClientPrefs.data.summerMode)
+				{
+					if (songLowercase == "lazy-river")
+					{
 						PlayState.SONG = Song.loadFromJson('lazy-summer', 'lazy-summer');
 					}
 				}
@@ -587,6 +589,10 @@ class FreeplayState extends MusicBeatState
 
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+		if (songs[curSelected].songName == "lazy river")
+		{
+			intendedScore = Highscore.getScore(ClientPrefs.data.summerMode ? "lazy summer" : "lazy river", curDifficulty);
+		}
 		FreeplayStage.whatShouldTheScoreSay = intendedScore;
 
 		intendedRating = Highscore.getRating(songs[curSelected].songName, curDifficulty);
