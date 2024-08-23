@@ -1,5 +1,7 @@
 package states;
 
+import openfl.filters.ShaderFilter;
+import shaders.WiggleEffect;
 import flixel.FlxSubState;
 import backend.Highscore;
 import backend.Song;
@@ -91,6 +93,8 @@ class MainMenuState extends MusicBeatState
 	var isNight:Bool = false;
 	var baldWeek:Array<WeekData> = [];
 
+	var summerEffect:WiggleEffect;
+
 	public static function nightCheck():Bool
 	{
 		var curHour = Date.now().getHours();
@@ -113,7 +117,18 @@ class MainMenuState extends MusicBeatState
 		}
 
 		WeekData.reloadWeekFiles(false);
+		// var everything:FlxSpriteGroup = new FlxSpriteGroup();
+		if (ClientPrefs.data.summerMode && ClientPrefs.data.shaders)
+		{
+			summerEffect = new WiggleEffect();
+			//summerEffect.effectType = WiggleEffectType.HEAT_WAVE_HORIZONTAL;
+			summerEffect.waveAmplitude = 0.01;
+			summerEffect.waveFrequency = 1;
+			summerEffect.waveSpeed = 1;
+			FlxG.camera.filters = [new ShaderFilter(summerEffect.shader)];
+		}
 
+		// add(everything);
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
@@ -199,6 +214,15 @@ class MainMenuState extends MusicBeatState
 		stage.y = FlxG.height * 3.4 - stage.height;
 		stage.antialiasing = ClientPrefs.data.antialiasing;
 		add(stage);
+
+		// var wooglyboogly:FlxSprite = new FlxSprite(-600).loadGraphic(Paths.image("testasset"));
+		// add(wooglyboogly);
+		// wiggleShader = new WiggleEffect();
+		//// wiggleShader.effectType = WiggleEffectType.HEAT_WAVE_HORIZONTAL;
+		// wiggleShader.waveAmplitude = 0.1;
+		// wiggleShader.waveFrequency = 4;
+		// wiggleShader.waveSpeed = 1;
+		// wooglyboogly.shader = wiggleShader.shader;
 
 		// the!!!! i know this!! yay!! wahoo
 		super.create();
@@ -376,14 +400,14 @@ class MainMenuState extends MusicBeatState
 
 	override function openSubState(SubState:FlxSubState)
 	{
-		//persistentUpdate = false;
+		// persistentUpdate = false;
 		selectedSomethin = true;
 		super.openSubState(SubState);
 	}
 
 	override function closeSubState()
 	{
-		//persistentUpdate = true;
+		// persistentUpdate = true;
 		selectedSomethin = false;
 		super.closeSubState();
 	}
@@ -395,6 +419,11 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		if (summerEffect != null)
+		{
+			summerEffect.update(elapsed);
+			FlxG.camera.filters = [new ShaderFilter(summerEffect.shader)];
+		}
 		holdUp.offset.set(FlxG.random.int(-1, 1) * 1, FlxG.random.int(-1, 1) * 0.5);
 		// FlxG.camera.scroll.set(cameraPoint.x,cameraPoint.y);
 		if (controls.RESET)
@@ -537,7 +566,8 @@ class MainMenuState extends MusicBeatState
 						case "settings":
 							MusicBeatState.switchState(new OptionsState());
 						case "extras":
-							MusicBeatState.switchState(new MasterEditorMenu());
+							openSubState(new MasterEditorMenu());
+						// MusicBeatState.switchState(new MasterEditorMenu());
 						case "story_mode":
 							selectedSomethin = true;
 							var baldArray:Array<String> = ["Baldspicable", "Baldozer", "Dealtastic"];
@@ -564,9 +594,9 @@ class MainMenuState extends MusicBeatState
 			#if desktop
 			if (controls.justPressed('debug_1'))
 			{
-				//selectedSomethin = true;
+				// selectedSomethin = true;
 				openSubState(new MasterEditorMenu());
-				//MusicBeatState.switchState(new MasterEditorMenu());
+				// MusicBeatState.switchState(new MasterEditorMenu());
 			}
 			#end
 		}

@@ -92,7 +92,9 @@ class LazyRiver extends BaseStage
 		{
 			if (passerby != null)
 			{
-				passerby.offset.set(0, Math.sin(passerbySine) * 4);
+				// passerby.offset.set(0, Math.sin(passerbySine) * 4);
+				// This will fix the weird floating visual where everyone matches
+				passerby.offset.set(0, Math.sin(passerby.x / 50) * 4);
 				if ((passerby.ID > 0 && passerby.x <= -500 - passerby.width) || (passerby.ID < 0 && passerby.x >= FlxG.width * 2))
 				{
 					trace("destroying");
@@ -113,7 +115,7 @@ class LazyRiver extends BaseStage
 			game.dad.y = 100 - 170 + (Math.sin(sine) * 8);
 	}
 
-	var passerbys:Array<String> = ["baldgru", "beef", "harvester", "george"];
+	var passerbys:Array<String> = ["baldgru", "beef", "harvester", "george", "aflac", "trav"];
 	var activePasserbys:Array<Bool> = [];
 
 	var timeoutBeats = 4;
@@ -143,7 +145,7 @@ class LazyRiver extends BaseStage
 					activePasserbys[butt] = true;
 					switch (boob)
 					{
-						case "baldgru": // characters going up the river
+						case "baldgru" | "trav": // characters going up the river
 							passerby.x = -700 - passerby.width;
 							passerby.velocity.set(40, 0);
 							passerby.ID *= -1;
@@ -164,11 +166,15 @@ class LazyRiver extends BaseStage
 					switch (boob)
 					{
 						case "beef":
-							passerby.y += 20;
+							passerby.y += 50;
 						case 'harvester':
 							passerby.y -= 140;
 						case 'george':
 							passerby.y -= 210;
+						case 'aflac':
+							passerby.y -= 70;
+						case 'trav':
+							passerby.y -= 170;
 					}
 					passerbyGrp.add(passerby);
 					timeoutBeats = FlxG.random.int(40, 64);
@@ -179,7 +185,9 @@ class LazyRiver extends BaseStage
 				{
 					trace("cant spawn " + passerbys[butt] + "! it exists!");
 				}
-			} else {
+			}
+			else
+			{
 				trace("STOPP FIGHTING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			}
 		}
