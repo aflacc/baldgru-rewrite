@@ -159,7 +159,7 @@ class LazyRiver extends BaseStage
 							// passerby.ID = 0;
 					}
 					passerby.antialiasing = ClientPrefs.data.antialiasing;
-					passerby.origin.set(0, passerby.height);
+					passerby.origin.set(passerby.width / 2, passerby.height);
 					passerby.y = 400 + FlxG.random.int(0, 25);
 
 					// offsets
