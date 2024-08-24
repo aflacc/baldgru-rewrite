@@ -118,15 +118,15 @@ class MainMenuState extends MusicBeatState
 
 		WeekData.reloadWeekFiles(false);
 		// var everything:FlxSpriteGroup = new FlxSpriteGroup();
-		if (ClientPrefs.data.summerMode && ClientPrefs.data.shaders)
-		{
-			summerEffect = new WiggleEffect();
-			//summerEffect.effectType = WiggleEffectType.HEAT_WAVE_HORIZONTAL;
-			summerEffect.waveAmplitude = 0.01;
-			summerEffect.waveFrequency = 1;
-			summerEffect.waveSpeed = 1;
-			FlxG.camera.filters = [new ShaderFilter(summerEffect.shader)];
-		}
+		// if (ClientPrefs.data.summerMode && ClientPrefs.data.shaders)
+		// {
+		//	summerEffect = new WiggleEffect();
+		//	//summerEffect.effectType = WiggleEffectType.HEAT_WAVE_HORIZONTAL;
+		//	summerEffect.waveAmplitude = 0.01;
+		//	summerEffect.waveFrequency = 1;
+		//	summerEffect.waveSpeed = 1;
+		//	FlxG.camera.filters = [new ShaderFilter(summerEffect.shader)];
+		// }
 
 		// add(everything);
 		#if DISCORD_ALLOWED
