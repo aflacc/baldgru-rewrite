@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bfcool_popsicle_kill.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bf popsicle death instance 10000" x="4" y="4" width="204" height="208" frameX="0" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10001" x="216" y="4" width="199" height="211" frameX="-13" frameY="0" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10002" x="216" y="4" width="199" height="211" frameX="-13" frameY="0" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10003" x="423" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10004" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10005" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10006" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10007" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10008" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10009" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10010" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10011" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10012" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10013" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10014" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10015" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10016" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10017" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death instance 10018" x="633" y="4" width="202" height="207" frameX="-8" frameY="-3" frameWidth="212" frameHeight="211"/>
+	<SubTexture name="bf popsicle death loop instance 10000" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10001" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10002" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10003" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10004" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10005" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10006" x="213" y="223" width="200" height="212" frameX="0" frameY="0" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10007" x="213" y="223" width="200" height="212" frameX="0" frameY="0" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10008" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10009" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10010" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10011" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10012" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10013" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10014" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10015" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10016" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10017" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10018" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10019" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10020" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10021" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10022" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10023" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10024" x="213" y="223" width="200" height="212" frameX="0" frameY="0" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10025" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10026" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10027" x="213" y="223" width="200" height="212" frameX="0" frameY="0" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10028" x="213" y="223" width="200" height="212" frameX="0" frameY="0" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10029" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10030" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10031" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10032" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10033" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10034" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10035" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10036" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10037" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10038" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle death loop instance 10039" x="4" y="223" width="201" height="207" frameX="0" frameY="-5" frameWidth="201" frameHeight="212"/>
+	<SubTexture name="bf popsicle press instance 10000" x="421" y="223" width="199" height="211" frameX="-17" frameY="0" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10001" x="421" y="223" width="199" height="211" frameX="-17" frameY="0" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10002" x="628" y="223" width="202" height="207" frameX="-12" frameY="-4" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10003" x="628" y="223" width="202" height="207" frameX="-12" frameY="-4" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10004" x="4" y="443" width="209" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10005" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10006" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10007" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10008" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10009" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10010" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10011" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10012" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10013" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10014" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10015" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10016" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10017" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10018" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10019" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10020" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10021" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10022" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10023" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10024" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10025" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10026" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10027" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10028" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10029" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10030" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10031" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10032" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10033" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10034" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10035" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10036" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10037" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10038" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10039" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10040" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10041" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10042" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10043" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10044" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10045" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+	<SubTexture name="bf popsicle press instance 10046" x="221" y="443" width="208" height="208" frameX="0" frameY="-3" frameWidth="216" frameHeight="211"/>
+</TextureAtlas>

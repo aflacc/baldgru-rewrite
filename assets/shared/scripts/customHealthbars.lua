@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global, lowercase-global
 --Made my spectradev on discord
 --Modified by Trav
 

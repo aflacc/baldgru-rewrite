@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global, lowercase-global
 overlayResize = 0.55
 
 function setFrame(tag,type,value)
