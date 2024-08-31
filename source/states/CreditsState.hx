@@ -10,7 +10,7 @@ class CreditsState extends MusicBeatState
 		[
 			'BeefStarchJello',
 			'beef',
-			'Odd Day Director, Artistry for the bald, Charter, and Bald Gru & Sonic VA',
+			'Odd Day Director, Writer, Artistry for the bald, Charter, and Bald Gru & Sonic',
 			'https://twitter.com/beefstarchjello',
 			"baldiung moron"
 		],

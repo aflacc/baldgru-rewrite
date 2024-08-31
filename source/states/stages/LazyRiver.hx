@@ -106,8 +106,6 @@ class LazyRiver extends BaseStage
 				}
 			}
 		});
-		// sort them vertically, this is I think the only code from the scrapped v2 code (v2 IS NOT CANCELLED) that im gonna use lol
-		passerbyGrp.sort(FlxSort.byY, FlxSort.DESCENDING);
 
 		sine = (sine + elapsed) % (Math.PI * 4);
 
@@ -172,11 +170,14 @@ class LazyRiver extends BaseStage
 						case 'george':
 							passerby.y -= 210;
 						case 'aflac':
-							passerby.y -= 70;
+							passerby.y -= 140;
 						case 'trav':
 							passerby.y -= 170;
 					}
 					passerbyGrp.add(passerby);
+
+					// sort them vertically, this is I think the only code from the scrapped v2 code (v2 IS NOT CANCELLED) that im gonna use lol
+					passerbyGrp.sort(FlxSort.byY, FlxSort.DESCENDING);
 					timeoutBeats = FlxG.random.int(40, 64);
 
 					trace([for (i in 0...passerbys.length) if (activePasserbys[i]) i]);

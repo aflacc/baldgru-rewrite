@@ -8,7 +8,7 @@ import hxdiscord_rpc.Types;
 class DiscordClient
 {
 	public static var isInitialized:Bool = false;
-	private static final _defaultID:String = "1124862063001477150";
+	private static final _defaultID:String = "1278309756427178028";
 	public static var clientID(default, set):String = _defaultID;
 	private static var presence:DiscordRichPresence = DiscordRichPresence.create();
 

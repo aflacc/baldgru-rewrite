@@ -5,10 +5,11 @@ import backend.WeekData;
 import objects.Character;
 import states.MainMenuState;
 import states.FreeplayState;
+import backend.Highscore;
 
 class MasterEditorMenu extends MusicBeatSubstate
 {
-	var options:Array<String> = ['Test State', 'Chart Editor', 'Character Editor', "Freeplay"];
+	var options:Array<String> = ['Test State', 'Chart Editor', 'Character Editor', "Freeplay", "Skip Story"];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
 	private var directories:Array<String> = [null];
 
@@ -116,6 +117,11 @@ class MasterEditorMenu extends MusicBeatSubstate
 		{
 			switch (options[curSelected])
 			{
+				case 'Skip Story':
+					Highscore.saveScore("baldspicable",1);
+					Highscore.saveScore("baldozer",1);
+					Highscore.saveScore("dealtastic",1);
+					MusicBeatState.switchState(new MainMenuState());
 				case 'I dont care give me freeplay' | 'Freeplay':
 					MusicBeatState.switchState(new FreeplayState());
 				case 'Test State':

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="name.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="namebar change  instance 10000" x="4" y="4" width="447" height="158"/>
+	<SubTexture name="namebar change  instance 10001" x="4" y="4" width="447" height="158"/>
+	<SubTexture name="namebar change  instance 10002" x="459" y="4" width="447" height="158"/>
+	<SubTexture name="namebar change  instance 10003" x="459" y="4" width="447" height="158"/>
+	<SubTexture name="namebar change  instance 10004" x="4" y="170" width="447" height="158"/>
+	<SubTexture name="namebar change  instance 10005" x="4" y="170" width="447" height="158"/>
+	<SubTexture name="namebar change  instance 10006" x="459" y="170" width="447" height="158"/>
+	<SubTexture name="namebar change  instance 10007" x="459" y="170" width="447" height="158"/>
+</TextureAtlas>

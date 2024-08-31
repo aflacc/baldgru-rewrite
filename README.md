@@ -10,4 +10,4 @@ if theres bugs discovered feel free to create an [issue](https://github.com/afla
 
 ![dog](./art/dog.jpg)
 
-the file `SAVE.zip` is a save file that *only* has the main story week and yolked completed, you can use it by copying the save file to your `%appdata%` (Roaming) folder! make sure it is in the format of `./aflac/baldgru/(...)` and it *should* just let you create save data that skips the freeplay unlock. That's all I did with that save! I didn't mess with any settings (I think).
+the file `SAVE.zip` is a save file that *only* has the main story week and yolked completed, you can use it by copying the save file to your `%appdata%` (Roaming) folder! make sure it is in the format of `./BaldCrew/BaldGru/(...)` and it *should* just let you create save data that skips the freeplay unlock. That's all I did with that save! I didn't mess with any settings (I think).

@@ -28,6 +28,8 @@ class TitleState extends MusicBeatState
 
 	public static var updateVersion:String = '';
 
+	public static var chosenName:String = "Bald Gru";
+
 	override public function create():Void
 	{
 		// if (!initialized) {
@@ -41,6 +43,7 @@ class TitleState extends MusicBeatState
 			];
 			var chosenBald = FlxG.random.getObject(bald);
 			var chosenGru = FlxG.random.getObject(gru);
+			chosenName = '${chosenBald} ${chosenGru}';
 			Application.current.window.title = 'Friday Night Funkin\': ${chosenBald} ${chosenGru}';
 		}
 		// }
