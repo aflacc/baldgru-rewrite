@@ -162,6 +162,10 @@ class PlayState extends MusicBeatState
 
 	public var camFollow:FlxObject;
 
+	
+	var ruther:Character;
+	var rutherKeys:Character;
+
 	private static var prevCamFollow:FlxObject;
 
 	public var strumLineNotes:FlxTypedGroup<StrumNote>;
@@ -593,6 +597,8 @@ class PlayState extends MusicBeatState
 		noteGroup.cameras = [camHUD];
 		comboGroup.cameras = [camHUD];
 
+
+		
 		startingSong = true;
 
 		#if LUA_ALLOWED
@@ -662,6 +668,25 @@ class PlayState extends MusicBeatState
 		cachePopUpScore();
 
 		super.create();
+		if (ClientPrefs.data.ruther) {
+			ruther = new Character(-820,-120, 'ruther', false);
+			ruther.cameras = [camHUD];
+			ruther.scale.x = 0.75;
+			ruther.scale.y = 0.75;
+			ruther.dance();
+			ruther.playAnim('enter', true);
+			ruther.specialAnim = true;
+			add(ruther);
+
+			rutherKeys = new Character(-290, -520, 'ruther_keys', false);
+			rutherKeys.cameras = [camHUD];
+			rutherKeys.scale.x = 0.7;
+			rutherKeys.scale.y = 0.7;
+			rutherKeys.dance();
+			rutherKeys.playAnim('enter', true);
+			rutherKeys.specialAnim = true;
+			add(rutherKeys);
+		}
 		if (ClientPrefs.data.crust)
 		{
 			var crust:FlxSprite = new FlxSprite().loadGraphic(Paths.image("crust holding 18 pencils"));
@@ -671,6 +696,7 @@ class PlayState extends MusicBeatState
 			crust.alpha = 0.5;
 			add(crust);
 		}
+		
 		Paths.clearUnusedMemory();
 
 		if (eventNotes.length < 1)

@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "enter",
+			"indices": [],
+			"name": "ruther enter"
+		},
+		{
+			"offsets": [
+				-390,
+				29
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "ruther loop"
+		},
+		{
+			"offsets": [
+				-272,
+				-27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "leave",
+			"indices": [],
+			"name": "ruther leave"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "topsecret/ruther",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

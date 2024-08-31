@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ruther keys.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="jingle hi instance 10000" x="4" y="4" width="486" height="563" frameX="0" frameY="0" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10001" x="494" y="4" width="403" height="596" frameX="-132" frameY="-66" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10002" x="901" y="4" width="621" height="584" frameX="-155" frameY="-206" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10003" x="901" y="4" width="621" height="584" frameX="-155" frameY="-206" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10004" x="1526" y="4" width="607" height="691" frameX="-356" frameY="-282" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10005" x="2137" y="4" width="388" height="826" frameX="-726" frameY="-300" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10006" x="2137" y="4" width="388" height="826" frameX="-726" frameY="-300" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10007" x="2529" y="4" width="488" height="626" frameX="-746" frameY="-287" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10008" x="3021" y="4" width="491" height="632" frameX="-749" frameY="-285" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10009" x="3021" y="4" width="491" height="632" frameX="-749" frameY="-285" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10010" x="3516" y="4" width="502" height="632" frameX="-739" frameY="-288" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10011" x="3516" y="4" width="502" height="632" frameX="-739" frameY="-288" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10012" x="4" y="834" width="440" height="650" frameX="-714" frameY="-298" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10013" x="4" y="834" width="440" height="650" frameX="-714" frameY="-298" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10014" x="448" y="834" width="376" height="820" frameX="-608" frameY="-293" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10015" x="448" y="834" width="376" height="820" frameX="-608" frameY="-293" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10016" x="828" y="834" width="508" height="744" frameX="-477" frameY="-295" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10017" x="1340" y="834" width="511" height="721" frameX="-480" frameY="-303" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10018" x="1855" y="834" width="411" height="809" frameX="-613" frameY="-304" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10019" x="1855" y="834" width="411" height="809" frameX="-613" frameY="-304" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10020" x="2270" y="834" width="390" height="826" frameX="-640" frameY="-298" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10021" x="2270" y="834" width="390" height="826" frameX="-640" frameY="-298" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10022" x="2664" y="834" width="390" height="807" frameX="-640" frameY="-298" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10023" x="3058" y="834" width="391" height="803" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10024" x="3058" y="834" width="391" height="803" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10025" x="3453" y="834" width="391" height="803" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10026" x="3453" y="834" width="391" height="803" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10027" x="4" y="1664" width="391" height="832" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10028" x="4" y="1664" width="391" height="832" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10029" x="399" y="1664" width="391" height="826" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10030" x="399" y="1664" width="391" height="826" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10031" x="794" y="1664" width="391" height="829" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10032" x="794" y="1664" width="391" height="829" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10033" x="1189" y="1664" width="391" height="831" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10034" x="1189" y="1664" width="391" height="831" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10035" x="1189" y="1664" width="391" height="831" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle hi instance 10036" x="1189" y="1664" width="391" height="831" frameX="-640" frameY="-296" frameWidth="1241" frameHeight="1128"/>
+	<SubTexture name="jingle leave instance 10000" x="1584" y="1664" width="391" height="832" frameX="-10" frameY="-490" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle leave instance 10001" x="1584" y="1664" width="391" height="832" frameX="-10" frameY="-490" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle leave instance 10002" x="1979" y="1664" width="389" height="838" frameX="-12" frameY="-485" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle leave instance 10003" x="2372" y="1664" width="398" height="827" frameX="-9" frameY="-434" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle leave instance 10004" x="2774" y="1664" width="403" height="818" frameX="-20" frameY="-383" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle leave instance 10005" x="3181" y="1664" width="415" height="817" frameX="-21" frameY="-200" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle leave instance 10006" x="3600" y="1664" width="426" height="809" frameX="0" frameY="0" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle leave instance 10007" x="4030" y="1664" width="0" height="0" frameX="754" frameY="-608" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle stay instance 10000" x="1584" y="1664" width="391" height="832" frameX="-111" frameY="-83" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle stay instance 10001" x="1584" y="1664" width="391" height="832" frameX="-111" frameY="-83" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle stay instance 10002" x="4" y="2506" width="419" height="798" frameX="-83" frameY="-78" frameWidth="516" frameHeight="915"/>
+	<SubTexture name="jingle stay instance 10003" x="427" y="2506" width="508" height="754" frameX="0" frameY="-27" frameWidth="516" frameHeight="915"/>
+	<SubTexture name="jingle stay instance 10004" x="2774" y="1664" width="403" height="818" frameX="-109" frameY="0" frameWidth="436" frameHeight="1323"/>
+	<SubTexture name="jingle stay instance 10005" x="939" y="2506" width="404" height="820" frameX="-109" frameY="0" frameWidth="516" frameHeight="915"/>
+	<SubTexture name="jingle stay instance 10006" x="939" y="2506" width="404" height="820" frameX="-109" frameY="0" frameWidth="516" frameHeight="915"/>
+	<SubTexture name="jingle stay instance 10007" x="1347" y="2506" width="405" height="819" frameX="-109" frameY="-2" frameWidth="516" frameHeight="915"/>
+	<SubTexture name="jingle stay instance 10008" x="1756" y="2506" width="411" height="778" frameX="-103" frameY="-17" frameWidth="516" frameHeight="915"/>
+	<SubTexture name="jingle stay instance 10009" x="2171" y="2506" width="406" height="745" frameX="-110" frameY="-84" frameWidth="516" frameHeight="915"/>
+</TextureAtlas>

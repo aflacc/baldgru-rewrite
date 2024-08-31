@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-150,
+				0
+			],
+			"anim": "enter",
+			"fps": 24,
+			"name": "jingle hi",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-628,
+				192
+			],
+			"anim": "leave",
+			"fps": 24,
+			"name": "jingle leave",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-529,
+				-211
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "jingle stay",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "topsecret/ruther_keys",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
