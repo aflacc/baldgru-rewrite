@@ -1,5 +1,7 @@
 package options;
 
+import backend.Highscore;
+
 class BaldGruSettingsSubState extends BaseOptionsMenu
 {
 	public function new()
@@ -7,7 +9,9 @@ class BaldGruSettingsSubState extends BaseOptionsMenu
 		title = 'Mod Settings';
 		rpcTitle = 'Bald Gru Settings Menu'; // for Discord Rich Presence
 
-		var option:Option = new Option('Summer Mode', 'swlurp slurp mmmmmmm popsiclkle,,,,,,, yum', 'summerMode', 'bool');
+		var option:Option = new Option('Summer Mode',
+			'swlurp slurp mmmmmmm popsiclkle,,,,,,, yum' + (Highscore.getScore("yolked", 0) > 0 ? "\nConsider checking out Lazy river!" : ""), 'summerMode',
+			'bool');
 		option.onChange = function()
 		{
 			if (ClientPrefs.data.summerMode)

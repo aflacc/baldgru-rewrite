@@ -14,6 +14,10 @@ class LazySummer extends BaseStage
 
 	override function create()
 	{
+		
+		GameOverSubstate.loopSoundName = "lazyriver-gameover-loop";
+		GameOverSubstate.endSoundName = 'lazyriver-gameover-end';
+		
 		var bg:BGSprite = new BGSprite('stages/lazyriver/MC_Sky', -830, -200, 0.1, 0.1);
 		bg.scale.set(1, 1.1);
 		add(bg);
