@@ -1,5 +1,6 @@
 package states.stages;
 
+import substates.GameOverSubstate;
 import flixel.addons.display.FlxBackdrop;
 import states.stages.objects.*;
 
