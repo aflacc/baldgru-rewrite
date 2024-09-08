@@ -48,6 +48,12 @@ class GeremySubState extends MusicBeatSubstate
 		{
 			geremyWarning.text = "Where do you think you're going?\nGet back in there and finish what you've started.\nYou CANNOT back out of this.";
 		}
+		// https://www.youtube.com/live/qezP8R03_jg?&t=28673
+		if (CoolUtil.whoIsPlaying == "penkaru") { // penkaru spotted ballistic missile go
+			trace("Hello penkaru");
+			geremyWarning.text += "\n\n*Pay attention this time, Penkaru*";
+			geremyWarning.applyMarkup(geremyWarning.text, [new FlxTextFormatMarkerPair(new FlxTextFormat(0xFF0000), "*")]);
+		}
 		fleed = false;
 		dumbass = false;
 

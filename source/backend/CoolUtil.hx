@@ -5,6 +5,10 @@ import lime.utils.Assets as LimeAssets;
 
 class CoolUtil
 {
+
+	public static var whoIsPlaying:String = "";
+	//penkaru: 318841033322528769 and just penkaru i guess
+
 	inline public static function quantize(f:Float, snap:Float){
 		// changed so this actually works lol
 		var m:Float = Math.fround(f * snap);

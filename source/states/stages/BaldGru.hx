@@ -107,6 +107,9 @@ class BaldGlue extends BaseStage
 
 	override function createPost()
 	{
+		if (PlayState.SONG.song.toLowerCase() == "baldspicable") {
+			game.boyfriend.playAnim("refix",true);
+		}
 		add(crowd3);
 		// Use this function to layer things above characters!
 

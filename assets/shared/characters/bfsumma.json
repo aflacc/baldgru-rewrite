@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				12,
-				-10
+				14,
+				3
 			],
 			"loop": false,
 			"fps": 24,
@@ -14,7 +14,7 @@
 		{
 			"offsets": [
 				16,
-				-35
+				-10
 			],
 			"loop": false,
 			"fps": 24,
@@ -24,8 +24,8 @@
 		},
 		{
 			"offsets": [
-				-18,
-				50
+				-16,
+				48
 			],
 			"loop": false,
 			"fps": 24,
@@ -36,7 +36,7 @@
 		{
 			"offsets": [
 				-37,
-				-11
+				6
 			],
 			"loop": false,
 			"fps": 24,
@@ -47,8 +47,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				12,
-				35
+				9,
+				37
 			],
 			"anim": "singLEFTmiss",
 			"fps": 24,
@@ -58,8 +58,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				12,
-				35
+				9,
+				37
 			],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
@@ -69,8 +69,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				12,
-				35
+				9,
+				37
 			],
 			"anim": "singDOWNmiss",
 			"fps": 24,
@@ -80,8 +80,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				12,
-				35
+				9,
+				37
 			],
 			"anim": "singUPmiss",
 			"fps": 24,
@@ -89,10 +89,14 @@
 			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				0,
-				0
+				2,
+				13
 			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bf idle s instance 1",
 			"indices": [
 				0,
 				1,
@@ -103,13 +107,97 @@
 				6,
 				7,
 				8
-			],
-			"fps": 24,
-			"anim": "idle",
+			]
+		},
+		{
 			"loop": false,
-			"name": "bf idle instance 1"
+			"offsets": [
+				160,
+				31
+			],
+			"anim": "popsicle1",
+			"fps": 24,
+			"name": "bf popsicle1 instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				160,
+				31
+			],
+			"anim": "popsicle",
+			"fps": 24,
+			"name": "bf popsicle1 instance",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				160,
+				31
+			],
+			"anim": "popsicle2",
+			"fps": 24,
+			"name": "bf popsicle2",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				159,
+				33
+			],
+			"anim": "popsicle3",
+			"fps": 24,
+			"name": "bf popsicle3",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				159,
+				33
+			],
+			"anim": "popsicle4",
+			"fps": 24,
+			"name": "bf popsicle4",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				160,
+				32
+			],
+			"anim": "popsicle5",
+			"fps": 24,
+			"name": "bf popsicle5",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				33
+			],
+			"anim": "popsicle6",
+			"fps": 24,
+			"name": "bf popsicle6",
+			"indices": []
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/bfsumma",
 	"position": [
@@ -128,5 +216,6 @@
 		-40
 	],
 	"sing_duration": 5.2,
-	"scale": 1.2
+	"scale": 1.2,
+	"_editor_isPlayer": true
 }

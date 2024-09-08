@@ -41,6 +41,9 @@ class DiscordClient
 		else //Old discriminators
 			trace('(Discord) Connected to User (${cast(requestPtr.username, String)})');
 
+		CoolUtil.whoIsPlaying = cast(requestPtr.username, String);
+		trace("Hello "+ CoolUtil.whoIsPlaying);
+
 		changePresence();
 	}
 

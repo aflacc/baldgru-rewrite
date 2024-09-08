@@ -1,13 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="trav.png">
-	<!-- Created with Adobe Animate version 24.0.4.28 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="trav floati0000" x="4" y="4" width="392" height="454"/>
-	<SubTexture name="trav floati0001" x="4" y="4" width="392" height="454"/>
-	<SubTexture name="trav floati0002" x="4" y="4" width="392" height="454"/>
-	<SubTexture name="trav floati0003" x="4" y="4" width="392" height="454"/>
-	<SubTexture name="trav floati0004" x="404" y="4" width="392" height="454"/>
-	<SubTexture name="trav floati0005" x="404" y="4" width="392" height="454"/>
-	<SubTexture name="trav floati0006" x="404" y="4" width="392" height="454"/>
-	<SubTexture name="trav floati0007" x="404" y="4" width="392" height="454"/>
+﻿<TextureAtlas imagePath="trav.png">
+	<SubTexture name="trav0000" x="0" y="0" w="392" h="455"/>
+	<SubTexture name="trav0001" x="0" y="0" w="392" h="455"/>
+	<SubTexture name="trav0002" x="0" y="0" w="392" h="455"/>
+	<SubTexture name="trav0003" x="0" y="0" w="392" h="455"/>
+	<SubTexture name="trav0004" x="392" y="0" w="392" h="455"/>
+	<SubTexture name="trav0005" x="392" y="0" w="392" h="455"/>
+	<SubTexture name="trav0006" x="392" y="0" w="392" h="455"/>
+	<SubTexture name="trav0007" x="392" y="0" w="392" h="455"/>
+	<SubTexture name="trav0008" x="0" y="455" w="392" h="455"/>
+	<SubTexture name="trav0009" x="0" y="455" w="392" h="455"/>
 </TextureAtlas>

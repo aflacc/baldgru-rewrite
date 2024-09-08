@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				10,
-				-6
+				15,
+				-7
 			],
 			"loop": false,
 			"fps": 24,
@@ -14,7 +14,7 @@
 		{
 			"offsets": [
 				14,
-				-24
+				-20
 			],
 			"loop": false,
 			"fps": 24,
@@ -24,8 +24,8 @@
 		},
 		{
 			"offsets": [
-				-6,
-				40
+				-17,
+				37
 			],
 			"loop": false,
 			"fps": 24,
@@ -35,7 +35,7 @@
 		},
 		{
 			"offsets": [
-				-31,
+				-34,
 				-5
 			],
 			"loop": false,
@@ -47,7 +47,7 @@
 		{
 			"offsets": [
 				0,
-				1
+				2
 			],
 			"loop": false,
 			"fps": 24,
@@ -58,8 +58,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				11,
-				24
+				8,
+				25
 			],
 			"anim": "singLEFTmiss",
 			"fps": 24,
@@ -69,8 +69,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				11,
-				24
+				8,
+				25
 			],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
@@ -80,8 +80,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				11,
-				24
+				8,
+				25
 			],
 			"anim": "singDOWNmiss",
 			"fps": 24,
@@ -91,8 +91,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				11,
-				24
+				8,
+				25
 			],
 			"anim": "singUPmiss",
 			"fps": 24,
@@ -101,16 +101,105 @@
 		},
 		{
 			"offsets": [
-				-2,
-				571
+				-4,
+				534
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "teleport",
 			"indices": [],
 			"name": "bf tp"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				158,
+				20
+			],
+			"anim": "popsicle1",
+			"fps": 24,
+			"name": "bf popsicle1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				158,
+				20
+			],
+			"anim": "popsicle2",
+			"fps": 24,
+			"name": "bf popsicle2",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				157,
+				22
+			],
+			"anim": "popsicle3",
+			"fps": 24,
+			"name": "bf popsicle3",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				157,
+				22
+			],
+			"anim": "popsicle4",
+			"fps": 24,
+			"name": "bf popsicle4",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				158,
+				21
+			],
+			"anim": "popsicle5",
+			"fps": 24,
+			"name": "bf popsicle5",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				22
+			],
+			"anim": "popsicle6",
+			"fps": 24,
+			"name": "bf popsicle6",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				58,
+				51
+			],
+			"anim": "refix",
+			"fps": 24,
+			"name": "bf refix",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				535
+			],
+			"anim": "tp",
+			"fps": 24,
+			"name": "bf tp instance",
+			"indices": []
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/bfcool",
 	"position": [
@@ -129,5 +218,6 @@
 		-40
 	],
 	"sing_duration": 6.1,
-	"scale": 1.2
+	"scale": 1.2,
+	"_editor_isPlayer": true
 }
