@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="thermometer.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="temp show up instance 10000" x="4" y="4" width="138" height="476" frameX="-29" frameY="-697" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10001" x="4" y="4" width="138" height="476" frameX="-29" frameY="-639" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10002" x="150" y="4" width="134" height="489" frameX="-31" frameY="-359" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10003" x="150" y="4" width="134" height="489" frameX="-31" frameY="-359" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10004" x="292" y="4" width="145" height="662" frameX="-27" frameY="-119" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10005" x="445" y="4" width="153" height="647" frameX="-24" frameY="-28" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10006" x="606" y="4" width="153" height="670" frameX="-24" frameY="-5" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10007" x="767" y="4" width="177" height="671" frameX="-17" frameY="-5" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10008" x="952" y="4" width="177" height="676" frameX="-17" frameY="0" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10009" x="1137" y="4" width="181" height="678" frameX="-15" frameY="0" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10010" x="1326" y="4" width="181" height="676" frameX="-15" frameY="-2" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10011" x="1326" y="4" width="181" height="676" frameX="-15" frameY="-2" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10012" x="1326" y="4" width="181" height="676" frameX="-15" frameY="-2" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10013" x="1515" y="4" width="183" height="669" frameX="-14" frameY="-9" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10014" x="1706" y="4" width="188" height="608" frameX="0" frameY="-80" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10015" x="1706" y="4" width="188" height="608" frameX="0" frameY="-80" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10016" x="4" y="690" width="175" height="612" frameX="-7" frameY="-74" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10017" x="4" y="690" width="175" height="612" frameX="-7" frameY="-74" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10018" x="187" y="690" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10019" x="187" y="690" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10020" x="187" y="690" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10021" x="187" y="690" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1173"/>
+	<SubTexture name="temp show up instance 10022" x="187" y="690" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1173"/>
+</TextureAtlas>
