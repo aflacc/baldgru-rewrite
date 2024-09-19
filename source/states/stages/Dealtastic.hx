@@ -38,41 +38,43 @@ class Dealtastic extends BaseStage
 	{
 		game.boyfriendGroup.visible = false;
 		game.gf.y += 600;
-
-		dealionsGrp = new FlxSpriteGroup();
-		dealionsGrp.cameras = [game.camHUD];
-		add(dealionsGrp);
-
-		for (i in 1...5)
+		if (ClientPrefs.data.distractions)
 		{
-			var dealion:FlxSprite = new FlxSprite();
-			dealion.ID = i;
-			dealion.frames = Paths.getSparrowAtlas("stages/dealtastic/dealion/dealion" + i);
-			dealion.animation.addByPrefix("enter", "dealion" + i + " enter", 24, false);
-			dealion.animation.addByPrefix("talk", "dealion" + i + " talk", 24, true);
-			dealion.animation.addByPrefix("leave", "dealion" + i + " leave", 24, false);
-			dealion.antialiasing = ClientPrefs.data.antialiasing;
-			dealion.animation.play("talk", true);
-			switch (i)
-			{ // If you think about it switch cases are really just fancy if...elif... chains
-				case 1:
-					// floor left
-					dealion.setPosition(106, 441);
-				case 2:
-					// floor right
-					dealion.setPosition(822, 364);
-				case 3:
-					// wall
-					dealion.setPosition(-48, 32);
-				case 4:
-					// get out of my face
-					dealion.screenCenter();
-					dealion.y += 54;
+			dealionsGrp = new FlxSpriteGroup();
+			dealionsGrp.cameras = [game.camHUD];
+			add(dealionsGrp);
+
+			for (i in 1...5)
+			{
+				var dealion:FlxSprite = new FlxSprite();
+				dealion.ID = i;
+				dealion.frames = Paths.getSparrowAtlas("stages/dealtastic/dealion/dealion" + i);
+				dealion.animation.addByPrefix("enter", "dealion" + i + " enter", 24, false);
+				dealion.animation.addByPrefix("talk", "dealion" + i + " talk", 24, true);
+				dealion.animation.addByPrefix("leave", "dealion" + i + " leave", 24, false);
+				dealion.antialiasing = ClientPrefs.data.antialiasing;
+				dealion.animation.play("talk", true);
+				switch (i)
+				{ // If you think about it switch cases are really just fancy if...elif... chains
+					case 1:
+						// floor left
+						dealion.setPosition(106, 441);
+					case 2:
+						// floor right
+						dealion.setPosition(822, 364);
+					case 3:
+						// wall
+						dealion.setPosition(-48, 32);
+					case 4:
+						// get out of my face
+						dealion.screenCenter();
+						dealion.y += 54;
+				}
+				dealionsActive[i] = false;
+				dealion.animation.play("leave");
+				dealion.animation.finish(); // las t frame is invisible
+				dealionsGrp.add(dealion);
 			}
-			dealionsActive[i] = false;
-			dealion.animation.play("leave");
-			dealion.animation.finish(); // las t frame is invisible
-			dealionsGrp.add(dealion);
 		}
 
 		lyricsBack = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
@@ -90,26 +92,30 @@ class Dealtastic extends BaseStage
 
 	override function update(elapsed:Float)
 	{
-		dealionsGrp.forEach(function(dealion:FlxSprite)
+		if (ClientPrefs.data.distractions)
 		{
-			if (dealion.animation.curAnim.name == "enter" && dealion.animation.finished)
+			dealionsGrp.forEach(function(dealion:FlxSprite)
 			{
-				dealion.animation.play("talk", true);
-				new FlxTimer().start(FlxG.random.float(2,8),function(_) {
-					dealion.animation.play("leave",true);
-					dealionsActive[dealion.ID] = false;
-					delayion += 8;
-				});
-			}
-			if (dealion.animation.curAnim.name == "leave" && dealion.animation.finished)
-			{
-				dealion.visible = false;
-			}
-			else
-			{
-				dealion.visible = true;
-			}
-		});
+				if (dealion.animation.curAnim.name == "enter" && dealion.animation.finished)
+				{
+					dealion.animation.play("talk", true);
+					new FlxTimer().start(FlxG.random.float(2, 8), function(_)
+					{
+						dealion.animation.play("leave", true);
+						dealionsActive[dealion.ID] = false;
+						delayion += 8;
+					});
+				}
+				if (dealion.animation.curAnim.name == "leave" && dealion.animation.finished)
+				{
+					dealion.visible = false;
+				}
+				else
+				{
+					dealion.visible = true;
+				}
+			});
+		}
 	}
 
 	override function countdownTick(count:backend.BaseStage.Countdown, num:Int)
@@ -137,30 +143,33 @@ class Dealtastic extends BaseStage
 
 	override function beatHit()
 	{
-		if (delayion <= 0)
+		if (ClientPrefs.data.distractions)
 		{
-			if (FlxG.random.bool(25))
-			{ // this should allow for the chance for some *small* extra randomness
-				var exclude = [for (i in 0...dealionsGrp.members.length) if (dealionsActive[i]) i];
-				if (exclude.length != dealionsGrp.members.length)
-				{
-					var dee = FlxG.random.int(0, dealionsGrp.members.length - 1, exclude);
-					dealionsActive[dee] = true;
-					var thelion = dealionsGrp.members[dee];
-					thelion.ID = dee;
-					thelion.animation.play("enter");
-					delayion += FlxG.random.int(3, 32);
-				}
-				else
-				{
-					trace("NO!!!");
-					delayion += 4;
+			if (delayion <= 0)
+			{
+				if (FlxG.random.bool(25))
+				{ // this should allow for the chance for some *small* extra randomness
+					var exclude = [for (i in 0...dealionsGrp.members.length) if (dealionsActive[i]) i];
+					if (exclude.length != dealionsGrp.members.length)
+					{
+						var dee = FlxG.random.int(0, dealionsGrp.members.length - 1, exclude);
+						dealionsActive[dee] = true;
+						var thelion = dealionsGrp.members[dee];
+						thelion.ID = dee;
+						thelion.animation.play("enter");
+						delayion += FlxG.random.int(3, 32);
+					}
+					else
+					{
+						trace("NO!!!");
+						delayion += 4;
+					}
 				}
 			}
-		}
-		else
-		{
-			delayion--;
+			else
+			{
+				delayion--;
+			}
 		}
 		// Code here
 		switch (curBeat)

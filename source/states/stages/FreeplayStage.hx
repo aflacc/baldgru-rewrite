@@ -416,6 +416,7 @@ class FreeplayStage extends BaseStage
 					lol.screenCenter(X);
 					lol.cameras = [game.camOther];
 					add(lol);
+					// thisis like a toddler playing with a bomb
 					PlayState.instance.startVideo("yolkedSadStory", false, function()
 					{
 						FlxTween.tween(lol, {alpha: 0}, Conductor.crochet * 0.002, {

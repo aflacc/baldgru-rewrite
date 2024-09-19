@@ -88,6 +88,7 @@
 		<assets path='example_mods' rename='mods' embed='false'/>
 	</section>
 	<assets path='art/readme.txt' rename='baldme.txt' />
+	<assets path='art/important note.txt' rename='kind of important.txt' />
 
 	<!-- _______________________________ Libraries ______________________________ -->
 

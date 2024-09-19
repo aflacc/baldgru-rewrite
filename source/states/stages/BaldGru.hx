@@ -1,6 +1,7 @@
 package states.stages;
 
 //
+import flixel.util.FlxGradient;
 import substates.GameOverSubstate;
 import flixel.input.FlxInput;
 import flixel.input.keyboard.FlxKey;
@@ -67,6 +68,13 @@ class BaldGlue extends BaseStage
 	var crowd2:BGSprite;
 	var crowd3:FlxSprite;
 
+	var alarm:FlxSprite;
+
+	var gandolfo:BGSprite;
+	var explosion:BGSprite;
+	var coolasFuckGradient:FlxSprite;
+	var imreallystupid:FlxSprite;
+
 	override function create()
 	{
 		GameOverSubstate.loopSoundName = "baldgru-gameover-loop";
@@ -75,10 +83,42 @@ class BaldGlue extends BaseStage
 		bg.scrollFactor.set(0.4, 0.4);
 		bg.scale.set(1.15, 1.15);
 		bg.antialiasing = ClientPrefs.data.antialiasing;
+
+		alarm = new FlxSprite(-480, -180);
+		alarm.frames = Paths.getSparrowAtlas("stages/baldGlue/alarm");
+		alarm.scrollFactor.set(0.4, 0.4);
+		alarm.animation.addByIndices("norm", "alarm goin off", [0, 0], "", 24, true); // cheating the system i think
+		alarm.animation.addByPrefix("alarm", "alarm goin off", 24, true);
+		alarm.scale.set(1.15, 1.15);
+		alarm.animation.play("norm", true);
+		add(alarm);
+
 		var pipe:FlxSprite = new FlxSprite(-175, 490).loadGraphic(Paths.image("stages/baldGlue/bg_pipe"));
 		pipe.antialiasing = ClientPrefs.data.antialiasing;
 		pipe.scrollFactor.set(0.4, 0.4);
 		pipe.scale.set(1.2, 1);
+
+		/*
+			makeLuaSprite("gandolfo","bigstage/gandolfo",300,700)
+			setLuaSpriteScrollFactor('gandolfo', 0.9, 0.9)
+			addLuaSprite("gandolfo",false)
+			setObjectOrder("gandolfo",4)
+
+			makeAnimatedLuaSprite("explody","bigstage/kablooey",-350,-300)
+			addAnimationByPrefix("explody","play","explos instance",24,false)
+			setProperty("explody.visible", false)
+			setLuaSpriteScrollFactor('explody', 0.9, 0.9)
+			addLuaSprite("explody",false)
+			setObjectOrder("explody",5)
+		 */
+		if (PlayState.SONG.song.toLowerCase() == "baldozer")
+		{
+			gandolfo = new BGSprite("stages/baldGlue/gandolfo", 300, 700, 0.9, 0.9);
+
+			explosion = new BGSprite("stages/baldGlue/kablooey", -350, -300, 0.9, 0.9, ["explos instance"]);
+			// explosion.animation.addByPrefix("play", "explos instance", 24, false);
+			explosion.visible = false;
+		}
 		var platform:FlxSprite = new FlxSprite(-700, 260).loadGraphic(Paths.image("stages/baldGlue/BGstage"));
 		platform.antialiasing = ClientPrefs.data.antialiasing;
 		platform.scrollFactor.set(1, 1);
@@ -98,19 +138,46 @@ class BaldGlue extends BaseStage
 		crowd3.scrollFactor.set(0.6, 1);
 		crowd3.scale.set(1.1, 1.1);
 
+		var gruOverlay:BGSprite = new BGSprite('stages/baldGlue/baldoverlay', -430, -100, 0, 0);
+		gruOverlay.blend = OVERLAY;
+		gruOverlay.scale.set(1.1, 1.1);
+
 		add(bg);
 		add(pipe);
 		add(crowd1);
 		add(crowd2);
+		if (PlayState.SONG.song.toLowerCase() == "baldozer")
+			{
+				add(explosion);
+				add(gandolfo);
+			}
 		add(platform);
+		add(gruOverlay);
+	}
+
+	override function countdownTick(count:backend.BaseStage.Countdown, num:Int)
+	{
+		switch (count)
+		{
+			case THREE: // num 0
+				if (PlayState.SONG.song.toLowerCase() == "baldspicable")
+				{
+					game.boyfriend.playAnim("deadasfuck", true);
+					game.boyfriend.specialAnim = true; // FUCK
+					game.gf.playAnim("awesome", true);
+					game.gf.specialAnim = true; // FUCK 2
+				}
+			case TWO: // num 1
+			case ONE: // num 2
+			case GO: // num 3
+			case START: // num 4
+		}
 	}
 
 	override function createPost()
 	{
-		if (PlayState.SONG.song.toLowerCase() == "baldspicable") {
-			game.boyfriend.playAnim("refix",true);
-		}
 		add(crowd3);
+
 		// Use this function to layer things above characters!
 
 		// dialog bg doesn't want to cooperate. Not going to use it
@@ -118,6 +185,18 @@ class BaldGlue extends BaseStage
 		// dialogBG.cameras = [game.camHUD];
 		// dialogBG.alpha = 0.5;
 		// add(dialogBG);
+
+		// Bald Gru should have a dedicated gangnam style button
+		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -580, -280, 1, 1);
+		gruDarkness.blend = MULTIPLY;
+		gruDarkness.scale.set(1.1, 1.1);
+		gruDarkness.scrollFactor.set(1,0.5);
+		add(gruDarkness);
+		var gruLighting = new BGSprite('stages/baldGlue/bal_gru_lighting', -580, -280, 1, 1);
+		gruLighting.blend = ADD;
+		gruLighting.scale.set(1.1, 1.1);
+		gruLighting.scrollFactor.set(1,0.5);
+		add(gruLighting);
 
 		loddy = new FlxSprite(-300, 280);
 		loddy.frames = Paths.getSparrowAtlas("stages/baldGlue/loddy");
@@ -145,6 +224,23 @@ class BaldGlue extends BaseStage
 		loddio.volume = 3.5;
 		FlxG.sound.list.add(loddio);
 
+		/*		
+			makeLuaSprite("gradient","bigstage/gradient",0,-720 * 2)
+			setObjectCamera("gradient","camOther")
+			addLuaSprite("gradient",true)
+			scaleObject("gradient",1280,1)
+			setObjectOrder('gruOverlay', 1112, false)
+		 */
+		coolasFuckGradient = FlxGradient.createGradientFlxSprite(1, 720, [FlxColor.BLACK, 0x0]);
+		coolasFuckGradient.scale.set(FlxG.width, 1);
+		coolasFuckGradient.cameras = [game.camOther];
+		coolasFuckGradient.y = -720;
+		coolasFuckGradient.screenCenter(X);
+		add(coolasFuckGradient);
+
+		imreallystupid = new FlxSprite(0, -720 * 2).makeGraphic(1280, 720, FlxColor.BLACK);
+		imreallystupid.cameras = [game.camOther];
+		add(imreallystupid);
 		// dialogBG.x = loddyDialog.x - 8;
 		// dialogBG.y = loddyDialog.y - 8;
 		// dialogBG.scale.set(loddyDialog.width + 16, loddyDialog.height + 16);
@@ -220,34 +316,72 @@ class BaldGlue extends BaseStage
 		// Baldozer loddy shits
 		if (PlayState.SONG.song.toLowerCase() == "baldozer")
 		{
-			loddyBuffer = Math.max(0, loddyBuffer - 1);
-			if (loddyBuffer == 0 && !loddyTalking && FlxG.random.bool(5))
+			if (ClientPrefs.data.distractions)
 			{
-				var chosen = FlxG.random.int(0, (ClientPrefs.data.summerMode ? voicelines_summer : voicelines).length  - 1);
-				trace(chosen);
-				loddyTalking = true;
-				loddyDialog.text = (ClientPrefs.data.summerMode ? voicelines_summer : voicelines)[chosen];
-				loddy.animation.play("enter", true);
-				loddio.loadEmbedded(Paths.sound("loddy/" + (ClientPrefs.data.summerMode ? "summer" : "regular") + "/" + chosen));
-				loddio.pitch = ClientPrefs.getGameplaySetting("songspeed");
-				loddio.onComplete = function()
+				loddyBuffer = Math.max(0, loddyBuffer - 1);
+				if (loddyBuffer == 0 && !loddyTalking && FlxG.random.bool(5))
 				{
-					loddy.animation.play("leave", true);
-
-					FlxTween.tween(loddyDialog, {alpha: 0}, 0.5);
-					new FlxTimer().start(0.75, function(_)
+					var chosen = FlxG.random.int(0, (ClientPrefs.data.summerMode ? voicelines_summer : voicelines).length - 1);
+					trace(chosen);
+					loddyTalking = true;
+					loddyDialog.text = (ClientPrefs.data.summerMode ? voicelines_summer : voicelines)[chosen];
+					loddy.animation.play("enter", true);
+					loddio.loadEmbedded(Paths.sound("loddy/" + (ClientPrefs.data.summerMode ? "summer" : "regular") + "/" + chosen));
+					loddio.pitch = ClientPrefs.getGameplaySetting("songspeed");
+					loddio.onComplete = function()
 					{
-						loddyBuffer = FlxG.random.int(16, 20);
-						loddyTalking = false;
+						loddy.animation.play("leave", true);
+
+						FlxTween.tween(loddyDialog, {alpha: 0}, 0.5);
+						new FlxTimer().start(0.75, function(_)
+						{
+							loddyBuffer = FlxG.random.int(16, 20);
+							loddyTalking = false;
+						});
+					}
+					new FlxTimer().start(0.25, function(tmr)
+					{
+						loddy.animation.play("speak", true);
+						loddio.play();
+
+						FlxTween.tween(loddyDialog, {alpha: 1}, 0.25);
 					});
 				}
-				new FlxTimer().start(0.25, function(tmr)
-				{
-					loddy.animation.play("speak", true);
-					loddio.play();
+			}
 
-					FlxTween.tween(loddyDialog, {alpha: 1}, 0.25);
-				});
+			/*
+				if curBeat == 456 then -- 456
+					doTweenY("hello","gandolfo",0,crochet*0.006,"quintOut")
+					setProperty("explody.visible",true)
+					playAnim("explody","play",true)
+					doTweenAlpha("byebyehud","camHUD",0,crochet*0.004,"quadInOut")
+				end
+				if curBeat == 464 then
+					setProperty("isCameraOnForcedPos",true)
+					doTweenY("goodbye","gandolfo",-4000,crochet*0.026,"sineIn")
+				end
+				if curBeat == 480 then
+					doTweenY("whee","camFollow",getProperty("camFollow.y") - 1600,crochet*0.016,"sineIn")
+					doTweenY("fade","gradient",0,crochet*0.010,"sineIn")
+					
+				end
+			 */
+			switch (curBeat)
+			{
+				case 456: // 456
+					FlxTween.tween(gandolfo, {y: 0}, Conductor.crochet * 0.006, {ease: FlxEase.quintOut});
+					FlxTween.tween(game.camHUD, {alpha: 0}, Conductor.crochet * 0.004, {ease: FlxEase.quadInOut});
+					explosion.visible = true;
+					explosion.dance();
+				// explosion.animation.play("play", true);
+				case 464: // 464
+					PlayState.isCameraOnForcedPos = true;
+					PlayState.instance.camFollow.x += 200;
+					FlxTween.tween(gandolfo, {y: -4000}, Conductor.crochet * 0.026, {ease: FlxEase.sineIn});
+				case 480: // 480
+					FlxTween.tween(coolasFuckGradient, {y: 720}, Conductor.crochet * 0.010, {ease: FlxEase.sineIn});
+					FlxTween.tween(imreallystupid, {y: 0}, Conductor.crochet * 0.010, {ease: FlxEase.sineIn});
+					FlxTween.tween(PlayState.instance.camFollow, {y: PlayState.instance.camFollow.y - 1600}, Conductor.crochet * 0.016, {ease: FlxEase.sineIn});
 			}
 		}
 	}

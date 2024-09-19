@@ -49,6 +49,7 @@ class MasterEditorMenu extends MusicBeatSubstate
 		//grpTexts.
 		add(grpTexts);
 
+
 		for (i in 0...options.length)
 		{
 			var leText:Alphabet = new Alphabet(90, 320, options[i], true);

@@ -21,14 +21,25 @@
 			"fps": 24,
 			"name": "gf teleport",
 			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				80,
+				-147
+			],
+			"anim": "awesome",
+			"fps": 24,
+			"name": "gf revive instance 1",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/gfcool",
 	"position": [
-		60,
-		180
+		50,
+		250
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -38,7 +49,7 @@
 		77
 	],
 	"camera_position": [
-		-150,
+		-160,
 		250
 	],
 	"sing_duration": 4,

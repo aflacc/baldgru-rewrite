@@ -1,202 +1,230 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				15,
 				-7
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "bf left"
+			"fps": 24,
+			"name": "bf left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				14,
 				-20
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "bf down"
+			"fps": 24,
+			"name": "bf down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-17,
 				37
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "bf up"
+			"fps": 24,
+			"name": "bf up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-34,
 				-5
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "bf right"
+			"fps": 24,
+			"name": "bf right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				2
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "bf idle"
+			"fps": 24,
+			"name": "bf idle",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				8,
 				25
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "bf miss",
-			"indices": []
+			"indices": [],
+			"name": "bf miss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				8,
 				25
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "bf miss",
-			"indices": []
+			"indices": [],
+			"name": "bf miss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				8,
 				25
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "bf miss",
-			"indices": []
+			"indices": [],
+			"name": "bf miss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				8,
 				25
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "bf miss",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "bf miss"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-4,
 				534
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "teleport",
-			"indices": [],
-			"name": "bf tp"
+			"fps": 24,
+			"name": "bf tp",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				158,
 				20
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle1",
-			"fps": 24,
-			"name": "bf popsicle1",
-			"indices": []
+			"indices": [],
+			"name": "bf popsicle1"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				158,
 				20
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle2",
-			"fps": 24,
-			"name": "bf popsicle2",
-			"indices": []
+			"indices": [],
+			"name": "bf popsicle2"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				157,
 				22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle3",
-			"fps": 24,
-			"name": "bf popsicle3",
-			"indices": []
+			"indices": [],
+			"name": "bf popsicle3"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				157,
 				22
 			],
-			"anim": "popsicle4",
+			"loop": false,
 			"fps": 24,
-			"name": "bf popsicle4",
-			"indices": []
+			"anim": "popsicle4",
+			"indices": [],
+			"name": "bf popsicle4"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				158,
 				21
 			],
-			"anim": "popsicle5",
+			"loop": false,
 			"fps": 24,
-			"name": "bf popsicle5",
-			"indices": []
+			"anim": "popsicle5",
+			"indices": [],
+			"name": "bf popsicle5"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				1,
 				22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle6",
-			"fps": 24,
-			"name": "bf popsicle6",
-			"indices": []
+			"indices": [],
+			"name": "bf popsicle6"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				58,
-				51
-			],
-			"anim": "refix",
-			"fps": 24,
-			"name": "bf refix",
-			"indices": []
-		},
-		{
-			"loop": false,
 			"offsets": [
 				-3,
 				535
 			],
-			"anim": "tp",
+			"loop": false,
 			"fps": 24,
-			"name": "bf tp instance",
-			"indices": []
+			"anim": "tp",
+			"indices": [],
+			"name": "bf tp instance"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				0,
+				1
+			],
+			"fps": 24,
+			"anim": "dead",
+			"loop": false,
+			"name": "bf refix instance 1"
+		},
+		{
+			"offsets": [
+				58,
+				51
+			],
+			"indices": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "deadasfuck",
+			"loop": true,
+			"name": "bf refix instance 1"
+		},
+		{
+			"offsets": [
+				58,
+				51
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "refix",
+			"loop": false,
+			"name": "bf refix"
 		}
 	],
 	"vocals_file": "",

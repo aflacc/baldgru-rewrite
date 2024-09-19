@@ -2,21 +2,11 @@
 	"song": {
 		"events": [
 			[
-				0,
-				[
-					[
-						"Play Animation",
-						"cometh",
-						"BF"
-					]
-				]
-			],
-			[
 				1339.28571428571,
 				[
 					[
 						"Play Animation",
-						"comethAlive",
+						"refix",
 						"BF"
 					]
 				]

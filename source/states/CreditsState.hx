@@ -68,14 +68,14 @@ class CreditsState extends MusicBeatState
 			'clover',
 			'Charter for Lazy River',
 			'https://twitter.com/Cloverderus',
-			null
+			'clov'
 		],
 		[
 			'PhantomFear',
 			'phantomfear',
 			'Ending cutscene help',
 			'https://twitter.com/PhantomFearOP',
-			null
+			'im fearing for my phantoms! ahh!'
 		],
 		[
 			'Crust',

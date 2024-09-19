@@ -122,6 +122,7 @@ class MainMenuState extends MusicBeatState
 		// var everything:FlxSpriteGroup = new FlxSpriteGroup();
 		if (ClientPrefs.data.summerMode && ClientPrefs.data.shaders)
 		{
+			// Fix
 			// summerEffect = new SummerShader();
 
 			//	summerEffect = new WiggleEffect();
@@ -681,6 +682,7 @@ class MainMenuState extends MusicBeatState
 	}
 }
 
+// Suicide 
 class SummerShader extends FlxShader
 {
 	@:glFragmentHeader('
