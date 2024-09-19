@@ -9,5 +9,3 @@ if you're here to just read something interesting, you can read commit descripti
 if theres bugs discovered feel free to create an [issue](https://github.com/aflacc/baldgru-rewrite/issues) and I might do something about it
 
 ![dog](./art/dog.jpg)
-
-the file `SAVE.zip` is a save file that *only* has the main story week and yolked completed, you can use it by copying the save file to your `%appdata%` (Roaming) folder! make sure it is in the format of `./BaldCrew/BaldGru/(...)` and it *should* just let you create save data that skips the freeplay unlock. That's all I did with that save! I didn't mess with any settings (I think).
