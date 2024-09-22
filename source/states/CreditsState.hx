@@ -2,6 +2,9 @@ package states;
 
 import flixel.util.FlxGradient;
 
+/**
+ * Yeah.. "Credits menu".. sure, lets go with that.
+ */
 class CreditsState extends MusicBeatState
 {
 	/* [ name, icon_path, desc, url, scream_path ] */
@@ -106,6 +109,8 @@ class CreditsState extends MusicBeatState
 
 	var allowControls:Bool = false;
 	var allowFlickering:Bool = false;
+
+	var door:FlxSprite; // start and end cutscenes
 
 	function useless(text:String):Void
 	{
@@ -243,10 +248,27 @@ class CreditsState extends MusicBeatState
 			icon.ID = i; // I think I'll make ID set to -1 when the icon has been thrown into the incinerator
 			switch (credits[i][1])
 			{
+				// offsetting stuff i forgot to do, and dont really think its all that needed seeing it in game
 			}
 			// ofs += 235;
 		}
 		super.create();
+
+		// Whats an Incine- I mean credits menu without a big ass door?!
+
+		door = new FlxSprite();
+		door.frames = Paths.getSparrowAtlas("credits/menuassets/door");
+		door.animation.addByPrefix("hold", "door hold", 24, true);
+		door.animation.addByPrefix("up", "door open", 24, false);
+		door.animation.addByPrefix("down", "door close", 24, false);
+		door.animation.play("hold"); // keep it where it needs to be at the start, "hold" should be a single frame, specifically the first frame of the open animation
+		door.updateHitbox();
+		door.y = -1450; // ugh. like. the song. but not fun. very specific positioning isnt fun
+		door.screenCenter(X);
+		door.scrollFactor.set(0, 1); // sorry beef im realizing now u probably didnt consider me adding the cool ass mouse stuff, not ur fault tho.
+
+		add(door);
+
 		// NOT AFTER
 		var transGrad:FlxSprite = FlxGradient.createGradientFlxSprite(FlxG.width, FlxG.height, [FlxColor.BLACK, 0x0]);
 		transGrad.scrollFactor.set();
@@ -259,6 +281,12 @@ class CreditsState extends MusicBeatState
 		FlxTween.tween(transBlack, {y: transBlack.y - FlxG.height * 2}, 1.5, {ease: FlxEase.quadOut});
 		FlxTween.tween(transGrad, {y: transGrad.y - FlxG.height * 2}, 1.5, {ease: FlxEase.quadOut});
 		FlxTween.tween(cameraPoint, {y: 0}, 2, {ease: FlxEase.quintOut});
+
+		new FlxTimer().start(0.6, function(_)
+		{
+			door.animation.play("up", true);
+		});
+
 		new FlxTimer().start(0.7, function(_)
 		{
 			geremy.animation.play("enter", true);
@@ -393,10 +421,25 @@ class CreditsState extends MusicBeatState
 			FlxMath.lerp(FlxG.camera.scroll.y, cameraPoint.y + (FlxG.mouse.screenY - FlxG.height / 2) / 24, 9 * elapsed));
 		super.update(elapsed);
 
-		if (controls.BACK)
+		if (controls.BACK && door.animation.curAnim.name != "down")
 		{
-			MusicBeatState.switchState(new MainMenuState());
-			FlxG.sound.playMusic(Paths.music(MainMenuState.nightCheck() ? 'nightTheme' : 'freakyMenu'));
+			allowControls = false;
+			door.animation.play("down", true);
+			door.animation.finishCallback = function(name:String)
+			{
+				if (name == "down")
+				{
+					new FlxTimer().start(0.2, function(_)
+					{
+						MusicBeatState.switchState(new MainMenuState());
+						FlxG.sound.playMusic(Paths.music(MainMenuState.nightCheck() ? 'nightTheme' : 'freakyMenu'));
+					});
+				}
+				else
+				{
+					trace("What the flip");
+				}
+			};
 		}
 	}
 }
