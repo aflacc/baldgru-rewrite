@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-1017,
+				-621
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "bf popsicle death"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-1019,
+				-621
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "bf popsicle death loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1000,
+				-619
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "bf popsicle press",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/bfcool_popsicle_death",
+	"position": [
+		-960,
+		-160
+	],
+	"healthicon": "bfcool",
+	"flip_x": true,
+	"healthbar_colors": [
+		74,
+		115,
+		155
+	],
+	"camera_position": [
+		990,
+		610
+	],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

@@ -25,7 +25,7 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	public static var instance:GameOverSubstate;
 
-	public static function resetVariables() {
+	public static function resetVariables(_popsicleDeath:Bool) {
 		characterName = 'bf-dead';
 		deathSoundName = 'fnf_loss_sfx';
 		loopSoundName = 'gameOver';
@@ -38,6 +38,11 @@ class GameOverSubstate extends MusicBeatSubstate
 			if(_song.gameOverSound != null && _song.gameOverSound.trim().length > 0) deathSoundName = _song.gameOverSound;
 			if(_song.gameOverLoop != null && _song.gameOverLoop.trim().length > 0) loopSoundName = _song.gameOverLoop;
 			if(_song.gameOverEnd != null && _song.gameOverEnd.trim().length > 0) endSoundName = _song.gameOverEnd;
+		}
+		
+		if (_popsicleDeath == true){
+			characterName = "bfcool_popsicle_dead";
+			deathSoundName = "popsicle pierce";
 		}
 	}
 

@@ -234,6 +234,9 @@ class PlayState extends MusicBeatState
 
 	public var defaultCamZoom:Float = 1.05;
 
+	private var eatingPopsicle:Bool = false;
+	private var curPopsicleState:Int = 1;
+
 	// how big to stretch the pixel art assets
 	public static var daPixelZoom:Float = 6;
 
@@ -292,6 +295,7 @@ class PlayState extends MusicBeatState
 		// for lua
 		instance = this;
 
+
 		PauseSubState.songName = null; // Reset to default
 		playbackRate = ClientPrefs.getGameplaySetting('songspeed');
 
@@ -341,7 +345,7 @@ class PlayState extends MusicBeatState
 		detailsPausedText = "Paused - " + detailsText;
 		#end
 
-		GameOverSubstate.resetVariables();
+		GameOverSubstate.resetVariables(false);
 		songName = Paths.formatToSongPath(SONG.song);
 		if (SONG.stage == null || SONG.stage.length < 1)
 		{
@@ -1830,6 +1834,13 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
+		if (ClientPrefs.data.summerMode)
+		{
+			if (FlxG.keys.justPressed.SPACE && !eatingPopsicle){
+				eatPopsicle();
+			}
+		}
+
 		setOnScripts('curDecStep', curDecStep);
 		setOnScripts('curDecBeat', curDecBeat);
 
@@ -2147,6 +2158,13 @@ class PlayState extends MusicBeatState
 				modchartTimers.clear();
 				modchartTweens.clear();
 				#end
+
+				var popsicleDeath:Bool = false;
+
+				if (curPopsicleState >= 7){
+					popsicleDeath = true;
+				}
+				GameOverSubstate.resetVariables(popsicleDeath);
 
 				openSubState(new GameOverSubstate());
 
@@ -3212,7 +3230,11 @@ class PlayState extends MusicBeatState
 				suffix = note.animSuffix;
 
 			var animToPlay:String = singAnimations[Std.int(Math.abs(Math.min(singAnimations.length - 1, direction)))] + 'miss' + suffix;
-			char.playAnim(animToPlay, true);
+			
+			if (!eatingPopsicle){
+				char.playAnim(animToPlay, true);
+			}
+
 			if (note.duetNote)
 			{
 				gf.playAnim(animToPlay, true);
@@ -3962,6 +3984,40 @@ class PlayState extends MusicBeatState
 		FlxG.log.warn("Platform unsupported for Runtime Shaders!");
 		return null;
 		#end
+	}
+
+	function eatPopsicle(){
+		eatingPopsicle = true;
+		boyfriend.stunned = true;
+		boyfriend.playAnim("popsicle"+curPopsicleState, true);
+		boyfriend.specialAnim = true;
+		boyfriend.heyTimer = 2.0;
+
+		FlxG.sound.play(Paths.sound('popsicle bite'), 1);
+
+		curPopsicleState++;
+
+		var consumingTimer = new FlxTimer();
+
+		if (curPopsicleState == 7){ // kill bf
+			consumingTimer.start(0.6, onPopsicleDeath);
+		}
+		else {
+			consumingTimer.start(4, onPopsicleEaten);
+		}
+	}
+
+	function onPopsicleEaten(timer:FlxTimer):Void
+	{
+		eatingPopsicle = false;
+		boyfriend.stunned = false;
+	}
+
+	function onPopsicleDeath(timer:FlxTimer):Void
+	{
+		health -= 99999999999999; // if u somehow live this then fair game
+		eatingPopsicle = false;
+		boyfriend.stunned = false;
 	}
 
 	public function initLuaShader(name:String, ?glslVersion:Int = 120)
