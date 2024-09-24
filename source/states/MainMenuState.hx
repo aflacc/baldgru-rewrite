@@ -16,6 +16,7 @@ import lime.app.Application;
 import states.editors.MasterEditorMenu;
 import options.OptionsState;
 import flixel.util.FlxGradient;
+import openfl.Lib;
 
 class MainMenuState extends MusicBeatState
 {
@@ -95,7 +96,7 @@ class MainMenuState extends MusicBeatState
 	var baldWeek:Array<WeekData> = [];
 	var time:Float;
 
-	var summerEffect:SummerShader;
+	//var summerEffect:SummerShader;
 
 	public static function nightCheck():Bool
 	{
@@ -119,19 +120,7 @@ class MainMenuState extends MusicBeatState
 		}
 
 		WeekData.reloadWeekFiles(false);
-		// var everything:FlxSpriteGroup = new FlxSpriteGroup();
-		if (ClientPrefs.data.summerMode && ClientPrefs.data.shaders)
-		{
-			// Fix
-			// summerEffect = new SummerShader();
-
-			//	summerEffect = new WiggleEffect();
-			//	//summerEffect.effectType = WiggleEffectType.HEAT_WAVE_HORIZONTAL;
-			//	summerEffect.waveAmplitude = 0.01;
-			//	summerEffect.waveFrequency = 1;
-			//	summerEffect.waveSpeed = 1;
-			// FlxG.camera.filters = [new ShaderFilter(summerEffect)];
-		}
+		
 
 		// add(everything);
 		#if DISCORD_ALLOWED
@@ -156,6 +145,19 @@ class MainMenuState extends MusicBeatState
 		hudCamera = new FlxCamera();
 		hudCamera.bgColor.alpha = 0;
 		FlxG.cameras.add(hudCamera, false);
+
+		// var everything:FlxSpriteGroup = new FlxSpriteGroup();
+		if (ClientPrefs.data.summerMode && ClientPrefs.data.shaders)
+		{
+			// Fix
+			var summerTime:SummerTime = new SummerTime();
+			var summerShader:ShaderFilter = new ShaderFilter(summerTime.shader);
+
+				//summerEffect = new WiggleEffect();
+				//summerEffect.effectType = WiggleEffectType.HEAT_WAVE_HORIZONTAL;
+			
+			hudCamera.setFilters([summerShader]);
+		}
 
 		var sky:FlxSprite = new FlxSprite().loadGraphic(Paths.image(isNight ? 'mainmenu/sky' : 'mainmenu/summer_sky'));
 		sky.scale.set(0.75, 0.75);
@@ -424,14 +426,14 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		if (summerEffect != null)
-		{
-			// time += elapsed;
-			// summerEffect.iTime = [time / 2];
-			///
-			///summerEffect.update(elapsed);
-			///FlxG.camera.filters = [new ShaderFilter(summerEffect.shader)];
-		}
+		// if (summerEffect != null)
+		// {
+		// 	// time += elapsed;
+		// 	// summerEffect.iTime = [time / 2];
+		// 	///
+		// 	///summerEffect.update(elapsed);
+		// 	///FlxG.camera.filters = [new ShaderFilter(summerEffect.shader)];
+		// }
 		holdUp.offset.set(FlxG.random.int(-1, 1) * 1, FlxG.random.int(-1, 1) * 0.5);
 		// FlxG.camera.scroll.set(cameraPoint.x,cameraPoint.y);
 		if (controls.RESET)
@@ -682,98 +684,68 @@ class MainMenuState extends MusicBeatState
 	}
 }
 
+class SummerTime
+{
+    public var shader:SummerShader = new SummerShader();
+    public function new(){
+        shader.iTime.value = [0];
+        var w:Float = Lib.current.stage.stageWidth;
+        var h:Float = Lib.current.stage.stageHeight;
+        shader.iResolution.value = [w,h];
+
+		// shader.waveAmplitude = 0.01;
+		// shader.waveFrequency = 1;
+		// shader.waveSpeed = 1;
+    }
+    public function update(elapsed:Float){
+        shader.iTime.value[0] += elapsed;
+        var w:Float = Lib.current.stage.stageWidth;
+        var h:Float = Lib.current.stage.stageHeight;
+        shader.iResolution.value = [w,h];
+		trace("I ran lol");
+    }
+}
+
 // Suicide 
 class SummerShader extends FlxShader
 {
-	@:glFragmentHeader('
+	@:glFragmentSource('
 		#pragma header
-		uniform float iTime = 0.0;
+		uniform float iTime;
 		vec2 uv = openfl_TextureCoordv.xy;
-		vec2 iResolution = openfl_TextureSize;
+		uniform vec2 iResolution = openfl_TextureSize;
 		vec2 fragCoord = openfl_TextureCoordv*openfl_TextureSize;
-		uniform vec4      iMouse;   
+		uniform vec4 iMouse;   
 		#define texture flixel_texture2D
 		#define iChannel0 bitmap
 		#define iChannel1 bitmap
 		#define iChannel2 bitmap
 		#define fragColor gl_FragColor
 		#define mainImage main
-	')
-	@:glFragmentSource('
-		vec3 rgb2hsv(vec3 c)
+
+		const vec4 u_WaveStrengthX=vec4(94.15,94.66,0.1016,0.1015);
+		const vec4 u_WaveStrengthY=vec4(92.54,96.33,0.10102,0.1025);
+		vec2 dist(vec2 uv) { 
+			float uTime = iTime * iMouse.x/iResolution.x;
+			if(uTime==0.0) uTime=0.15*iTime;
+			float noise = texture(iChannel1, uTime + uv).r;
+			uv.y += (cos((uv.y + uTime * u_WaveStrengthY.y + u_WaveStrengthY.x * noise)) * u_WaveStrengthY.z) +
+				(cos((uv.y + uTime) * 30.0) * u_WaveStrengthY.w);
+
+			uv.x += (sin((uv.y + uTime * u_WaveStrengthX.y + u_WaveStrengthX.x * noise)) * u_WaveStrengthX.z) +
+				(sin((uv.y + uTime) * 45.0) * u_WaveStrengthX.w);
+			return uv;
+		}
+		void mainImage()
 		{
-		    vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
-		    vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));
-		    vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));
+			// Normalized pixel coordinates (from 0 to 1)
+			vec2 uv = fragCoord/iResolution.xy;
 
-		    float d = q.x - min(q.w, q.y);
-		    float e = 1.0e-10;
-		    return vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
-		}
+			// Time varying pixel color
+			vec4 col = texture(iChannel0,dist(uv));
 
-		vec3 hsv2rgb(vec3 c)
-		{
-		    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
-		    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
-		    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
-		}
-
-		float rand(vec2 n) {
-		    return fract(sin(cos(dot(n, vec2(12.9898,12.1414)))) * 83758.5453);
-		}
-
-		float noise(vec2 n) {
-		    const vec2 d = vec2(0.0, 1.0);
-		    vec2 b = floor(n), f = smoothstep(vec2(0.0), vec2(1.0), fract(n));
-		    return mix(mix(rand(b), rand(b + d.yx), f.x), mix(rand(b + d.xy), rand(b + d.yy), f.x), f.y);
-		}
-
-		float fbm(vec2 n) {
-		    float total = 0.0, amplitude = 1.0;
-		    for (int i = 0; i <5; i++) {
-		        total += noise(n) * amplitude;
-		        n += n*1.7;
-		        amplitude *= 0.47;
-		    }
-		    return total;
-		}
-		void mainImage() {
-    		const vec3 c1 = vec3(0.5, 0.0, 0.1);
-    		const vec3 c2 = vec3(0.9, 0.1, 0.0);
-    		const vec3 c3 = vec3(0.2, 0.1, 0.7);
-    		const vec3 c4 = vec3(1.0, 0.9, 0.1);
-    		const vec3 c5 = vec3(0.1);
-    		const vec3 c6 = vec3(0.9);
-
-    		vec2 speed = vec2(1.2, 0.1);
-    		float shift = 1.327+sin(iTime*2.0)/2.4;
-    		float alpha = 1.0;
-
-    		//change the constant term for all kinds of cool distance versions,
-    		//make plus/minus to switch between 
-    		//ground fire and fire rain!
-			float dist = 3.5-sin(iTime*0.4)/1.89;
-
-    		vec2 p = fragCoord.xy * dist / iResolution.xx;
-    		p.x -= iTime/1.1;
-    		float q = fbm(p - iTime * 0.01+1.0*sin(iTime)/10.0);
-    		float qb = fbm(p - iTime * 0.002+0.1*cos(iTime)/5.0);
-    		float q2 = fbm(p - iTime * 0.44 - 5.0*cos(iTime)/7.0) - 6.0;
-    		float q3 = fbm(p - iTime * 0.9 - 10.0*cos(iTime)/30.0)-4.0;
-    		float q4 = fbm(p - iTime * 2.0 - 20.0*sin(iTime)/20.0)+2.0;
-    		q = (q + qb - .4 * q2 -2.0*q3  + .6*q4)/3.8;
-    		vec2 r = vec2(fbm(p + q /2.0 + iTime * speed.x - p.x - p.y), fbm(p + q - iTime * speed.y));
-    		vec3 c = mix(c1, c2, fbm(p + r)) + mix(c3, c4, r.x) - mix(c5, c6, r.y);
-    		vec3 color = vec3(c * cos(shift * fragCoord.y / iResolution.y));
-    		color += .05;
-    		color.r *= .8;
-    		vec3 hsv = rgb2hsv(color);
-    		hsv.y *= hsv.z  * 1.1;
-    		hsv.z *= hsv.y * 1.13;
-    		hsv.y = (2.2-hsv.z*.9)*1.20;
-    		color = hsv2rgb(hsv);
-    		vec4 camColor = texture(iChannel0, fragCoord.xy / iResolution.xy);
-    		fragColor = camColor * 0.5 + vec4(color.x, color.y, color.z, alpha) * 0.5;
+			// Output to screen
+			fragColor = col;
 		}
 	')
 	public function new()
