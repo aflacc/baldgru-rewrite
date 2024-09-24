@@ -24,6 +24,7 @@ import cutscenes.CutsceneHandler;
 import cutscenes.DialogueBoxPsych;
 import states.StoryMenuState;
 import states.FreeplayState;
+import flixel.math.FlxRect;
 import states.editors.ChartingState;
 import states.editors.CharacterEditorState;
 import substates.PauseSubState;
@@ -273,6 +274,16 @@ class PlayState extends MusicBeatState
 	#end
 
 	public var introSoundsSuffix:String = '';
+
+	// summerrrrrrrr lol
+	var heatMeter:FlxSprite;
+	var heatMeterBg:FlxSprite;
+
+	var tempIncrease:Bool = false;
+	var tempAmount:Float = 0;
+	var tempRate:Float = 3.5;
+	
+	var object:FlxSprite; // debug shit
 
 	// Less laggy controls
 	private var keysArray:Array<String>;
@@ -670,6 +681,30 @@ class PlayState extends MusicBeatState
 
 		cacheCountdown();
 		cachePopUpScore();
+
+		if (ClientPrefs.data.summerMode)
+		{
+			heatMeterBg = new FlxSprite(65,279).loadGraphic(Paths.image('heatMeterBg'));
+			heatMeterBg.antialiasing = true;
+			heatMeterBg.scale.set(1.8,1.8);
+			heatMeterBg.clipRect = new FlxRect(0, heatMeterBg.height, heatMeterBg.width, 0);
+			heatMeterBg.alpha = 0;
+			uiGroup.add(heatMeterBg);
+
+			heatMeter = new FlxSprite();
+			heatMeter.frames = Paths.getSparrowAtlas('heatMeter');
+			heatMeter.animation.addByPrefix("idle", 'temp hold', 24, false);
+			heatMeter.animation.addByPrefix("appear", 'temp show up', 24, false);
+			heatMeter.animation.play("appear", true);
+			heatMeter.scrollFactor.set(0,0);
+			heatMeter.antialiasing = true;
+			heatMeter.scale.set(0.9,0.9);
+			heatMeter.alpha = 0;
+			heatMeter.setPosition(0,88);
+			uiGroup.add(heatMeter);
+
+			object = heatMeterBg;
+		}
 
 		super.create();
 		if (ClientPrefs.data.ruther) {
@@ -1137,6 +1172,12 @@ class PlayState extends MusicBeatState
 						countdownGo = createCountdownSprite(introAlts[2], antialias);
 						FlxG.sound.play(Paths.sound('introGo' + introSoundsSuffix), 0.6);
 						tick = GO;
+						if (ClientPrefs.data.summerMode){
+							heatMeter.animation.play("appear", true);
+							heatMeter.alpha = 1;
+							heatMeterBg.alpha = 1;
+							tempIncrease = true;
+						}
 					case 4:
 						tick = START;
 				}
@@ -1839,10 +1880,24 @@ class PlayState extends MusicBeatState
 			if (FlxG.keys.justPressed.SPACE && !eatingPopsicle){
 				eatPopsicle();
 			}
+
+			if (tempIncrease){
+				tempAmount += tempRate * elapsed;
+			}
+			if (tempAmount >= heatMeterBg.height) {
+				tempAmount = heatMeterBg.height;
+				health -= 999999999999;
+			}
+
+			heatMeterBg.clipRect = new FlxRect(0, heatMeterBg.height - tempAmount, heatMeterBg.width, tempAmount);
 		}
 
 		setOnScripts('curDecStep', curDecStep);
 		setOnScripts('curDecBeat', curDecBeat);
+
+		#if debug
+		debugShit();
+		#end
 
 		if (botplayTxt != null && botplayTxt.visible)
 		{
@@ -3998,12 +4053,14 @@ class PlayState extends MusicBeatState
 		curPopsicleState++;
 
 		var consumingTimer = new FlxTimer();
+		var consumingTimer2 = new FlxTimer();
 
 		if (curPopsicleState == 7){ // kill bf
 			consumingTimer.start(0.6, onPopsicleDeath);
 		}
 		else {
 			consumingTimer.start(4, onPopsicleEaten);
+			consumingTimer2.start(2, decreaseTempMeter);
 		}
 	}
 
@@ -4013,11 +4070,99 @@ class PlayState extends MusicBeatState
 		boyfriend.stunned = false;
 	}
 
+	function decreaseTempMeter(timer:FlxTimer):Void
+	{
+		tempIncrease = false;
+		var curTemp:Float = tempAmount;
+		FlxTween.num(curTemp, curTemp-60, 2.5, { ease: FlxEase.cubeInOut, onComplete: yummyInMyTummy }, function(number)
+		{
+			tempAmount = number;
+		});
+	}
+
+	private function yummyInMyTummy(tween:FlxTween):Void {
+        tempIncrease = true;
+    }
+
 	function onPopsicleDeath(timer:FlxTimer):Void
 	{
-		health -= 99999999999999; // if u somehow live this then fair game
+		health -= 99999999; // if u somehow live this then fair game
 		eatingPopsicle = false;
 		boyfriend.stunned = false;
+	}
+
+	function debugShit(){
+		var holdShift = FlxG.keys.pressed.SHIFT;
+		var holdCtrl = FlxG.keys.pressed.CONTROL;
+		var holdAlt = FlxG.keys.pressed.ALT;
+		var multiplier = 1;
+		if (holdShift)
+			multiplier = 10;
+	
+		if (holdCtrl)
+			multiplier = 100;
+	
+		if (FlxG.keys.justPressed.J)
+			{
+				object.x -= (1 * multiplier);
+				trace(object.x, object.y);
+			}
+		if (FlxG.keys.justPressed.I)
+			{
+				object.y -= (1 * multiplier);
+				trace(object.x, object.y);
+			}
+		if (FlxG.keys.justPressed.SEMICOLON)
+			{
+				trace ("------------------------------------");
+				trace ("X: " + object.x);
+				trace ("Y: " + object.y);
+				trace ("SCALE X: " + object.scale.x);
+				trace ("SCALE Y: " + object.scale.y);
+				trace ("------------------------------------");
+			}
+		if (FlxG.keys.justPressed.K)
+			{
+				object.y += (1 * multiplier);
+				trace(object.x, object.y);
+			}
+		if (FlxG.keys.justPressed.L)
+			{
+				object.x += (1 * multiplier);
+				trace(object.x, object.y);
+			}
+		if (FlxG.keys.justPressed.U)
+			{
+				object.scale.x -= (0.1* multiplier);
+			}
+		if (FlxG.keys.justPressed.Y)
+			{
+				object.scale.x += (0.1* multiplier);
+			}
+		if (FlxG.keys.justPressed.O)
+			{
+				object.scale.y -= (0.1* multiplier);
+			}
+		if (FlxG.keys.justPressed.P)
+			{
+				object.scale.y += (0.1* multiplier);
+			}
+		if (FlxG.keys.justPressed.Z)
+			{
+				object.angle -= (0.1* multiplier);
+			}
+		if (FlxG.keys.justPressed.X)
+			{
+				object.angle += (0.1* multiplier);
+			}
+		if (FlxG.keys.justPressed.PAGEUP)
+			{
+				PlayState.instance.defaultCamZoom += 0.1;
+			}
+		if (FlxG.keys.justPressed.PAGEDOWN)
+			{
+				PlayState.instance.defaultCamZoom -= 0.1;
+			}
 	}
 
 	public function initLuaShader(name:String, ?glslVersion:Int = 120)

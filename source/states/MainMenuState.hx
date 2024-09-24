@@ -149,14 +149,11 @@ class MainMenuState extends MusicBeatState
 		// var everything:FlxSpriteGroup = new FlxSpriteGroup();
 		if (ClientPrefs.data.summerMode && ClientPrefs.data.shaders)
 		{
-			// Fix
-			var summerTime:SummerTime = new SummerTime();
-			var summerShader:ShaderFilter = new ShaderFilter(summerTime.shader);
-
-				//summerEffect = new WiggleEffect();
-				//summerEffect.effectType = WiggleEffectType.HEAT_WAVE_HORIZONTAL;
+			// // uncomment this if u wanna give it a shot lmao
+			// var summerTime:SummerTime = new SummerTime();
+			// var summerShader:ShaderFilter = new ShaderFilter(summerTime.shader);
 			
-			hudCamera.setFilters([summerShader]);
+			// hudCamera.setFilters([summerShader]);
 		}
 
 		var sky:FlxSprite = new FlxSprite().loadGraphic(Paths.image(isNight ? 'mainmenu/sky' : 'mainmenu/summer_sky'));

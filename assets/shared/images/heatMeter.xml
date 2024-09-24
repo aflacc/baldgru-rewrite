@@ -21,9 +21,9 @@
 	<SubTexture name="temp show up0015" x="8" y="694" width="187" height="608" frameX="0" frameY="-80" frameWidth="197" frameHeight="1114"/>
 	<SubTexture name="temp show up0016" x="203" y="694" width="174" height="612" frameX="-8" frameY="-74" frameWidth="197" frameHeight="1114"/>
 	<SubTexture name="temp show up0017" x="203" y="694" width="174" height="612" frameX="-8" frameY="-74" frameWidth="197" frameHeight="1114"/>
-	<SubTexture name="temp show up0018" x="385" y="694" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1114"/>
-	<SubTexture name="temp show up0019" x="385" y="694" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1114"/>
-	<SubTexture name="temp show up0020" x="385" y="694" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1114"/>
-	<SubTexture name="temp show up0021" x="385" y="694" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1114"/>
-	<SubTexture name="temp show up0022" x="385" y="694" width="163" height="621" frameX="-16" frameY="-69" frameWidth="197" frameHeight="1114"/>
+	<SubTexture name="temp show up0018" x="8" y="8" width="163" height="621" frameX="-16" frameY="-69" frameWidth="163" frameHeight="621"/>
+	<SubTexture name="temp show up0019" x="8" y="8" width="163" height="621" frameX="-16" frameY="-69" frameWidth="163" frameHeight="621"/>
+	<SubTexture name="temp show up0020" x="8" y="8" width="163" height="621" frameX="-16" frameY="-69" frameWidth="163" frameHeight="621"/>
+	<SubTexture name="temp show up0021" x="8" y="8" width="163" height="621" frameX="-16" frameY="-69" frameWidth="163" frameHeight="621"/>
+	<SubTexture name="temp show up0022" x="8" y="8" width="163" height="621" frameX="-16" frameY="-69" frameWidth="163" frameHeight="621"/>
 </TextureAtlas>
