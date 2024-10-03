@@ -8650,7 +8650,7 @@
 			}
 		],
 		"player2": "gandolfo",
-		"player3": null,
+		"player3": "dm_bg",
 		"gameOverChar": "dm_bfcool_dead",
 		"song": "Dealtastic",
 		"needsVoices": true,
