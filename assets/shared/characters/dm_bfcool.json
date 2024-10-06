@@ -12,65 +12,54 @@
 			"name": "bf idle"
 		},
 		{
-			"offsets": [
-				53,
-				-49
-			],
 			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "bf left"
-		},
-		{
 			"offsets": [
-				-20,
-				-65
+				-48,
+				-3
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "bf down"
-		},
-		{
-			"offsets": [
-				-31,
-				83
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
-			"indices": [],
-			"name": "bf up"
-		},
-		{
-			"offsets": [
-				-68,
-				-10
-			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "bf right"
-		},
-		{
-			"offsets": [
-				57,
-				184
-			],
-			"loop": false,
 			"fps": 24,
-			"anim": "tpIn",
-			"indices": [],
-			"name": "bf tp in"
+			"name": "bf right",
+			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-4,
-				14
+				-17,
+				-45
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "bf down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-11,
+				63
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "bf up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				59,
+				125
+			],
+			"anim": "tpIn",
+			"fps": 24,
+			"name": "bf tp in",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				11
 			],
 			"anim": "singLEFTmiss",
 			"fps": 24,
@@ -80,8 +69,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-4,
-				14
+				-2,
+				11
 			],
 			"anim": "singDOWNmiss",
 			"fps": 24,
@@ -91,8 +80,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-4,
-				14
+				-2,
+				11
 			],
 			"anim": "singUPmiss",
 			"fps": 24,
@@ -102,15 +91,93 @@
 		{
 			"loop": false,
 			"offsets": [
-				-4,
-				14
+				43,
+				-33
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "bf left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				10
 			],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
 			"name": "bf missing",
 			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				20
+			],
+			"anim": "popsicle1",
+			"fps": 24,
+			"name": "bf cooldown instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				20
+			],
+			"anim": "popsicle2",
+			"fps": 24,
+			"name": "bf cooldown instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				20
+			],
+			"anim": "popsicle3",
+			"fps": 24,
+			"name": "bf cooldown instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				20
+			],
+			"anim": "popsicle4",
+			"fps": 24,
+			"name": "bf cooldown instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				20
+			],
+			"anim": "popsicle5",
+			"fps": 24,
+			"name": "bf cooldown instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				20
+			],
+			"anim": "popsicle6",
+			"fps": 24,
+			"name": "bf cooldown instance 1",
+			"indices": []
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/dm_bfcool",
 	"position": [
@@ -122,12 +189,13 @@
 	"healthbar_colors": [
 		74,
 		115,
-		155
+		175
 	],
 	"camera_position": [
 		0,
 		0
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 1,
+	"_editor_isPlayer": false
 }

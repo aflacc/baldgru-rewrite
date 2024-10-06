@@ -76,7 +76,7 @@ class CreditsState extends MusicBeatState
 		[
 			'PhantomFear',
 			'phantomfear',
-			'Ending cutscene help',
+			'Summer mode Code, Ending cutscene help',
 			'https://twitter.com/PhantomFearOP',
 			'im fearing for my phantoms! ahh!'
 		],

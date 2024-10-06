@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				242,
+				164
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "bf cooldown death instance 1"
+		},
+		{
+			"offsets": [
+				185,
+				-68
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "bf cooldown death retry instance 1"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				43,
+				-50
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "bf cooldown death hold instance 1",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/DMSBFcool death",
+	"position": [
+		14,
+		-72
+	],
+	"healthicon": "bfcool",
+	"flip_x": true,
+	"healthbar_colors": [
+		74,
+		115,
+		155
+	],
+	"camera_position": [
+		30,
+		250
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

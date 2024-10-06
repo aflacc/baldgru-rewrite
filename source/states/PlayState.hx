@@ -276,9 +276,13 @@ class PlayState extends MusicBeatState
 	public var introSoundsSuffix:String = '';
 
 	// summerrrrrrrr lol
+	public var summerTime:Bool = false;
+
 	var heatMeter:FlxSprite;
 	var heatMeterBg:FlxSprite;
+	var gfWaterBucket:FlxSprite;
 
+	var summerDifficulty:Float = 1;
 	var tempIncrease:Bool = false;
 	var tempAmount:Float = 0;
 	var tempRate:Float = 3.5;
@@ -424,6 +428,17 @@ class PlayState extends MusicBeatState
 				ClientPrefs.data.summerMode ? new states.stages.LazySummer() : new states.stages.LazyRiver();
 			case 'maudade':
 				new states.stages.Maudade();
+		}
+
+		summerTime = ClientPrefs.data.summerMode;
+
+		switch (SONG.song.toLowerCase()){
+			case "lazy river":
+				summerDifficulty = 0.5;
+				summerTime = true;
+				boyfriend.y = 530;
+			case "lazy summer":
+				summerDifficulty = 1.5;
 		}
 
 		if (isPixelStage)
@@ -682,9 +697,15 @@ class PlayState extends MusicBeatState
 		cacheCountdown();
 		cachePopUpScore();
 
-		if (ClientPrefs.data.summerMode)
+		if (summerTime)
 		{
-			heatMeterBg = new FlxSprite(65,279).loadGraphic(Paths.image('heatMeterBg'));
+			var offset:Float = 0;
+
+			if (SONG.song.toLowerCase() == "dealtastic"){
+				offset = 1100;
+			}
+
+			heatMeterBg = new FlxSprite(65+offset,279).loadGraphic(Paths.image('heatMeterBg'));
 			heatMeterBg.antialiasing = true;
 			heatMeterBg.scale.set(1.8,1.8);
 			heatMeterBg.clipRect = new FlxRect(0, heatMeterBg.height, heatMeterBg.width, 0);
@@ -700,11 +721,26 @@ class PlayState extends MusicBeatState
 			heatMeter.antialiasing = true;
 			heatMeter.scale.set(0.9,0.9);
 			heatMeter.alpha = 0;
-			heatMeter.setPosition(0,88);
+			heatMeter.setPosition(0+offset,88);
 			uiGroup.add(heatMeter);
 
-			object = heatMeterBg;
+			gfWaterBucket = new FlxSprite();
+			if (SONG.song.toLowerCase() == "dealtastic"){
+				gfWaterBucket.frames = Paths.getSparrowAtlas('summer/gfHeadPat');
+				gfWaterBucket.animation.addByPrefix("water", 'GfHeadPat', 24, false);
+				gfWaterBucket.animation.play("water", true);
+				gfWaterBucket.scrollFactor.set(1,1);
+				gfWaterBucket.antialiasing = true;
+				gfWaterBucket.scale.set(1,1);
+				gfWaterBucket.alpha = 0;
+				gfWaterBucket.setPosition(-990,-182);
+				add(gfWaterBucket);
+			}
+
+			
 		}
+
+		object = boyfriend;
 
 		super.create();
 		if (ClientPrefs.data.ruther) {
@@ -1172,7 +1208,7 @@ class PlayState extends MusicBeatState
 						countdownGo = createCountdownSprite(introAlts[2], antialias);
 						FlxG.sound.play(Paths.sound('introGo' + introSoundsSuffix), 0.6);
 						tick = GO;
-						if (ClientPrefs.data.summerMode){
+						if (summerTime){
 							heatMeter.animation.play("appear", true);
 							heatMeter.alpha = 1;
 							heatMeterBg.alpha = 1;
@@ -1875,7 +1911,7 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
-		if (ClientPrefs.data.summerMode)
+		if (summerTime)
 		{
 			if (FlxG.keys.justPressed.SPACE && !eatingPopsicle){
 				eatPopsicle();
@@ -1886,8 +1922,12 @@ class PlayState extends MusicBeatState
 			}
 			if (tempAmount >= heatMeterBg.height) {
 				tempAmount = heatMeterBg.height;
-				health -= 999999999999;
+				//health -= 999999999999;
 			}
+
+			health -= (tempAmount * 0.0005 * summerDifficulty) * elapsed;
+
+			//trace(tempAmount);
 
 			heatMeterBg.clipRect = new FlxRect(0, heatMeterBg.height - tempAmount, heatMeterBg.width, tempAmount);
 		}
@@ -4042,11 +4082,18 @@ class PlayState extends MusicBeatState
 	}
 
 	function eatPopsicle(){
+		var whichSong:String = SONG.song.toLowerCase();
+		
 		eatingPopsicle = true;
 		boyfriend.stunned = true;
 		boyfriend.playAnim("popsicle"+curPopsicleState, true);
 		boyfriend.specialAnim = true;
 		boyfriend.heyTimer = 2.0;
+
+		if (whichSong == "dealtastic"){
+			gfWaterBucket.animation.play("water", true);
+			gfWaterBucket.alpha = 1;
+		}
 
 		FlxG.sound.play(Paths.sound('popsicle bite'), 1);
 
@@ -4054,6 +4101,7 @@ class PlayState extends MusicBeatState
 
 		var consumingTimer = new FlxTimer();
 		var consumingTimer2 = new FlxTimer();
+		var consumingTimer3 = new FlxTimer();
 
 		if (curPopsicleState == 7){ // kill bf
 			consumingTimer.start(0.6, onPopsicleDeath);
@@ -4061,6 +4109,10 @@ class PlayState extends MusicBeatState
 		else {
 			consumingTimer.start(4, onPopsicleEaten);
 			consumingTimer2.start(2, decreaseTempMeter);
+			if (whichSong == "dealtastic"){
+				consumingTimer3.start(7, hideGfBucket);
+			}
+			
 		}
 	}
 
@@ -4070,11 +4122,22 @@ class PlayState extends MusicBeatState
 		boyfriend.stunned = false;
 	}
 
+	function hideGfBucket(timer:FlxTimer):Void
+	{
+		gfWaterBucket.alpha = 0; // dealtastic
+	}
+
 	function decreaseTempMeter(timer:FlxTimer):Void
 	{
 		tempIncrease = false;
 		var curTemp:Float = tempAmount;
-		FlxTween.num(curTemp, curTemp-60, 2.5, { ease: FlxEase.cubeInOut, onComplete: yummyInMyTummy }, function(number)
+		var targetTemp:Float = curTemp-120;
+
+		if (targetTemp < 0){
+			targetTemp = 0;
+		}
+
+		FlxTween.num(curTemp, targetTemp, 2.5, { ease: FlxEase.cubeInOut, onComplete: yummyInMyTummy }, function(number)
 		{
 			tempAmount = number;
 		});

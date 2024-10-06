@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DMSBFcool death.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bf cooldown death hold instance 10000" x="1990" y="5471" width="433" height="337" frameX="0" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death hold instance 10001" x="1990" y="5471" width="433" height="337" frameX="0" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death hold instance 10002" x="1990" y="5471" width="433" height="337" frameX="0" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death hold instance 10003" x="1990" y="5471" width="433" height="337" frameX="0" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death hold instance 10004" x="1990" y="5471" width="433" height="337" frameX="0" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death hold instance 10005" x="1990" y="5471" width="433" height="337" frameX="0" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death hold instance 10006" x="1990" y="5471" width="433" height="337" frameX="0" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death instance 10000" x="2" y="2" width="832" height="1144" frameX="0" frameY="0" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10001" x="2" y="2" width="832" height="1144" frameX="0" frameY="0" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10002" x="836" y="2" width="828" height="1144" frameX="0" frameY="0" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10003" x="1666" y="2" width="793" height="1111" frameX="-39" frameY="-33" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10004" x="2461" y="2" width="791" height="1111" frameX="-39" frameY="-33" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10005" x="3254" y="2" width="680" height="1065" frameX="-142" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10006" x="3936" y="2" width="681" height="1065" frameX="-142" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10007" x="4619" y="2" width="587" height="1069" frameX="-198" frameY="-75" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10008" x="5208" y="2" width="585" height="1069" frameX="-198" frameY="-75" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10009" x="5795" y="2" width="566" height="1071" frameX="-215" frameY="-73" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10010" x="6363" y="2" width="567" height="1071" frameX="-215" frameY="-73" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10011" x="6932" y="2" width="561" height="1067" frameX="-219" frameY="-77" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10012" x="7495" y="2" width="562" height="1067" frameX="-219" frameY="-77" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10013" x="2" y="1148" width="563" height="1067" frameX="-219" frameY="-77" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10014" x="567" y="1148" width="559" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10015" x="1128" y="1148" width="560" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10016" x="1690" y="1148" width="561" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10017" x="567" y="1148" width="559" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10018" x="1128" y="1148" width="560" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10019" x="1690" y="1148" width="561" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10020" x="2253" y="1148" width="559" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10021" x="2814" y="1148" width="565" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10022" x="3381" y="1148" width="565" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10023" x="3948" y="1148" width="560" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10024" x="4510" y="1148" width="562" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10025" x="5074" y="1148" width="559" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10026" x="5635" y="1148" width="562" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10027" x="6199" y="1148" width="561" height="1065" frameX="-221" frameY="-79" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10028" x="6762" y="1148" width="549" height="1056" frameX="-234" frameY="-88" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10029" x="7313" y="1148" width="561" height="1061" frameX="-220" frameY="-83" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10030" x="2" y="2217" width="563" height="1061" frameX="-220" frameY="-83" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10031" x="567" y="2217" width="568" height="1075" frameX="-212" frameY="-69" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10032" x="1137" y="2217" width="570" height="1043" frameX="-213" frameY="-101" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10033" x="1709" y="2217" width="569" height="1043" frameX="-213" frameY="-101" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10034" x="2280" y="2217" width="570" height="1036" frameX="-213" frameY="-108" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10035" x="2852" y="2217" width="568" height="1036" frameX="-213" frameY="-108" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10036" x="3422" y="2217" width="570" height="1036" frameX="-213" frameY="-108" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10037" x="3994" y="2217" width="572" height="1019" frameX="-211" frameY="-125" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10038" x="4568" y="2217" width="572" height="1019" frameX="-211" frameY="-125" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10039" x="5142" y="2217" width="569" height="1024" frameX="-213" frameY="-120" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10040" x="5713" y="2217" width="571" height="1029" frameX="-211" frameY="-115" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10041" x="6286" y="2217" width="569" height="1029" frameX="-213" frameY="-115" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10042" x="6857" y="2217" width="569" height="1029" frameX="-213" frameY="-115" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10043" x="7428" y="2217" width="569" height="1029" frameX="-213" frameY="-115" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10044" x="2" y="3294" width="569" height="1025" frameX="-213" frameY="-119" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10045" x="573" y="3294" width="571" height="1012" frameX="-211" frameY="-132" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10046" x="1146" y="3294" width="569" height="1015" frameX="-213" frameY="-129" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10047" x="1717" y="3294" width="571" height="1015" frameX="-211" frameY="-129" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10048" x="2290" y="3294" width="569" height="1012" frameX="-213" frameY="-132" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10049" x="2861" y="3294" width="569" height="969" frameX="-213" frameY="-175" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10050" x="3432" y="3294" width="571" height="972" frameX="-211" frameY="-173" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10051" x="4005" y="3294" width="569" height="972" frameX="-213" frameY="-173" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10052" x="4576" y="3294" width="569" height="969" frameX="-213" frameY="-176" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10053" x="5147" y="3294" width="569" height="969" frameX="-213" frameY="-176" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10054" x="5718" y="3294" width="569" height="937" frameX="-213" frameY="-208" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10055" x="6289" y="3294" width="561" height="946" frameX="-213" frameY="-208" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10056" x="6852" y="3294" width="557" height="938" frameX="-217" frameY="-216" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10057" x="7411" y="3294" width="565" height="935" frameX="-207" frameY="-214" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10058" x="2" y="4321" width="565" height="935" frameX="-207" frameY="-214" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10059" x="569" y="4321" width="574" height="932" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10060" x="569" y="4321" width="574" height="932" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10061" x="1145" y="4321" width="596" height="931" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10062" x="1743" y="4321" width="596" height="931" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10063" x="2341" y="4321" width="665" height="931" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10064" x="3008" y="4321" width="665" height="935" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10065" x="3675" y="4321" width="714" height="935" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10066" x="4391" y="4321" width="793" height="1020" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10067" x="5186" y="4321" width="810" height="1110" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10068" x="5998" y="4321" width="605" height="1018" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10069" x="6605" y="4321" width="602" height="1018" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10070" x="7209" y="4321" width="649" height="1148" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10071" x="2" y="5471" width="650" height="1148" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10072" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10073" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10074" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10075" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10076" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10077" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10078" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10079" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10080" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10081" x="654" y="5471" width="450" height="279" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10082" x="1106" y="5471" width="450" height="281" frameX="-206" frameY="-213" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10083" x="1558" y="5471" width="430" height="344" frameX="-200" frameY="-205" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10084" x="1558" y="5471" width="430" height="344" frameX="-200" frameY="-205" frameWidth="1016" frameHeight="1361"/>
+	<SubTexture name="bf cooldown death instance 10085" x="1990" y="5471" width="433" height="337" frameX="-200" frameY="-205" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death instance 10086" x="1990" y="5471" width="433" height="337" frameX="-200" frameY="-205" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death instance 10087" x="1990" y="5471" width="433" height="337" frameX="-200" frameY="-205" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10000" x="1990" y="5471" width="433" height="337" frameX="-135" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10001" x="1990" y="5471" width="433" height="337" frameX="-135" frameY="0" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10002" x="2425" y="5471" width="437" height="326" frameX="-129" frameY="-2" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10003" x="2425" y="5471" width="437" height="326" frameX="-129" frameY="-2" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10004" x="2864" y="5471" width="445" height="306" frameX="-96" frameY="-8" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10005" x="2864" y="5471" width="445" height="306" frameX="-96" frameY="-8" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10006" x="3311" y="5471" width="452" height="284" frameX="-35" frameY="-14" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10007" x="3765" y="5471" width="455" height="262" frameX="0" frameY="-29" frameWidth="568" frameHeight="337"/>
+	<SubTexture name="bf cooldown death retry instance 10008" x="4222" y="5471" width="0" height="0" frameX="-354" frameY="-50" frameWidth="568" frameHeight="337"/>
+</TextureAtlas>
