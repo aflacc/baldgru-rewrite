@@ -51,7 +51,7 @@ class OptionsState extends MusicBeatState
 
 	override function create()
 	{
-		summerActive = ClientPrefs.data.summerMode;
+		summerActive = ClientPrefs.data.summerMode; // Why?
 		#if DISCORD_ALLOWED
 		DiscordClient.changePresence("Options Menu", null);
 		#end
@@ -130,6 +130,7 @@ class OptionsState extends MusicBeatState
 					LoadingState.loadAndSwitchState(new PlayState());
 					FlxG.sound.music.volume = 0;
 				}
+		onPlayState = false; // why the fuck did it suddenly decide there was a problem I hate everything
 			}
 			else
 				MusicBeatState.switchState(new MainMenuState());

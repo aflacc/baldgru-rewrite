@@ -43,10 +43,12 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (_popsicleDeath == true){
 			
 			characterName = "bfcool_popsicle_dead";
+			deathSoundName = "popsicle pierce";
+
 			if (_song.song.toLowerCase() == "dealtastic"){
 				characterName = "dm_bfcool_dead_summer";
-			}
-			deathSoundName = "popsicle pierce";
+				deathSoundName = "death/bucket death";
+		}
 		}
 	}
 

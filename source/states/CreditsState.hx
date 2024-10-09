@@ -249,6 +249,9 @@ class CreditsState extends MusicBeatState
 			switch (credits[i][1])
 			{
 				// offsetting stuff i forgot to do, and dont really think its all that needed seeing it in game
+				case 'luigiman':
+					icon.offset.set(70,-80);
+
 			}
 			// ofs += 235;
 		}

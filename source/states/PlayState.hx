@@ -163,7 +163,6 @@ class PlayState extends MusicBeatState
 
 	public var camFollow:FlxObject;
 
-	
 	var ruther:Character;
 	var rutherKeys:Character;
 
@@ -286,7 +285,7 @@ class PlayState extends MusicBeatState
 	var tempIncrease:Bool = false;
 	var tempAmount:Float = 0;
 	var tempRate:Float = 3.5;
-	
+
 	var object:FlxSprite; // debug shit
 
 	// Less laggy controls
@@ -309,7 +308,6 @@ class PlayState extends MusicBeatState
 
 		// for lua
 		instance = this;
-
 
 		PauseSubState.songName = null; // Reset to default
 		playbackRate = ClientPrefs.getGameplaySetting('songspeed');
@@ -424,21 +422,17 @@ class PlayState extends MusicBeatState
 			case 'freeplay':
 				new states.stages.FreeplayStage();
 			case 'lazyRiver':
-
 				ClientPrefs.data.summerMode ? new states.stages.LazySummer() : new states.stages.LazyRiver();
 			case 'maudade':
 				new states.stages.Maudade();
 		}
 
-		summerTime = ClientPrefs.data.summerMode;
-
-		switch (SONG.song.toLowerCase()){
-			case "lazy river":
-				summerDifficulty = 0.5;
-				summerTime = true;
-				boyfriend.y = 530;
-			case "lazy summer":
-				summerDifficulty = 1.5;
+		switch (SONG.song.toLowerCase().replace(" ", "-"))
+		{
+			case "baldspicable" | "baldozer" | "dealtastic" | "lazy-river" | "lazy-summer":
+				summerTime = ClientPrefs.data.summerMode;
+			default:
+				summerTime = false;
 		}
 
 		if (isPixelStage)
@@ -503,6 +497,17 @@ class PlayState extends MusicBeatState
 		boyfriendGroup.add(boyfriend);
 		startCharacterScripts(boyfriend.curCharacter);
 
+		// please for the love of god do not try editing the boyfriend variable before it exists
+		switch (SONG.song.toLowerCase())
+		{
+			case "lazy river":
+				summerDifficulty = 0.5;
+				summerTime = true;
+				boyfriend.y = 530;
+			case "lazy summer":
+				summerDifficulty = 1.5;
+		}
+
 		var camPos:FlxPoint = FlxPoint.get(girlfriendCameraOffset[0], girlfriendCameraOffset[1]);
 		if (gf != null)
 		{
@@ -525,7 +530,7 @@ class PlayState extends MusicBeatState
 		add(uiGroup);
 		noteGroup = new FlxTypedGroup<FlxBasic>();
 		add(noteGroup);
-		
+
 		Conductor.songPosition = -5000 / Conductor.songPosition;
 		var showTime:Bool = (ClientPrefs.data.timeBarType != 'Disabled');
 		timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 19, 400, "", 32);
@@ -627,8 +632,6 @@ class PlayState extends MusicBeatState
 		noteGroup.cameras = [camHUD];
 		comboGroup.cameras = [camHUD];
 
-
-		
 		startingSong = true;
 
 		#if LUA_ALLOWED
@@ -701,13 +704,14 @@ class PlayState extends MusicBeatState
 		{
 			var offset:Float = 0;
 
-			if (SONG.song.toLowerCase() == "dealtastic"){
+			if (SONG.song.toLowerCase() == "dealtastic")
+			{
 				offset = 1100;
 			}
 
-			heatMeterBg = new FlxSprite(65+offset,279).loadGraphic(Paths.image('heatMeterBg'));
+			heatMeterBg = new FlxSprite(65 + offset, 279).loadGraphic(Paths.image('heatMeterBg'));
 			heatMeterBg.antialiasing = true;
-			heatMeterBg.scale.set(1.8,1.8);
+			heatMeterBg.scale.set(1.8, 1.8);
 			heatMeterBg.clipRect = new FlxRect(0, heatMeterBg.height, heatMeterBg.width, 0);
 			heatMeterBg.alpha = 0;
 			uiGroup.add(heatMeterBg);
@@ -717,34 +721,34 @@ class PlayState extends MusicBeatState
 			heatMeter.animation.addByPrefix("idle", 'temp hold', 24, false);
 			heatMeter.animation.addByPrefix("appear", 'temp show up', 24, false);
 			heatMeter.animation.play("appear", true);
-			heatMeter.scrollFactor.set(0,0);
+			heatMeter.scrollFactor.set(0, 0);
 			heatMeter.antialiasing = true;
-			heatMeter.scale.set(0.9,0.9);
+			heatMeter.scale.set(0.9, 0.9);
 			heatMeter.alpha = 0;
-			heatMeter.setPosition(0+offset,88);
+			heatMeter.setPosition(0 + offset, 88);
 			uiGroup.add(heatMeter);
 
 			gfWaterBucket = new FlxSprite();
-			if (SONG.song.toLowerCase() == "dealtastic"){
+			if (SONG.song.toLowerCase() == "dealtastic")
+			{
 				gfWaterBucket.frames = Paths.getSparrowAtlas('summer/gfHeadPat');
 				gfWaterBucket.animation.addByPrefix("water", 'GfHeadPat', 24, false);
 				gfWaterBucket.animation.play("water", true);
-				gfWaterBucket.scrollFactor.set(1,1);
+				gfWaterBucket.scrollFactor.set(1, 1);
 				gfWaterBucket.antialiasing = true;
-				gfWaterBucket.scale.set(1,1);
+				gfWaterBucket.scale.set(1, 1);
 				gfWaterBucket.alpha = 0;
-				gfWaterBucket.setPosition(-990,-182);
+				gfWaterBucket.setPosition(-990, -182);
 				add(gfWaterBucket);
 			}
-
-			
 		}
 
 		object = boyfriend;
 
 		super.create();
-		if (ClientPrefs.data.ruther) {
-			ruther = new Character(-820,-120, 'ruther', false);
+		if (ClientPrefs.data.ruther)
+		{
+			ruther = new Character(-820, -120, 'ruther', false);
 			ruther.cameras = [camHUD];
 			ruther.scale.x = 0.75;
 			ruther.scale.y = 0.75;
@@ -771,7 +775,7 @@ class PlayState extends MusicBeatState
 			crust.alpha = 0.5;
 			add(crust);
 		}
-		
+
 		Paths.clearUnusedMemory();
 
 		if (eventNotes.length < 1)
@@ -1208,7 +1212,8 @@ class PlayState extends MusicBeatState
 						countdownGo = createCountdownSprite(introAlts[2], antialias);
 						FlxG.sound.play(Paths.sound('introGo' + introSoundsSuffix), 0.6);
 						tick = GO;
-						if (summerTime){
+						if (summerTime)
+						{
 							heatMeter.animation.play("appear", true);
 							heatMeter.alpha = 1;
 							heatMeterBg.alpha = 1;
@@ -1741,7 +1746,8 @@ class PlayState extends MusicBeatState
 					targetAlpha = 0.35;
 			}
 
-			var babyArrow:StrumNote = new StrumNote(strumLineX, strumLineY, i, (SONG.song.toLowerCase() == "dealtastic" && !ClientPrefs.data.middleScroll) ? (player + 1) % 2 : player);
+			var babyArrow:StrumNote = new StrumNote(strumLineX, strumLineY, i,
+				(SONG.song.toLowerCase() == "dealtastic" && !ClientPrefs.data.middleScroll) ? (player + 1) % 2 : player);
 			babyArrow.downScroll = ClientPrefs.data.downScroll;
 			if (!isStoryMode && !skipArrowStartTween)
 			{
@@ -1913,21 +1919,25 @@ class PlayState extends MusicBeatState
 
 		if (summerTime)
 		{
-			if (FlxG.keys.justPressed.SPACE && !eatingPopsicle){
+			if (FlxG.keys.justPressed.SPACE && !eatingPopsicle)
+			{
 				eatPopsicle();
 			}
 
-			if (tempIncrease){
+			if (tempIncrease)
+			{
 				tempAmount += tempRate * elapsed;
 			}
-			if (tempAmount >= heatMeterBg.height) {
+			if (tempAmount >= heatMeterBg.height)
+			{
 				tempAmount = heatMeterBg.height;
-				//health -= 999999999999;
+				// health -= 999999999999;
 			}
-
-			health -= (tempAmount * 0.0005 * summerDifficulty) * elapsed;
-
-			//trace(tempAmount);
+			if (tempAmount >= heatMeterBg.height - 65)
+			{
+				health -= ((tempAmount - (heatMeterBg.height - 65)) * 0.0023 * summerDifficulty) * elapsed;
+			}
+			// trace(tempAmount);
 
 			heatMeterBg.clipRect = new FlxRect(0, heatMeterBg.height - tempAmount, heatMeterBg.width, tempAmount);
 		}
@@ -2006,7 +2016,13 @@ class PlayState extends MusicBeatState
 		FlxG.watch.addQuick("stepShit", curStep);
 
 		// RESET = Quick Game Over Screen
-		if (!ClientPrefs.data.noReset && controls.RESET && canReset && !inCutscene && startedCountdown && !endingSong && !videoPlaying)
+		if (!ClientPrefs.data.noReset
+			&& controls.RESET
+			&& canReset
+			&& !inCutscene
+			&& startedCountdown
+			&& !endingSong
+			&& !videoPlaying)
 		{
 			health = 0;
 			trace("RESET = True");
@@ -2256,7 +2272,8 @@ class PlayState extends MusicBeatState
 
 				var popsicleDeath:Bool = false;
 
-				if (curPopsicleState >= 7){
+				if (curPopsicleState >= 7)
+				{
 					popsicleDeath = true;
 				}
 				GameOverSubstate.resetVariables(popsicleDeath);
@@ -3325,8 +3342,9 @@ class PlayState extends MusicBeatState
 				suffix = note.animSuffix;
 
 			var animToPlay:String = singAnimations[Std.int(Math.abs(Math.min(singAnimations.length - 1, direction)))] + 'miss' + suffix;
-			
-			if (!eatingPopsicle){
+
+			if (!eatingPopsicle)
+			{
 				char.playAnim(animToPlay, true);
 			}
 
@@ -4081,21 +4099,23 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	function eatPopsicle(){
+	function eatPopsicle()
+	{
 		var whichSong:String = SONG.song.toLowerCase();
-		
+
 		eatingPopsicle = true;
 		boyfriend.stunned = true;
-		boyfriend.playAnim("popsicle"+curPopsicleState, true);
+		boyfriend.playAnim("popsicle" + curPopsicleState, true);
 		boyfriend.specialAnim = true;
 		boyfriend.heyTimer = 2.0;
 
-		if (whichSong == "dealtastic"){
+		if (whichSong == "dealtastic")
+		{
 			gfWaterBucket.animation.play("water", true);
 			gfWaterBucket.alpha = 1;
 		}
 
-		FlxG.sound.play(Paths.sound('popsicle bite'), 1);
+		FlxG.sound.play(Paths.sound(SONG.song.toLowerCase() == "dealtastic" ? 'bucket splash' : 'popsicle bite'), 1);
 
 		curPopsicleState++;
 
@@ -4103,16 +4123,18 @@ class PlayState extends MusicBeatState
 		var consumingTimer2 = new FlxTimer();
 		var consumingTimer3 = new FlxTimer();
 
-		if (curPopsicleState == 7){ // kill bf
+		if (curPopsicleState == 7)
+		{ // kill bf
 			consumingTimer.start(0.6, onPopsicleDeath);
 		}
-		else {
+		else
+		{
 			consumingTimer.start(4, onPopsicleEaten);
 			consumingTimer2.start(2, decreaseTempMeter);
-			if (whichSong == "dealtastic"){
+			if (whichSong == "dealtastic")
+			{
 				consumingTimer3.start(7, hideGfBucket);
 			}
-			
 		}
 	}
 
@@ -4131,21 +4153,24 @@ class PlayState extends MusicBeatState
 	{
 		tempIncrease = false;
 		var curTemp:Float = tempAmount;
-		var targetTemp:Float = curTemp-120;
+		var targetTemp:Float = curTemp - 120;
 
-		if (targetTemp < 0){
+		if (targetTemp < 0)
+		{
 			targetTemp = 0;
 		}
 
-		FlxTween.num(curTemp, targetTemp, 2.5, { ease: FlxEase.cubeInOut, onComplete: yummyInMyTummy }, function(number)
+		FlxTween.num(curTemp, targetTemp, 2.5, {ease: FlxEase.cubeInOut, onComplete: yummyInMyTummy}, function(number)
 		{
 			tempAmount = number;
 		});
 	}
 
-	private function yummyInMyTummy(tween:FlxTween):Void {
-        tempIncrease = true;
-    }
+	// incredible function name phantom
+	private function yummyInMyTummy(tween:FlxTween):Void
+	{
+		tempIncrease = true;
+	}
 
 	function onPopsicleDeath(timer:FlxTimer):Void
 	{
@@ -4154,78 +4179,79 @@ class PlayState extends MusicBeatState
 		boyfriend.stunned = false;
 	}
 
-	function debugShit(){
+	function debugShit()
+	{
 		var holdShift = FlxG.keys.pressed.SHIFT;
 		var holdCtrl = FlxG.keys.pressed.CONTROL;
 		var holdAlt = FlxG.keys.pressed.ALT;
 		var multiplier = 1;
 		if (holdShift)
 			multiplier = 10;
-	
+
 		if (holdCtrl)
 			multiplier = 100;
-	
+
 		if (FlxG.keys.justPressed.J)
-			{
-				object.x -= (1 * multiplier);
-				trace(object.x, object.y);
-			}
+		{
+			object.x -= (1 * multiplier);
+			trace(object.x, object.y);
+		}
 		if (FlxG.keys.justPressed.I)
-			{
-				object.y -= (1 * multiplier);
-				trace(object.x, object.y);
-			}
+		{
+			object.y -= (1 * multiplier);
+			trace(object.x, object.y);
+		}
 		if (FlxG.keys.justPressed.SEMICOLON)
-			{
-				trace ("------------------------------------");
-				trace ("X: " + object.x);
-				trace ("Y: " + object.y);
-				trace ("SCALE X: " + object.scale.x);
-				trace ("SCALE Y: " + object.scale.y);
-				trace ("------------------------------------");
-			}
+		{
+			trace("------------------------------------");
+			trace("X: " + object.x);
+			trace("Y: " + object.y);
+			trace("SCALE X: " + object.scale.x);
+			trace("SCALE Y: " + object.scale.y);
+			trace("------------------------------------");
+		}
 		if (FlxG.keys.justPressed.K)
-			{
-				object.y += (1 * multiplier);
-				trace(object.x, object.y);
-			}
+		{
+			object.y += (1 * multiplier);
+			trace(object.x, object.y);
+		}
 		if (FlxG.keys.justPressed.L)
-			{
-				object.x += (1 * multiplier);
-				trace(object.x, object.y);
-			}
+		{
+			object.x += (1 * multiplier);
+			trace(object.x, object.y);
+		}
 		if (FlxG.keys.justPressed.U)
-			{
-				object.scale.x -= (0.1* multiplier);
-			}
+		{
+			object.scale.x -= (0.1 * multiplier);
+		}
 		if (FlxG.keys.justPressed.Y)
-			{
-				object.scale.x += (0.1* multiplier);
-			}
+		{
+			object.scale.x += (0.1 * multiplier);
+		}
 		if (FlxG.keys.justPressed.O)
-			{
-				object.scale.y -= (0.1* multiplier);
-			}
+		{
+			object.scale.y -= (0.1 * multiplier);
+		}
 		if (FlxG.keys.justPressed.P)
-			{
-				object.scale.y += (0.1* multiplier);
-			}
+		{
+			object.scale.y += (0.1 * multiplier);
+		}
 		if (FlxG.keys.justPressed.Z)
-			{
-				object.angle -= (0.1* multiplier);
-			}
+		{
+			object.angle -= (0.1 * multiplier);
+		}
 		if (FlxG.keys.justPressed.X)
-			{
-				object.angle += (0.1* multiplier);
-			}
+		{
+			object.angle += (0.1 * multiplier);
+		}
 		if (FlxG.keys.justPressed.PAGEUP)
-			{
-				PlayState.instance.defaultCamZoom += 0.1;
-			}
+		{
+			PlayState.instance.defaultCamZoom += 0.1;
+		}
 		if (FlxG.keys.justPressed.PAGEDOWN)
-			{
-				PlayState.instance.defaultCamZoom -= 0.1;
-			}
+		{
+			PlayState.instance.defaultCamZoom -= 0.1;
+		}
 	}
 
 	public function initLuaShader(name:String, ?glslVersion:Int = 120)
