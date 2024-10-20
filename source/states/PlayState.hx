@@ -741,9 +741,20 @@ class PlayState extends MusicBeatState
 				gfWaterBucket.setPosition(-990, -182);
 				add(gfWaterBucket);
 			}
+
+			var summerWarningText:FlxText = new FlxText(276,320, 0, "This song has the heat meter!\nPress SPACE to cool down!\nYou have a limited amount of uses.", 32);
+			summerWarningText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			summerWarningText.alpha = 1;
+			summerWarningText.scale.set(1,1);
+			summerWarningText.scrollFactor.set(0, 0);
+			uiGroup.add(summerWarningText);
+
+			FlxTween.tween(summerWarningText, {alpha: 0}, 10, {ease: FlxEase.quintIn});
+
+			object = summerWarningText;
 		}
 
-		object = boyfriend;
+		
 
 		super.create();
 		if (ClientPrefs.data.ruther)
@@ -2702,6 +2713,7 @@ class PlayState extends MusicBeatState
 	public function endSong()
 	{
 		// Should kill you if you tried to cheat
+		#if release
 		if (!startingSong)
 		{
 			notes.forEach(function(daNote:Note)
@@ -2724,6 +2736,7 @@ class PlayState extends MusicBeatState
 				return false;
 			}
 		}
+		#end
 
 		timeBar.visible = false;
 		timeTxt.visible = false;
@@ -4200,6 +4213,9 @@ class PlayState extends MusicBeatState
 		{
 			object.y -= (1 * multiplier);
 			trace(object.x, object.y);
+		}
+		if (FlxG.keys.justPressed.F1){
+			endSong();
 		}
 		if (FlxG.keys.justPressed.SEMICOLON)
 		{
