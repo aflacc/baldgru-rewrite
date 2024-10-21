@@ -33,7 +33,7 @@ import substates.GameOverSubstate;
 import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
 #end
-#if VIDEOS_ALLOWED
+/*#if VIDEOS_ALLOWED
 #if (hxCodec >= "3.0.0")
 import hxcodec.flixel.FlxVideo as VideoHandler;
 #elseif (hxCodec >= "2.6.1")
@@ -43,9 +43,10 @@ import VideoHandler;
 #else
 import vlc.MP4Handler as VideoHandler;
 #end
-#end
+#end*/
 import objects.Note.EventNote;
 import objects.*;
+import objects.VideoSprite;
 import states.stages.objects.*;
 #if LUA_ALLOWED
 import psychlua.*;
@@ -1000,7 +1001,7 @@ class PlayState extends MusicBeatState
 		char.y += char.positionArray[1];
 	}
 
-	public function startVideo(name:String, end:Bool = true, ?callback:Function)
+	/*public function startVideo(name:String, end:Bool = true, ?callback:Function)
 	{
 		#if VIDEOS_ALLOWED
 		inCutscene = true;
@@ -1020,7 +1021,7 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		var video:VideoHandler = new VideoHandler();
+		/*var video:VideoHandler = new VideoHandler();
 		#if (hxCodec >= "3.0.0")
 		// Recent versions
 		video.play(filepath);
@@ -1054,7 +1055,9 @@ class PlayState extends MusicBeatState
 		videoPlaying = false;
 		return;
 		#end
+		startAndEnd();
 	}
+	
 
 	// Starts and then immediatly ends a video
 
@@ -1064,7 +1067,79 @@ class PlayState extends MusicBeatState
 			endSong();
 		else
 			startCountdown();
+	}*/
+
+	public var videoCutscene:VideoSprite = null;
+	public function startVideo(name:String, forMidSong:Bool = false, canSkip:Bool = true, loop:Bool = false, playOnLoad:Bool = true, ?callback:Function = null)
+	{
+		#if VIDEOS_ALLOWED
+		inCutscene = true;
+		canPause = false;
+
+		var foundFile:Bool = false;
+		var fileName:String = Paths.video(name);
+
+		#if sys
+		if (FileSystem.exists(fileName))
+		#else
+		if (OpenFlAssets.exists(fileName))
+		#end
+		foundFile = true;
+
+		if (foundFile)
+		{
+			videoCutscene = new VideoSprite(fileName, forMidSong, canSkip, loop);
+
+			// Finish callback
+			if (!forMidSong)
+			{
+				function onVideoEnd()
+				{
+					if (callback != null)
+						{
+							trace("my nuts hurt ahhh!!!");
+							callback();
+						}
+					if (generatedMusic && PlayState.SONG.notes[Std.int(curStep / 16)] != null && !endingSong && !isCameraOnForcedPos)
+					{
+						moveCameraSection();
+						FlxG.camera.snapToTarget();
+					}
+					videoCutscene = null;
+					canPause = true; // why is this false?
+					inCutscene = false;
+					startAndEnd();
+				}
+				videoCutscene.finishCallback = onVideoEnd;
+				videoCutscene.onSkip = onVideoEnd;
+			}
+			add(videoCutscene);
+
+			if (playOnLoad)
+				videoCutscene.videoSprite.play();
+			return videoCutscene;
+		}
+		#if (LUA_ALLOWED || HSCRIPT_ALLOWED)
+		else addTextToDebug("Video not found: " + fileName, FlxColor.RED);
+		#else
+		else FlxG.log.error("Video not found: " + fileName);
+		#end
+		#else
+		FlxG.log.warn('Platform not supported!');
+		startAndEnd();
+		#end
+		return null;
 	}
+
+	function startAndEnd()
+	{
+		if(endingSong)
+			endSong();
+		else
+			startCountdown();
+	}
+
+
 
 	var dialogueCount:Int = 0;
 

@@ -3,7 +3,7 @@ package states;
 import backend.Highscore;
 import haxe.Json;
 import flixel.addons.display.FlxBackdrop;
-#if VIDEOS_ALLOWED
+/*#if VIDEOS_ALLOWED
 #if (hxCodec >= "3.0.0")
 import hxcodec.flixel.FlxVideo as VideoHandler;
 #elseif (hxCodec >= "2.6.1")
@@ -13,7 +13,7 @@ import VideoHandler;
 #else
 import vlc.MP4Handler as VideoHandler;
 #end
-#end
+#end*/
 using StringTools;
 
 /**
@@ -53,7 +53,7 @@ class ExtrasState extends MusicBeatState
 	var videoing:Bool = false;
 
 	#if VIDEOS_ALLOWED
-	var video:VideoHandler;
+	//var video:VideoHandler;
 	#end
 
 	override function create()
@@ -177,7 +177,7 @@ class ExtrasState extends MusicBeatState
 		FlxG.sound.music.fadeIn(3, 0, 0.7);
 
 		#if VIDEOS_ALLOWED
-		video = new VideoHandler();
+		//video = new VideoHandler();
 		#end
 
 		super.create();

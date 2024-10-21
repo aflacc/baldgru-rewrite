@@ -153,6 +153,13 @@ class BaldGlue extends BaseStage
 			}
 		add(platform);
 		add(gruOverlay);
+
+		if (isStoryMode) {
+			switch(songName) {
+				case "baldspicable":
+					//if(!seenCutscene) PlayState.instance.startVideo("cough");
+			}
+		}
 	}
 
 	override function countdownTick(count:backend.BaseStage.Countdown, num:Int)

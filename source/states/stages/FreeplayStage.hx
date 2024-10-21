@@ -10,16 +10,17 @@ import objects.HealthIcon;
 import openfl.filters.BlurFilter;
 import flixel.system.FlxAssets.FlxShader;
 import states.stages.objects.*;
+
 #if VIDEOS_ALLOWED
-#if (hxCodec >= "3.0.0")
-import hxcodec.flixel.FlxVideo as VideoHandler;
-#elseif (hxCodec >= "2.6.1")
-import hxcodec.VideoHandler as VideoHandler;
-#elseif (hxCodec == "2.6.0")
-import VideoHandler;
-#else
-import vlc.MP4Handler as VideoHandler;
-#end
+// #if (hxCodec >= "3.0.0")
+// import hxcodec.flixel.FlxVideo as VideoHandler;
+// #elseif (hxCodec >= "2.6.1")
+// import hxcodec.VideoHandler as VideoHandler;
+// #elseif (hxCodec == "2.6.0")
+// import VideoHandler;
+// #else
+// import vlc.MP4Handler as VideoHandler;
+// #end
 #end
 // Stage thats like a fake freeplay menu
 // I'm sorry
@@ -152,10 +153,10 @@ class FreeplayStage extends BaseStage
 
 		// precache the cutscene.. stupid method but everybody says this is how you do it.. so i wont judge
 		#if VIDEOS_ALLOWED
-		var filepath:String = Paths.video("yolkedSadStory");
-		var video:VideoHandler = new VideoHandler();
-		video.play(filepath);
-		video.dispose();
+		// var filepath:String = Paths.video("yolkedSadStory");
+		// var video:VideoHandler = new VideoHandler();
+		// video.play(filepath);
+		// video.dispose();
 		#end
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
@@ -417,7 +418,7 @@ class FreeplayStage extends BaseStage
 					lol.cameras = [game.camOther];
 					add(lol);
 					// thisis like a toddler playing with a bomb
-					PlayState.instance.startVideo("yolkedSadStory", false, function()
+					PlayState.instance.startVideo("yolkedSadStory", true, false,false, true, function()
 					{
 						FlxTween.tween(lol, {alpha: 0}, Conductor.crochet * 0.002, {
 							onComplete: function(_)
