@@ -1,6 +1,7 @@
 package states.stages;
 
 //
+import flixel.addons.transition.FlxTransitionableState;
 import flixel.util.FlxGradient;
 import substates.GameOverSubstate;
 import flixel.input.FlxInput;
@@ -147,17 +148,21 @@ class BaldGlue extends BaseStage
 		add(crowd1);
 		add(crowd2);
 		if (PlayState.SONG.song.toLowerCase() == "baldozer")
-			{
-				add(explosion);
-				add(gandolfo);
-			}
+		{
+			add(explosion);
+			add(gandolfo);
+		}
 		add(platform);
 		add(gruOverlay);
 
-		if (isStoryMode) {
-			switch(songName) {
+		if (isStoryMode)
+		{
+			switch (songName)
+			{
 				case "baldspicable":
-					//if(!seenCutscene) PlayState.instance.startVideo("cough");
+					// if(!seenCutscene) PlayState.instance.startVideo("cough");
+					if (!seenCutscene)
+						setStartCallback(videoCutscene.bind('BaldGruIntro'));
 			}
 		}
 	}
@@ -183,6 +188,13 @@ class BaldGlue extends BaseStage
 
 	override function createPost()
 	{
+		if (PlayState.SONG.song.toLowerCase() == "baldspicable")
+			{
+				game.boyfriend.playAnim("deadasfuck", true);
+				game.boyfriend.specialAnim = true; // FUCK
+				game.gf.playAnim("awesome", true);
+				game.gf.specialAnim = true; // FUCK 2
+			}
 		add(crowd3);
 
 		// Use this function to layer things above characters!
@@ -197,12 +209,12 @@ class BaldGlue extends BaseStage
 		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -580, -280, 1, 1);
 		gruDarkness.blend = MULTIPLY;
 		gruDarkness.scale.set(1.1, 1.1);
-		gruDarkness.scrollFactor.set(1,0.5);
+		gruDarkness.scrollFactor.set(1, 0.5);
 		add(gruDarkness);
 		var gruLighting = new BGSprite('stages/baldGlue/bal_gru_lighting', -580, -280, 1, 1);
 		gruLighting.blend = ADD;
 		gruLighting.scale.set(1.1, 1.1);
-		gruLighting.scrollFactor.set(1,0.5);
+		gruLighting.scrollFactor.set(1, 0.5);
 		add(gruLighting);
 
 		loddy = new FlxSprite(-300, 280);
@@ -411,6 +423,46 @@ class BaldGlue extends BaseStage
 			loddio.pause();
 			// timer.active = false;
 			// tween.active = false;
+		}
+	}
+
+	// delayed hxvlc porting for several days because my dumbass didnt notice this was a FUCKING FUNCTION
+	var videoEnded:Bool = false;
+
+	function videoCutscene(?videoName:String = null)
+	{
+		game.inCutscene = true;
+		if (!videoEnded && videoName != null)
+		{
+			#if VIDEOS_ALLOWED
+			game.startVideo(videoName);
+			game.videoCutscene.finishCallback = game.videoCutscene.onSkip = function()
+			{
+				trace('wagooga');
+				videoEnded = true;
+				game.videoCutscene = null;
+				videoCutscene();
+			};
+			#else // Make a timer to prevent it from crashing due to sprites not being ready yet.
+			new FlxTimer().start(0.0, function(tmr:FlxTimer)
+			{
+				videoEnded = true;
+				videoCutscene(videoName);
+			});
+			#end
+			return;
+		}
+
+		if (isStoryMode)
+		{
+			switch (songName)
+			{
+				default:
+					trace('cd!');
+					startCountdown();
+					// case 'darnell':
+					// darnellCutscene();
+			}
 		}
 	}
 }

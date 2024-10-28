@@ -1,5 +1,6 @@
 package states.stages;
 
+import flixel.addons.transition.FlxTransitionableState;
 import substates.GameOverSubstate;
 import backend.BaseStage;
 import states.stages.objects.*;
@@ -22,22 +23,38 @@ class Dealtastic extends BaseStage
 
 		var suffix:String = "";
 
-		if (ClientPrefs.data.summerMode){
+		if (ClientPrefs.data.summerMode)
+		{
 			suffix = "-summer";
 		}
 
-		var sky:BGSprite = new BGSprite("stages/dealtastic"+suffix+"/DMsky", -350, -500, 0.1, 0.1);
+		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", -350, -500, 0.1, 0.1);
 		sky.scale.set(1.5, 1.5);
 		add(sky);
-		var shutters:BGSprite = new BGSprite("stages/dealtastic"+suffix+"/DMShutters", -380, -470, 0.5, 0.5);
+		var shutters:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMShutters", -380, -470, 0.5, 0.5);
 		shutters.scale.set(0.8 * 1.5, 0.8 * 1.5);
 		add(shutters);
-		var stage:BGSprite = new BGSprite("stages/dealtastic"+suffix+"/DMStage", 0, 500, 1, 1);
+		var stage:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMStage", 0, 500, 1, 1);
 		stage.scale.set(1, 1);
 		add(stage);
-		var borda:BGSprite = new BGSprite("stages/dealtastic"+suffix+"/borda", -610, 230, 1, 1, ["acrtion bubble"], true);
+		var borda:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/borda", -610, 230, 1, 1, ["acrtion bubble"], true);
 		borda.scale.set(1.5, 1.5);
 		add(borda);
+
+		switch (songName)
+		{
+			case 'dealtastic':
+				setEndCallback(function()
+				{
+					game.endingSong = true;
+					inCutscene = true;
+					canPause = false;
+					FlxTransitionableState.skipNextTransIn = true;
+					FlxG.camera.visible = false;
+					camHUD.visible = false;
+					game.startVideo('outro');
+				});
+		}
 	}
 
 	override function createPost()
@@ -94,6 +111,22 @@ class Dealtastic extends BaseStage
 		lyricsText.screenCenter(X);
 		lyricsText.cameras = [game.camHUD];
 		add(lyricsText);
+
+		/*if (isStoryMode) {
+			switch(songName) {
+				case "dealtastic":
+					setEndCallback(function()
+						{
+							game.endingSong = true;
+							inCutscene = true;
+							canPause = false;
+							FlxTransitionableState.skipNextTransIn = true;
+							FlxG.camera.visible = false;
+							camHUD.visible = false;
+							game.startVideo('outtro');
+						});
+			}
+		}*/
 	}
 
 	override function update(elapsed:Float)
@@ -264,6 +297,46 @@ class Dealtastic extends BaseStage
 						// precacheSound('mySoundThree') //preloads sounds/mySoundThree.ogg
 						// precacheMusic('myMusicThree') //preloads music/myMusicThree.ogg
 				}
+		}
+	}
+
+	// empty comment
+	var videoEnded:Bool = false;
+
+	function videoCutscene(?videoName:String = null)
+	{
+		game.inCutscene = true;
+		if (!videoEnded && videoName != null)
+		{
+			#if VIDEOS_ALLOWED
+			game.startVideo(videoName);
+			game.videoCutscene.finishCallback = game.videoCutscene.onSkip = function()
+			{
+				trace('wagooga');
+				videoEnded = true;
+				game.videoCutscene = null;
+				videoCutscene();
+			};
+			#else // Make a timer to prevent it from crashing due to sprites not being ready yet.
+			new FlxTimer().start(0.0, function(tmr:FlxTimer)
+			{
+				videoEnded = true;
+				videoCutscene(videoName);
+			});
+			#end
+			return;
+		}
+
+		if (isStoryMode)
+		{
+			switch (songName)
+			{
+				default:
+					trace('cd!');
+					startCountdown();
+					// case 'darnell':
+					// darnellCutscene();
+			}
 		}
 	}
 }

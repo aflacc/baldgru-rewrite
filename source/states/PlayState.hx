@@ -1070,7 +1070,7 @@ class PlayState extends MusicBeatState
 	}*/
 
 	public var videoCutscene:VideoSprite = null;
-	public function startVideo(name:String, forMidSong:Bool = false, canSkip:Bool = true, loop:Bool = false, playOnLoad:Bool = true, ?callback:Function = null)
+	public function startVideo(name:String, forMidSong:Bool = false, canSkip:Bool = true, loop:Bool = false, playOnLoad:Bool = true, ?callback:Void->Void = null)
 	{
 		#if VIDEOS_ALLOWED
 		inCutscene = true;
@@ -1086,6 +1086,8 @@ class PlayState extends MusicBeatState
 		#end
 		foundFile = true;
 
+		trace("attemptiong to video.");
+
 		if (foundFile)
 		{
 			videoCutscene = new VideoSprite(fileName, forMidSong, canSkip, loop);
@@ -1093,26 +1095,64 @@ class PlayState extends MusicBeatState
 			// Finish callback
 			if (!forMidSong)
 			{
+				trace("woah.");
+				
 				function onVideoEnd()
 				{
-					if (callback != null)
-						{
-							trace("my nuts hurt ahhh!!!");
-							callback();
-						}
+					trace('end');
+					///if (callback != null)
+					//	{
+					//		trace("my nuts hurt ahhh!!!");
+					//		//callback();
+					///		trace("cb");
+					//	}
 					if (generatedMusic && PlayState.SONG.notes[Std.int(curStep / 16)] != null && !endingSong && !isCameraOnForcedPos)
 					{
 						moveCameraSection();
 						FlxG.camera.snapToTarget();
 					}
 					videoCutscene = null;
-					canPause = true; // why is this false?
+					canPause = false; // why is this false?
 					inCutscene = false;
 					startAndEnd();
 				}
 				videoCutscene.finishCallback = onVideoEnd;
 				videoCutscene.onSkip = onVideoEnd;
+			} else {
+				trace("hello midsong");
+
+				function midsongVideoEnd() {
+					trace("func called");
+
+					if (callback != null)
+						callback();
+
+					videoCutscene = null;
+					canPause = true; // why is this false?
+					inCutscene = false;
+				}
+
+				videoCutscene.finishCallback = midsongVideoEnd;
 			}
+			/* else {
+				trace("wuh!?");
+				function onVideoEnd() {
+					trace('end mmdsong');
+					if (callback != null)
+						{
+							trace("my nuts hurt ahhh!!! but midsong..");
+							callback();
+							trace("cb");
+						}
+						videoCutscene = null;
+						canPause = false; // why is this false?
+						inCutscene = false;
+					}
+				
+				videoCutscene.finishCallback = onVideoEnd;
+				//videoCutscene.onSkip = onVideoEnd; shouldnt be allowed to do that
+			}*/
+			
 			add(videoCutscene);
 
 			if (playOnLoad)
@@ -1225,6 +1265,9 @@ class PlayState extends MusicBeatState
 
 		seenCutscene = true;
 		inCutscene = false;
+		trace('bah!');
+		canPause = true;
+		trace("pause fixed?");
 		var ret:Dynamic = callOnScripts('onStartCountdown', null, true);
 		if (ret != LuaUtils.Function_Stop)
 		{

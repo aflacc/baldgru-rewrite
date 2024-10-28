@@ -134,6 +134,17 @@ class LoddyStage extends BaseStage
 		add(cold);
 
 		PlayState.instance.gfGroup.visible = false;
+
+		//if (isStoryMode)
+		//	{
+				switch (songName.replace(" ","-"))
+				{
+					case "jingle-bald":
+						// if(!seenCutscene) PlayState.instance.startVideo("cough");
+						if (!seenCutscene)
+							setStartCallback(videoCutscene.bind('lovewins'));
+				}
+		//	}
 	}
 
 	function placeFollow(x, y)
@@ -338,5 +349,44 @@ class LoddyStage extends BaseStage
 			case 3:
 				placeFollow(10, 0);
 		}
+	}
+
+	var videoEnded:Bool = false;
+
+	function videoCutscene(?videoName:String = null)
+	{
+		game.inCutscene = true;
+		if (!videoEnded && videoName != null)
+		{
+			#if VIDEOS_ALLOWED
+			game.startVideo(videoName);
+			game.videoCutscene.finishCallback = game.videoCutscene.onSkip = function()
+			{
+				trace('wagooga');
+				videoEnded = true;
+				game.videoCutscene = null;
+				videoCutscene();
+			};
+			#else // Make a timer to prevent it from crashing due to sprites not being ready yet.
+			new FlxTimer().start(0.0, function(tmr:FlxTimer)
+			{
+				videoEnded = true;
+				videoCutscene(videoName);
+			});
+			#end
+			return;
+		}
+
+		//if (isStoryMode)
+		//{
+			switch (songName)
+			{
+				default:
+					trace('cd!');
+					startCountdown();
+					// case 'darnell':
+					// darnellCutscene();
+			}
+		//}
 	}
 }

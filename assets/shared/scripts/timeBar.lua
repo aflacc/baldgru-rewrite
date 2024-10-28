@@ -8,10 +8,17 @@ function onCreate()
     if songName == "Jingle Bald" then
         close();
     end
+    if (string.lower(songName) == "yolked") then
+        close()
+    end
 end
 function onCreatePost()
     if songName == "Jingle Bald" then
         close();
+    end
+    
+    if (string.lower(songName) == "yolked") then
+        close()
     end
     makeLuaSprite("timeBar", "customHealthbars/timeBar/time_background", 0.0, 0.0)
     setObjectCamera("timeBar", "camHUD")

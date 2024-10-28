@@ -418,8 +418,12 @@ class FreeplayStage extends BaseStage
 					lol.cameras = [game.camOther];
 					add(lol);
 					// thisis like a toddler playing with a bomb
+					// now that this is using hxvlc instead of hxcodec *hopefully* this is more stable? may need some testing..
+
+					// as of this current moment, does work ,need to reimplement callback
 					PlayState.instance.startVideo("yolkedSadStory", true, false,false, true, function()
 					{
+						trace("hello!");
 						FlxTween.tween(lol, {alpha: 0}, Conductor.crochet * 0.002, {
 							onComplete: function(_)
 							{
@@ -427,7 +431,7 @@ class FreeplayStage extends BaseStage
 							}
 						});
 					});
-					PlayState.instance.inCutscene = false;
+					//PlayState.instance.inCutscene = false;
 				case 80: // sad story #2
 					// fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory2"));
 				case 94: // sad story #3 (blink) (no fade)

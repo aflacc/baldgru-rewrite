@@ -36,10 +36,10 @@ class TitleState extends MusicBeatState
 		if (FlxG.random.bool(20)) // 20% chance to happen
 		{
 			var bald:Array<String> = [
-				"Bald", "Balmed", "Bold", "Balled", "Bowled", "Mald", "Called", "Balbed", "Bulb", "Pulp", "Beef", "Bah", "Burp", "Tall"
+				"Bald", "Balmed", "Bold", "Balled", "Bowled", "Mald", "Called", "Balbed", "Bulb", "Pulp", "Beef", "Bah", "Burp", "Tall", "Broken", "Bladder"
 			];
 			var gru:Array<String> = [
-				"Gru", "Grew", "Glue", "Grue", "Blue", "Stew", "Shoe", "Poo", "Brew", "Starch Jello", "Goo", "New", "Few"
+				"Gru", "Grew", "Glue", "Grue", "Blue", "Stew", "Shoe", "Poo", "Brew", "Starch Jello", "Goo", "New", "Few", "Gru Build", "Gangnam Style"
 			];
 			var chosenBald = FlxG.random.getObject(bald);
 			var chosenGru = FlxG.random.getObject(gru);
