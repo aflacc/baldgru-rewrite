@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="background.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="background background instance 10000" x="2" y="2" width="1334" height="582"/>
+	<SubTexture name="background background instance 10001" x="1338" y="2" width="1334" height="582"/>
+	<SubTexture name="background background instance 10002" x="2674" y="2" width="1334" height="582"/>
+	<SubTexture name="background background instance 10003" x="2" y="586" width="1334" height="582"/>
+	<SubTexture name="background background instance 10004" x="1338" y="586" width="1334" height="582"/>
+	<SubTexture name="background background instance 10005" x="2674" y="586" width="1334" height="582"/>
+</TextureAtlas>
