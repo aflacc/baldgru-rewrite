@@ -74,6 +74,7 @@ class BaseStage extends FlxBasic
 	public function createPost()
 	{
 	}
+	
 
 	public function opponentNoteHit(note:Note)
 	{
@@ -83,6 +84,11 @@ class BaseStage extends FlxBasic
 	public function countdownTick(count:Countdown, num:Int)
 	{
 	}
+
+	public function onSongStart()
+		{
+
+		}
 
 	// FNF steps, beats and sections
 	public var curBeat:Int = 0;

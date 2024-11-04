@@ -414,8 +414,10 @@ class PlayState extends MusicBeatState
 		{
 			case 'stage':
 				new states.stages.StageWeek1();
-			case 'loddy':
-				new states.stages.Loddy.LoddyStage();
+				case 'loddy':
+					new states.stages.Loddy.LoddyStage();
+			case 'mansion':
+				new states.stages.LoddyMansion();
 			case 'baldGlue':
 				new states.stages.BaldGru.BaldGlue();
 			case 'dealtastic':
@@ -1070,6 +1072,35 @@ class PlayState extends MusicBeatState
 	}*/
 
 	public var videoCutscene:VideoSprite = null;
+
+	// should create a video, and then send a callback when its ready, made to preload stuff for baldoween (and probably yolked but it was made for baldoween)
+	/*public function prepareVideo(name:String, onLoaded:Void->Void = null) {
+		#if VIDEOS_ALLOWED
+			var foundFile:Bool = false;
+			var fileName:String = Paths.video(name);
+
+			#if sys
+			if (FileSystem.exists(fileName))
+			#else
+			if (OpenFlAssets.exists(fileName))
+			#end
+			foundFile = true;
+
+			if (foundFile) {
+				var tempVideo:VideoSprite = new VideoSprite(fileName,true,false,false);
+				tempVideo.finishCallback = onVideoEnd;
+			} else {
+				trace("couldn't find the video");
+				if (onLoaded != null) {
+					onLoaded();
+				}
+			}
+		#else
+		if (onLoaded != null) {
+			onLoaded();
+		}
+		#end
+	}*/
 	public function startVideo(name:String, forMidSong:Bool = false, canSkip:Bool = true, loop:Bool = false, playOnLoad:Bool = true, ?callback:Void->Void = null)
 	{
 		#if VIDEOS_ALLOWED
@@ -1102,7 +1133,7 @@ class PlayState extends MusicBeatState
 					trace('end');
 					///if (callback != null)
 					//	{
-					//		trace("my nuts hurt ahhh!!!");
+					//		trace("cb");
 					//		//callback();
 					///		trace("cb");
 					//	}
@@ -1125,33 +1156,20 @@ class PlayState extends MusicBeatState
 					trace("func called");
 
 					if (callback != null)
-						callback();
-
+						{
+							callback();
+						}
+					else {
+						trace("callback is null, ignoring");
+					}
 					videoCutscene = null;
 					canPause = true; // why is this false?
 					inCutscene = false;
 				}
 
 				videoCutscene.finishCallback = midsongVideoEnd;
+				videoCutscene.onSkip = midsongVideoEnd;
 			}
-			/* else {
-				trace("wuh!?");
-				function onVideoEnd() {
-					trace('end mmdsong');
-					if (callback != null)
-						{
-							trace("my nuts hurt ahhh!!! but midsong..");
-							callback();
-							trace("cb");
-						}
-						videoCutscene = null;
-						canPause = false; // why is this false?
-						inCutscene = false;
-					}
-				
-				videoCutscene.finishCallback = onVideoEnd;
-				//videoCutscene.onSkip = onVideoEnd; shouldnt be allowed to do that
-			}*/
 			
 			add(videoCutscene);
 
@@ -1589,6 +1607,8 @@ class PlayState extends MusicBeatState
 		if (autoUpdateRPC)
 			DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength);
 		#end
+		stagesFunc(function(stage:BaseStage) stage.onSongStart());
+
 		setOnScripts('songLength', songLength);
 		callOnScripts('onSongStart');
 	}
