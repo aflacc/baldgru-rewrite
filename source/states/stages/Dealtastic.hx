@@ -28,7 +28,7 @@ class Dealtastic extends BaseStage
 			suffix = "-summer";
 		}
 
-		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", -350, -500, 0.1, 0.1);
+		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", 250, -500, 0.1, 0.1);
 		sky.scale.set(1.5, 1.5);
 		add(sky);
 		var shutters:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMShutters", -380, -470, 0.5, 0.5);
@@ -41,19 +41,22 @@ class Dealtastic extends BaseStage
 		borda.scale.set(1.5, 1.5);
 		add(borda);
 
-		switch (songName)
+		if (isStoryMode && ClientPrefs.data.cutscenes)
 		{
-			case 'dealtastic':
-				setEndCallback(function()
-				{
-					game.endingSong = true;
-					inCutscene = true;
-					canPause = false;
-					FlxTransitionableState.skipNextTransIn = true;
-					FlxG.camera.visible = false;
-					camHUD.visible = false;
-					game.startVideo('outro');
-				});
+			switch (songName)
+			{
+				case 'dealtastic':
+					setEndCallback(function()
+					{
+						game.endingSong = true;
+						inCutscene = true;
+						canPause = false;
+						FlxTransitionableState.skipNextTransIn = true;
+						FlxG.camera.visible = false;
+						camHUD.visible = false;
+						game.startVideo('outro');
+					});
+			}
 		}
 	}
 
@@ -127,6 +130,11 @@ class Dealtastic extends BaseStage
 						});
 			}
 		}*/
+		if (songName.toLowerCase() == "dealtastic") {
+			defaultCamZoom = 1.8;
+			PlayState.instance.camGame.zoom = 1.8;
+			PlayState.instance.camGame.fade(FlxColor.BLACK,0,false);
+		}
 	}
 
 	override function update(elapsed:Float)
@@ -166,6 +174,13 @@ class Dealtastic extends BaseStage
 			case ONE: // num 2
 			case GO: // num 3
 			case START: // num 4
+				if (songName.toLowerCase() == "dealtastic") {
+					FlxTween.tween(PlayState.instance.camGame,{zoom: 1.2}, Conductor.crochet * 0.029, {ease: FlxEase.quadInOut});
+					defaultCamZoom = 1.2;
+					PlayState.instance.camGame.fade(FlxColor.BLACK,Conductor.crochet * 0.008,true);
+				}
+			
+
 		}
 	}
 
@@ -213,6 +228,19 @@ class Dealtastic extends BaseStage
 		// Code here
 		switch (curBeat)
 		{
+			case 29:
+				FlxTween.tween(PlayState.instance.camGame,{zoom: 1.4}, Conductor.crochet * 0.002, {ease: FlxEase.quadInOut});
+				defaultCamZoom = 1.4;
+			case 32:
+				FlxTween.tween(PlayState.instance.camGame,{zoom: 0.85}, Conductor.crochet * 0.026, {ease: FlxEase.quadInOut});
+					defaultCamZoom = 0.85;
+			case 58:
+				FlxTween.tween(PlayState.instance.camGame,{zoom: 1.25}, Conductor.crochet * 0.005, {ease: FlxEase.quadInOut});
+					defaultCamZoom = 1.25;
+			//case 64:
+			//	defaultCamZoom = 0.95;
+			case 65:
+				defaultCamZoom = 0.85;
 			case 269:
 				FlxTween.tween(game.gf, {y: game.gf.y -= 600}, 4);
 		}

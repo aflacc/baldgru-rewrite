@@ -1,3 +1,16 @@
 sometimes songs glitch out on start and sound really choppy. if that happens just restart the song and that should fix it
 
-this build in general is kinda buggy and i really really apologize if the game crashes
+this build in general is kinda buggy please just try to ignore that..
+
+ADDITION:
+videos MAY crash, It's super inconsistant. I greatly apologize if that happens. it only happens when the video ends if at all, if that happens just reopen the mod, Sorry
+^ hopefully this shouldn't cause any issues since theres no video cutscenes that should be able to cause you to lose progress or something.
+
+if its *really* bad, disable cutscenes in the settings, it should skip every video
+
+I've spent weeks trying to fix this one specific issue and got nowhere with it, for the sake of my sanity, we're just taking the "it might crash but doesnt always" and we're happy with that (i guess)
+
+in the event that the game SOMEHOW does some bullshit press 7 and there should be an option in there to skip the story, i ask you don't skip anything in the mod, and only use that if you saw it already and the game crashed literally right at the end of it
+
+if you're smarter at coding than me, you're fully welcome to check out the github repository and try to fix the issue(s) yourself. But we'd like to be done with this update. It was meant to be out almost a year ago!
+Let the people play Bald Gru!

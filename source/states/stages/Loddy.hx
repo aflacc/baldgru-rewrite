@@ -377,8 +377,8 @@ class LoddyStage extends BaseStage
 			return;
 		}
 
-		//if (isStoryMode)
-		//{
+		if (ClientPrefs.data.cutscenes)
+		{
 			switch (songName)
 			{
 				default:
@@ -387,6 +387,6 @@ class LoddyStage extends BaseStage
 					// case 'darnell':
 					// darnellCutscene();
 			}
-		//}
+		}
 	}
 }

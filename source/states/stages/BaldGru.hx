@@ -155,7 +155,7 @@ class BaldGlue extends BaseStage
 		add(platform);
 		add(gruOverlay);
 
-		if (isStoryMode)
+		if (isStoryMode && ClientPrefs.data.cutscenes)
 		{
 			switch (songName)
 			{
