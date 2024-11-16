@@ -28,7 +28,7 @@ class CreditsState extends MusicBeatState
 			"aflac",
 			"aflac",
 			"programmed all da things\ntrans rights         im sleepy",
-			'https://twitter.com/aflaccck',
+			'https://bsky.app/profile/aflac.bsky.social', //'https://twitter.com/aflaccck',
 			"aflacscreamWAAAAHHH"
 		],
 		[
@@ -91,7 +91,7 @@ class CreditsState extends MusicBeatState
 			'Daddy Dearest',
 			'daddydearest',
 			'Hi! I\'m Daddy Dearest! I play the role of Daddy Dearest in this FNF Mod! Hope you enjoy it, haha!     ',
-			'https://twitter.com/DearestGamingYT',
+			'https://bsky.app/profile/daddydearest.bsky.social',//'https://twitter.com/DearestGamingYT',
 			'daddy dearest dies to death'
 		]
 	];

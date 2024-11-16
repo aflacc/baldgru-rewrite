@@ -9,7 +9,7 @@ import backend.Highscore;
 
 class MasterEditorMenu extends MusicBeatSubstate
 {
-	var options:Array<String> = ['Test State', 'Chart Editor', 'Character Editor', "Freeplay", "Skip Story"];
+	var options:Array<String> = ['Test State', 'Chart Editor', 'Character Editor', "Freeplay", "Skip Story (dont)", "Skip Yolked (also dont)"];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
 	private var directories:Array<String> = [null];
 
@@ -118,7 +118,10 @@ class MasterEditorMenu extends MusicBeatSubstate
 		{
 			switch (options[curSelected])
 			{
-				case 'Skip Story':
+				case 'Skip Yolked (also dont)':
+					Highscore.saveScore("yolked",1);
+					MusicBeatState.switchState(new FreeplayState());
+				case 'Skip Story (dont)':
 					Highscore.saveScore("baldspicable",1);
 					Highscore.saveScore("baldozer",1);
 					Highscore.saveScore("dealtastic",1);
