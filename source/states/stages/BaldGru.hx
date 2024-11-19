@@ -143,7 +143,7 @@ class BaldGlue extends BaseStage
 		var platform:FlxSprite = new FlxSprite(-340,670).loadGraphic(Paths.image("stages/baldGlue/BGstage"));
 		platform.antialiasing = ClientPrefs.data.antialiasing;
 		platform.scrollFactor.set(1, 1);
-		platform.scale.set(1.2, 1.2);
+		platform.scale.set(1.3, 1.2);
 
 		crowd1 = new BGSprite("stages/baldGlue/BGbackcrowd", -500,500, 0.4, 0.3, ["front"], false);
 		crowd1.dance();
@@ -178,7 +178,7 @@ class BaldGlue extends BaseStage
 
 		add(minionsFront);
 
-		object = crowd1;
+		object = platform;
 
 		
 
