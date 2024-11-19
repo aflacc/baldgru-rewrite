@@ -76,13 +76,13 @@ class ExtrasState extends MusicBeatState
 		minionsBot.y = FlxG.height - minionsBot.height;
 		minionsBot.velocity.set(30, 0);
 		minionsBot.antialiasing = ClientPrefs.data.antialiasing;
-		// add(minionsBot);
+		add(minionsBot);
 
 		var minionsTop:FlxBackdrop = new FlxBackdrop(Paths.image("extras/menuAssets/minions"), X);
 		minionsTop.flipY = true;
 		minionsTop.velocity.set(-30, 0);
 		minionsTop.antialiasing = ClientPrefs.data.antialiasing;
-		// add(minionsTop);
+		add(minionsTop);
 
 		var backBack:FlxSprite = new FlxSprite(50, 154).loadGraphic(Paths.image("extras/menuAssets/backback"));
 		add(backBack);
