@@ -394,7 +394,7 @@ class FreeplayStage extends BaseStage
 
 	var poseOfMany:FlxSprite;
 	var shit:FlxSprite;
-
+	var depression:FlxText;
 	override function beatHit()
 	{
 		speaker.animation.play("Idle", true);
@@ -413,6 +413,7 @@ class FreeplayStage extends BaseStage
 					fadeImage(Conductor.crochet * 0.004, null);
 				// fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory1"));
 				case 68:
+					if (ClientPrefs.data.cutscenes) {
 					var lol:FlxSprite = new FlxSprite().makeGraphic(1280, 720, FlxColor.WHITE);
 					lol.screenCenter(X);
 					lol.cameras = [game.camOther];
@@ -431,12 +432,25 @@ class FreeplayStage extends BaseStage
 							}
 						});
 					});
+				}
 					//PlayState.instance.inCutscene = false;
-				case 80: // sad story #2
+				case 72: // sad story #2
+				if (!ClientPrefs.data.cutscenes) {
+					depression = new FlxText(0,0,FlxG.width / 2,"normally there would be a cool as hell video here, but you turned off cutscenes, so you wont see it",16);
+					depression.cameras = [game.camOther];
+					depression.setFormat("VCR OSD Mono", 24, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+					depression.screenCenter();
+					add(depression);
+				}
 					// fadeImage(Conductor.crochet * 0.004, Paths.image("stages/yolked/sadstory2"));
-				case 94: // sad story #3 (blink) (no fade)
-					// changeImage(Paths.image("stages/yolked/sadstory3"));
+				case 88: // sad story #3 (blink) (no fade)
+					if (!ClientPrefs.data.cutscenes)
+						{depression.text += "\n\ni'm not judging you for that btw, don't worry";
+				}// changeImage(Paths.image("stages/yolked/sadstory3"));
 				case 98: // fade to white, fade to bf
+				if (!ClientPrefs.data.cutscenes) {
+					depression.destroy();
+				}
 					fadeImage(Conductor.crochet * 0.001, null);
 				case 102: // left geremy
 					var popup:FlxSprite = new FlxSprite().loadGraphic(Paths.image("stages/yolked/right"), true, 435, 500);

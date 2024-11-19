@@ -1162,6 +1162,7 @@ class PlayState extends MusicBeatState
 						trace("callback is null, ignoring");
 					}
 					videoCutscene = null;
+					trace("VIDEOCUTSCENE IS NIL"); // on crash
 					canPause = true; // why is this false?
 					inCutscene = false;
 				}

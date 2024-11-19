@@ -54,14 +54,14 @@ class VideoSprite extends FlxSpriteGroup
 		{
 			videoSprite.bitmap.onEndReached.add(function()
 			{
-				trace(alreadyDestroyed ? "yeah" : "waa");
-				if (alreadyDestroyed)
-					return;
+				//trace(alreadyDestroyed ? "yeah" : "waa");
+				//if (alreadyDestroyed)
+				//	return;
 
 				trace('Video destroyed');
 				if (cover != null)
 				{
-					remove(cover);
+					//remove(cover);
 					cover.destroy();
 				}
 
@@ -97,17 +97,17 @@ class VideoSprite extends FlxSpriteGroup
 
 	override function destroy()
 	{
-		if (alreadyDestroyed)
-		{
-			trace("HELLO HI ALREADYDESTROYED");
-			super.destroy();
-			return;
-		}
+	//	if (alreadyDestroyed)
+	//	{
+			//trace("HELLO HI ALREADYDESTROYED");
+			//super.destroy();
+	//		return;
+	//	}
 
 		trace('Video destroyed');
 		if (cover != null)
 		{
-			//remove(cover);
+			remove(cover);
 			cover.destroy();
 		}
 
@@ -120,8 +120,8 @@ class VideoSprite extends FlxSpriteGroup
 		onSkip = null;
 
 		trace("1");
-		if (PlayState.instance != null) // make sure playstate isnt being destroyed already. prevents a crash
-			PlayState.instance.remove(this);
+		//if (PlayState.instance != null) // make sure playstate isnt being destroyed already. prevents a crash
+		//	PlayState.instance.remove(this);
 		trace("2");
 		
 		// super.destroy() crash is due to the group line.
