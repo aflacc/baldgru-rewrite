@@ -65,6 +65,8 @@ class BaldGlue extends BaseStage
 	var dialogBG:FlxSprite;
 	var loddyDialog:FlxText;
 
+	var object:FlxSprite;
+
 	var crowd1:BGSprite;
 	var crowd2:BGSprite;
 	var crowd3:FlxSprite;
@@ -80,10 +82,28 @@ class BaldGlue extends BaseStage
 	{
 		GameOverSubstate.loopSoundName = "baldgru-gameover-loop";
 		GameOverSubstate.endSoundName = 'baldgru-gameover-end';
-		var bg:FlxSprite = new FlxSprite(-300, -290).loadGraphic(Paths.image("stages/baldGlue/BG_background"));
-		bg.scrollFactor.set(0.4, 0.4);
-		bg.scale.set(1.15, 1.15);
+
+		var farBg:FlxSprite = new FlxSprite(-630,-330).loadGraphic(Paths.image("stages/baldGlue/farthest background"));
+		farBg.scrollFactor.set(0.0, 0.0);
+		farBg.scale.set(0.85,0.85);
+		farBg.antialiasing = ClientPrefs.data.antialiasing;
+
+		var fartherBg:FlxSprite = new FlxSprite(-630,-530).loadGraphic(Paths.image("stages/baldGlue/farther background"));
+		fartherBg.scrollFactor.set(0.15, 0.15);
+		fartherBg.scale.set(0.85,0.85);
+		fartherBg.antialiasing = ClientPrefs.data.antialiasing;
+
+		var bg:FlxSprite = new FlxSprite(-660,-430).loadGraphic(Paths.image("stages/baldGlue/background"));
+		bg.scrollFactor.set(0.3, 0.3);
+		bg.scale.set(0.85,0.85);
 		bg.antialiasing = ClientPrefs.data.antialiasing;
+
+		var minionsFront = new FlxSprite(-520,770);
+		minionsFront.frames = Paths.getSparrowAtlas("stages/baldGlue/bf_foreground_crowd");
+		minionsFront.antialiasing = ClientPrefs.data.antialiasing;
+		minionsFront.animation.addByPrefix("idle", "front crowd1 instance 1", 24, true);
+		minionsFront.animation.play("idle", true);
+		minionsFront.scale.set(1.2,1.2);
 
 		alarm = new FlxSprite(-480, -180);
 		alarm.frames = Paths.getSparrowAtlas("stages/baldGlue/alarm");
@@ -94,10 +114,10 @@ class BaldGlue extends BaseStage
 		alarm.animation.play("norm", true);
 		add(alarm);
 
-		var pipe:FlxSprite = new FlxSprite(-175, 490).loadGraphic(Paths.image("stages/baldGlue/bg_pipe"));
-		pipe.antialiasing = ClientPrefs.data.antialiasing;
-		pipe.scrollFactor.set(0.4, 0.4);
-		pipe.scale.set(1.2, 1);
+		//var pipe:FlxSprite = new FlxSprite(-175, 490).loadGraphic(Paths.image("stages/baldGlue/bg_pipe"));
+		//pipe.antialiasing = ClientPrefs.data.antialiasing;
+		//pipe.scrollFactor.set(0.4, 0.4);
+		//pipe.scale.set(1.2, 1);
 
 		/*
 			makeLuaSprite("gandolfo","bigstage/gandolfo",300,700)
@@ -120,31 +140,33 @@ class BaldGlue extends BaseStage
 			// explosion.animation.addByPrefix("play", "explos instance", 24, false);
 			explosion.visible = false;
 		}
-		var platform:FlxSprite = new FlxSprite(-700, 260).loadGraphic(Paths.image("stages/baldGlue/BGstage"));
+		var platform:FlxSprite = new FlxSprite(-340,670).loadGraphic(Paths.image("stages/baldGlue/BGstage"));
 		platform.antialiasing = ClientPrefs.data.antialiasing;
 		platform.scrollFactor.set(1, 1);
-		platform.scale.set(1.1, 1.1);
+		platform.scale.set(1.2, 1.2);
 
-		crowd1 = new BGSprite("stages/baldGlue/BGbackcrowd", -500, 450, 0.6, 0.6, ["front"], false);
+		crowd1 = new BGSprite("stages/baldGlue/BGbackcrowd", -500,500, 0.4, 0.3, ["front"], false);
 		crowd1.dance();
 
-		crowd2 = new BGSprite("stages/baldGlue/BGfront_crowd", -500, 450, 0.7, 0.7, ["front"], false);
+		crowd2 = new BGSprite("stages/baldGlue/BGfront_crowd", -700,490, 0.7, 0.4, ["front"], false);
 		crowd2.dance();
 
-		crowd3 = new FlxSprite(-520, 100);
+
+		crowd3 = new FlxSprite(-499,280);
 		crowd3.antialiasing = ClientPrefs.data.antialiasing;
 		crowd3.frames = Paths.getSparrowAtlas("stages/baldGlue/BGfront_minons");
 		crowd3.animation.addByPrefix("idle", "crowd instance 1", 24, false, false);
 		crowd3.animation.play("idle");
-		crowd3.scrollFactor.set(0.6, 1);
-		crowd3.scale.set(1.1, 1.1);
+		crowd3.scrollFactor.set(1.2, 1);
+		crowd3.scale.set(1.8,1.8);
 
-		var gruOverlay:BGSprite = new BGSprite('stages/baldGlue/baldoverlay', -430, -100, 0, 0);
-		gruOverlay.blend = OVERLAY;
-		gruOverlay.scale.set(1.1, 1.1);
+		//var gruOverlay:BGSprite = new BGSprite('stages/baldGlue/baldoverlay', -430, -100, 0, 0);
+		//gruOverlay.blend = OVERLAY;
+		//gruOverlay.scale.set(1.1, 1.1);
 
+		add(farBg);
+		add(fartherBg);
 		add(bg);
-		add(pipe);
 		add(crowd1);
 		add(crowd2);
 		if (PlayState.SONG.song.toLowerCase() == "baldozer")
@@ -153,7 +175,12 @@ class BaldGlue extends BaseStage
 			add(gandolfo);
 		}
 		add(platform);
-		add(gruOverlay);
+
+		add(minionsFront);
+
+		object = crowd1;
+
+		
 
 		if (isStoryMode && ClientPrefs.data.cutscenes)
 		{
@@ -206,14 +233,15 @@ class BaldGlue extends BaseStage
 		// add(dialogBG);
 
 		// Bald Gru should have a dedicated gangnam style button
-		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -580, -280, 1, 1);
+		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -970,-1180, 1, 1);
 		gruDarkness.blend = MULTIPLY;
-		gruDarkness.scale.set(1.1, 1.1);
+		gruDarkness.scale.set(1, 1);
 		gruDarkness.scrollFactor.set(1, 0.5);
+		gruDarkness.alpha = 0.8;
 		add(gruDarkness);
-		var gruLighting = new BGSprite('stages/baldGlue/bal_gru_lighting', -580, -280, 1, 1);
+		var gruLighting = new BGSprite('stages/baldGlue/bal_gru_lighting', -420,-310, 1, 1);
 		gruLighting.blend = ADD;
-		gruLighting.scale.set(1.1, 1.1);
+		gruLighting.scale.set(1, 1);
 		gruLighting.scrollFactor.set(1, 0.5);
 		add(gruLighting);
 
@@ -227,6 +255,8 @@ class BaldGlue extends BaseStage
 		loddy.animation.play("leave", true);
 		loddy.animation.finish();
 		add(loddy);
+
+		
 
 		loddyDialog = new FlxText(128, FlxG.height * 0.7, FlxG.width - 128, "I know this one; the Indescribable Yes!", 30);
 		loddyDialog.setFormat("VCR OSD Mono", 30, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
@@ -317,6 +347,10 @@ class BaldGlue extends BaseStage
 				}
 			}
 		}
+
+		#if debug
+		debugShit();
+		#end
 
 		loddy.visible = !(loddy.animation.curAnim.name == "leave" && loddy.animation.finished);
 	}
@@ -465,4 +499,82 @@ class BaldGlue extends BaseStage
 			}
 		}
 	}
+
+	function debugShit()
+		{
+			var holdShift = FlxG.keys.pressed.SHIFT;
+			var holdCtrl = FlxG.keys.pressed.CONTROL;
+			var holdAlt = FlxG.keys.pressed.ALT;
+			var multiplier = 1;
+			if (holdShift)
+				multiplier = 10;
+	
+			if (holdCtrl)
+				multiplier = 100;
+	
+			if (FlxG.keys.justPressed.J)
+			{
+				object.x -= (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.I)
+			{
+				object.y -= (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.F1){
+				endSong();
+			}
+			if (FlxG.keys.justPressed.SEMICOLON)
+			{
+				trace("------------------------------------");
+				trace("X: " + object.x);
+				trace("Y: " + object.y);
+				trace("SCALE X: " + object.scale.x);
+				trace("SCALE Y: " + object.scale.y);
+				trace("------------------------------------");
+			}
+			if (FlxG.keys.justPressed.K)
+			{
+				object.y += (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.L)
+			{
+				object.x += (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.U)
+			{
+				object.scale.x -= (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.Y)
+			{
+				object.scale.x += (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.O)
+			{
+				object.scale.y -= (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.P)
+			{
+				object.scale.y += (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.Z)
+			{
+				object.angle -= (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.X)
+			{
+				object.angle += (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.PAGEUP)
+			{
+				PlayState.instance.defaultCamZoom += 0.1;
+			}
+			if (FlxG.keys.justPressed.PAGEDOWN)
+			{
+				PlayState.instance.defaultCamZoom -= 0.1;
+			}
+		}
 }
