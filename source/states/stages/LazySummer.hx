@@ -63,17 +63,26 @@ class LazySummer extends BaseStage
 		martello.antialiasing = ClientPrefs.data.antialiasing;
 		martello.scale.set(1.5,1.5); // Why
 		add(martello);
+		
 	}
 
 	override function createPost()
 	{
+
+
+		game.camGame.zoom = 2;
+		defaultCamZoom = 1.2;
+		PlayState.instance.camZooming = true;
 		game.dadGroup.visible = false;
 		game.gfGroup.visible = false;
 		
 		game.dad.y += 100;
+		game.boyfriendCameraOffset[1] -= 100;
+
 		game.dadGroup.x -= 200;
 		game.boyfriend.y += 300; // camera purposes!
-		game.boyfriendCameraOffset[1] -= 100;
+
+		PlayState.instance.moveCamera(false); // i think this will reposition the camera correctly?
 
 		lyricsBack = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
 		lyricsBack.visible = false;
@@ -86,6 +95,14 @@ class LazySummer extends BaseStage
 		lyricsText.screenCenter(X);
 		lyricsText.cameras = [game.camHUD];
 		add(lyricsText);
+	}
+
+	override function beatHit() {
+		if (PlayState.SONG.notes[curSection].mustHitSection) {
+			defaultCamZoom = curBeat > 42 ? 0.8 : 1.2;
+		} else {
+			defaultCamZoom = 0.65;
+		}
 	}
 
 	override function eventCalled(eventName:String, value1:String, value2:String, flValue1:Null<Float>, flValue2:Null<Float>, strumTime:Float)
