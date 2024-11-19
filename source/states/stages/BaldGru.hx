@@ -101,7 +101,7 @@ class BaldGlue extends BaseStage
 		var minionsFront = new FlxSprite(-520,770);
 		minionsFront.frames = Paths.getSparrowAtlas("stages/baldGlue/bf_foreground_crowd");
 		minionsFront.antialiasing = ClientPrefs.data.antialiasing;
-		minionsFront.animation.addByPrefix("idle", "front crowd1 instance 1", 24, true);
+		minionsFront.animation.addByPrefix("idle", "front crowd1 instance", 24, true);
 		minionsFront.animation.play("idle", true);
 		minionsFront.scale.set(1.2,1.2);
 
@@ -145,10 +145,10 @@ class BaldGlue extends BaseStage
 		platform.scrollFactor.set(1, 1);
 		platform.scale.set(1.3, 1.2);
 
-		crowd1 = new BGSprite("stages/baldGlue/BGbackcrowd", -500,500, 0.4, 0.3, ["front"], false);
+		crowd1 = new BGSprite("stages/baldGlue/BGbackcrowd", -500,500, 0.4, 0.3, ["Back crowd instance 1"], false);
 		crowd1.dance();
 
-		crowd2 = new BGSprite("stages/baldGlue/BGfront_crowd", -700,490, 0.7, 0.4, ["front"], false);
+		crowd2 = new BGSprite("stages/baldGlue/BGfront_crowd", -700,490, 0.7, 0.4, ["front crowd instance 1"], false);
 		crowd2.dance();
 
 
