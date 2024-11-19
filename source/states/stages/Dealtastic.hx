@@ -28,7 +28,7 @@ class Dealtastic extends BaseStage
 			suffix = "-summer";
 		}
 
-		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", 250, -500, 0.1, 0.1);
+		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", 150, -500, 0.1, 0.1);
 		sky.scale.set(1.5, 1.5);
 		add(sky);
 		var shutters:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMShutters", -380, -470, 0.5, 0.5);
