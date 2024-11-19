@@ -754,7 +754,6 @@ class PlayState extends MusicBeatState
 
 			FlxTween.tween(summerWarningText, {alpha: 0}, 10, {ease: FlxEase.quintIn});
 
-			object = summerWarningText;
 		}
 
 		
@@ -2095,9 +2094,7 @@ class PlayState extends MusicBeatState
 		setOnScripts('curDecStep', curDecStep);
 		setOnScripts('curDecBeat', curDecBeat);
 
-		#if debug
-		debugShit();
-		#end
+		
 
 		if (botplayTxt != null && botplayTxt.visible)
 		{
@@ -4329,84 +4326,6 @@ class PlayState extends MusicBeatState
 		health -= 99999999; // if u somehow live this then fair game
 		eatingPopsicle = false;
 		boyfriend.stunned = false;
-	}
-
-	function debugShit()
-	{
-		var holdShift = FlxG.keys.pressed.SHIFT;
-		var holdCtrl = FlxG.keys.pressed.CONTROL;
-		var holdAlt = FlxG.keys.pressed.ALT;
-		var multiplier = 1;
-		if (holdShift)
-			multiplier = 10;
-
-		if (holdCtrl)
-			multiplier = 100;
-
-		if (FlxG.keys.justPressed.J)
-		{
-			object.x -= (1 * multiplier);
-			trace(object.x, object.y);
-		}
-		if (FlxG.keys.justPressed.I)
-		{
-			object.y -= (1 * multiplier);
-			trace(object.x, object.y);
-		}
-		if (FlxG.keys.justPressed.F1){
-			endSong();
-		}
-		if (FlxG.keys.justPressed.SEMICOLON)
-		{
-			trace("------------------------------------");
-			trace("X: " + object.x);
-			trace("Y: " + object.y);
-			trace("SCALE X: " + object.scale.x);
-			trace("SCALE Y: " + object.scale.y);
-			trace("------------------------------------");
-		}
-		if (FlxG.keys.justPressed.K)
-		{
-			object.y += (1 * multiplier);
-			trace(object.x, object.y);
-		}
-		if (FlxG.keys.justPressed.L)
-		{
-			object.x += (1 * multiplier);
-			trace(object.x, object.y);
-		}
-		if (FlxG.keys.justPressed.U)
-		{
-			object.scale.x -= (0.1 * multiplier);
-		}
-		if (FlxG.keys.justPressed.Y)
-		{
-			object.scale.x += (0.1 * multiplier);
-		}
-		if (FlxG.keys.justPressed.O)
-		{
-			object.scale.y -= (0.1 * multiplier);
-		}
-		if (FlxG.keys.justPressed.P)
-		{
-			object.scale.y += (0.1 * multiplier);
-		}
-		if (FlxG.keys.justPressed.Z)
-		{
-			object.angle -= (0.1 * multiplier);
-		}
-		if (FlxG.keys.justPressed.X)
-		{
-			object.angle += (0.1 * multiplier);
-		}
-		if (FlxG.keys.justPressed.PAGEUP)
-		{
-			PlayState.instance.defaultCamZoom += 0.1;
-		}
-		if (FlxG.keys.justPressed.PAGEDOWN)
-		{
-			PlayState.instance.defaultCamZoom -= 0.1;
-		}
 	}
 
 	public function initLuaShader(name:String, ?glslVersion:Int = 120)
