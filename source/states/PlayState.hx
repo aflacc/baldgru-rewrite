@@ -2044,6 +2044,8 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+		trace ("Dookie fart till i smell brown");
+
 		if (!inCutscene && !paused && !freezeCamera)
 		{
 			FlxG.camera.followLerp = 2.4 * cameraSpeed * playbackRate;
