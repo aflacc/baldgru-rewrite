@@ -285,7 +285,7 @@ class PlayState extends MusicBeatState
 	var summerDifficulty:Float = 1;
 	var tempIncrease:Bool = false;
 	var tempAmount:Float = 0;
-	var tempRate:Float = 3.5;
+	var tempRate:Float = 1.5;
 
 	var object:FlxSprite; // debug shit
 
@@ -504,11 +504,13 @@ class PlayState extends MusicBeatState
 		switch (SONG.song.toLowerCase())
 		{
 			case "lazy river":
+				tempRate = 2.0;
 				summerDifficulty = 0.5;
 				summerTime = true;
 				boyfriend.y = 530;
 			case "lazy summer":
 				summerDifficulty = 1.5;
+				tempRate = 2.5;
 		}
 
 		var camPos:FlxPoint = FlxPoint.get(girlfriendCameraOffset[0], girlfriendCameraOffset[1]);
@@ -2044,8 +2046,7 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		trace ("Dookie fart till i smell brown");
-
+		
 		if (!inCutscene && !paused && !freezeCamera)
 		{
 			FlxG.camera.followLerp = 2.4 * cameraSpeed * playbackRate;

@@ -28,13 +28,13 @@ class Dealtastic extends BaseStage
 			suffix = "-summer";
 		}
 
-		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", 150, -500, 0.1, 0.1);
+		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", 150, -200, 0.1, 0.1);
 		sky.scale.set(1.5, 1.5);
 		add(sky);
 		var shutters:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMShutters", -380, -470, 0.5, 0.5);
 		shutters.scale.set(0.8 * 1.5, 0.8 * 1.5);
 		add(shutters);
-		var stage:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMStage", 0, 500, 1, 1);
+		var stage:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMStage", -100, 200, 1, 1);
 		stage.scale.set(1, 1);
 		add(stage);
 		var borda:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/borda", -610, 230, 1, 1, ["acrtion bubble"], true);

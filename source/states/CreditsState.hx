@@ -13,14 +13,14 @@ class CreditsState extends MusicBeatState
 		[
 			'BeefStarchJello',
 			'beef',
-			'Odd Day Director, Writer, Artistry for the bald, Charter, and Bald Gru & Sonic',
+			'Odd Day Director, Main Artist, Coder, Charter, Bald Gru & Sonic VA',
 			'https://twitter.com/beefstarchjello',
 			"baldiung moron"
 		],
 		[
 			"BurritoBaptizer",
 			"bb",
-			'Even Day Director, Music of the Bald Variety, Voice of Geremy and Sonic Do Mau',
+			'Even Day Director, Music of the Bald Variety, Geremy & Sonic Do Mau',
 			'https://twitter.com/burritobaptizer',
 			'burrito'
 		],
@@ -76,7 +76,7 @@ class CreditsState extends MusicBeatState
 		[
 			'PhantomFear',
 			'phantomfear',
-			'Summer mode Code, Ending cutscene help',
+			'Code Assistance, Ending cutscene help',
 			'https://twitter.com/PhantomFearOP',
 			'im fearing for my phantoms! ahh!'
 		],
@@ -176,7 +176,7 @@ class CreditsState extends MusicBeatState
 		signTitle.antialiasing = ClientPrefs.data.antialiasing;
 		signTitle.scrollFactor.set(0.65, 0.65);
 
-		signDesc = new FlxText(0, 132, 967, "Odd Day Director, Artistry for the bald, Charter, and Bald Gru & Sonic VA", 38);
+		signDesc = new FlxText(0, 132, 967, "Odd Day Director, Main Artist, Coder, Charter, Bald Gru & Sonic VA", 38);
 		signDesc.setFormat(Paths.font("vcr.ttf"), 38, CENTER);
 		signDesc.screenCenter(X);
 		signDesc.visible = false;
