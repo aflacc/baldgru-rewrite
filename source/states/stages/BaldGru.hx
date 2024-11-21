@@ -98,7 +98,7 @@ class BaldGlue extends BaseStage
 		bg.scale.set(0.85,0.85);
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 
-		var minionsFront = new FlxSprite(-520,770);
+		var minionsFront = new FlxSprite(-520,670);
 		minionsFront.frames = Paths.getSparrowAtlas("stages/baldGlue/bf_foreground_crowd");
 		minionsFront.antialiasing = ClientPrefs.data.antialiasing;
 		minionsFront.animation.addByPrefix("idle", "front crowd1 instance", 24, true);
@@ -145,7 +145,7 @@ class BaldGlue extends BaseStage
 		platform.scrollFactor.set(1, 1);
 		platform.scale.set(1.3, 1.2);
 
-		crowd1 = new BGSprite("stages/baldGlue/BGbackcrowd", -500,500, 0.4, 0.3, ["Back crowd instance 1"], false);
+		crowd1 = new BGSprite("stages/baldGlue/BGbackcrowd", -500,525, 0.4, 0.3, ["Back crowd instance 1"], false);
 		crowd1.dance();
 
 		crowd2 = new BGSprite("stages/baldGlue/BGfront_crowd", -700,490, 0.7, 0.4, ["front crowd instance 1"], false);
@@ -155,7 +155,7 @@ class BaldGlue extends BaseStage
 		crowd3 = new FlxSprite(-499,280);
 		crowd3.antialiasing = ClientPrefs.data.antialiasing;
 		crowd3.frames = Paths.getSparrowAtlas("stages/baldGlue/BGfront_minons");
-		crowd3.animation.addByPrefix("idle", "crowd instance 1", 24, false, false);
+		crowd3.animation.addByPrefix("idle", "front minons instance 1", 24, false, false);
 		crowd3.animation.play("idle");
 		crowd3.scrollFactor.set(1.2, 1);
 		crowd3.scale.set(1.8,1.8);
@@ -234,7 +234,7 @@ class BaldGlue extends BaseStage
 
 		// Bald Gru should have a dedicated gangnam style button
 		// i agree - beef
-		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -970,-1180, 1, 1);
+		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -1000,-1180, 1, 1);
 		gruDarkness.blend = MULTIPLY;
 		gruDarkness.scale.set(1, 1);
 		gruDarkness.scrollFactor.set(1, 0.5);

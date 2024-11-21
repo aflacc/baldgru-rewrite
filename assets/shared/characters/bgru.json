@@ -1,70 +1,92 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"indices": [],
 			"fps": 24,
-			"name": "idle",
-			"indices": []
+			"anim": "idle",
+			"loop": false,
+			"name": "bg idle 2"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				284,
 				17
 			],
-			"anim": "singLEFT",
+			"indices": [],
 			"fps": 24,
-			"name": "singLEFT",
-			"indices": []
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "bg left 2"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				150,
 				-272
 			],
-			"anim": "singDOWN",
+			"indices": [],
 			"fps": 24,
-			"name": "singDOWN",
-			"indices": []
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "bg down 2"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-2,
 				155
 			],
-			"anim": "singUP",
+			"indices": [],
 			"fps": 24,
-			"name": "singUP",
-			"indices": []
+			"anim": "singUP",
+			"loop": false,
+			"name": "bg up 2"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				308,
 				52
 			],
-			"anim": "hey",
+			"indices": [],
 			"fps": 24,
-			"name": "dox",
-			"indices": []
+			"anim": "hey",
+			"loop": false,
+			"name": "bg dox"
 		},
 		{
 			"offsets": [
-				-61,
-				11
+				-72,
+				8
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "singRIGHT"
+			"name": "bg right 2"
+		},
+		{
+			"offsets": [
+				18,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "turn around",
+			"loop": false,
+			"name": "bg turn around"
+		},
+		{
+			"offsets": [
+				18,
+				6
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "look around",
+			"loop": false,
+			"name": "bg turn look around"
 		}
 	],
 	"vocals_file": "",
@@ -86,6 +108,6 @@
 		0
 	],
 	"sing_duration": 4,
-	"scale": 1,
+	"scale": 1.5,
 	"_editor_isPlayer": false
 }
