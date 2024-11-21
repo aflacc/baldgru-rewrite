@@ -13,6 +13,10 @@ class LazySummer extends BaseStage
 	var lyricsText:FlxText;
 	var lyricsBack:FlxSprite;
 
+	var elephant:FlxSprite;
+
+	var object:FlxSprite;
+
 	override function create()
 	{
 		
@@ -55,6 +59,16 @@ class LazySummer extends BaseStage
 		gfDead.animation.play("loop");
 		gfDead.antialiasing = ClientPrefs.data.antialiasing;
 		add(gfDead);
+		
+		elephant:FlxSprite = new FlxSprite(0,0);
+		elephant.scale.set(1,1);
+		elephant.frames = Paths.getSparrowAtlas("stages/lazyriver/hernando");
+		elephant.animation.addByPrefix("loop","Elephat",24,true);
+		elephant.animation.play("loop");
+		elephant.antialiasing = false;
+		add(elephant);
+
+		object = elephant;
 
 		var martello:FlxSprite = new FlxSprite(-300,120);
 		martello.frames = Paths.getSparrowAtlas("stages/lazyriver/martello");
@@ -105,10 +119,96 @@ class LazySummer extends BaseStage
 		}
 	}
 
+	override function Update(elapsed:Float){
+		#if debug
+		debugShit();
+		#end
+	}
+
+	function debugShit()
+		{
+			var holdShift = FlxG.keys.pressed.SHIFT;
+			var holdCtrl = FlxG.keys.pressed.CONTROL;
+			var holdAlt = FlxG.keys.pressed.ALT;
+			var multiplier = 1;
+			if (holdShift)
+				multiplier = 10;
+	
+			if (holdCtrl)
+				multiplier = 100;
+	
+			if (FlxG.keys.justPressed.J)
+			{
+				object.x -= (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.I)
+			{
+				object.y -= (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.F1){
+				endSong();
+			}
+			if (FlxG.keys.justPressed.SEMICOLON)
+			{
+				trace("------------------------------------");
+				trace("X: " + object.x);
+				trace("Y: " + object.y);
+				trace("SCALE X: " + object.scale.x);
+				trace("SCALE Y: " + object.scale.y);
+				trace("------------------------------------");
+			}
+			if (FlxG.keys.justPressed.K)
+			{
+				object.y += (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.L)
+			{
+				object.x += (1 * multiplier);
+				trace(object.x, object.y);
+			}
+			if (FlxG.keys.justPressed.U)
+			{
+				object.scale.x -= (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.Y)
+			{
+				object.scale.x += (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.O)
+			{
+				object.scale.y -= (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.P)
+			{
+				object.scale.y += (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.Z)
+			{
+				object.angle -= (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.X)
+			{
+				object.angle += (0.1 * multiplier);
+			}
+			if (FlxG.keys.justPressed.PAGEUP)
+			{
+				PlayState.instance.defaultCamZoom += 0.1;
+			}
+			if (FlxG.keys.justPressed.PAGEDOWN)
+			{
+				PlayState.instance.defaultCamZoom -= 0.1;
+			}
+		}
+
 	override function eventCalled(eventName:String, value1:String, value2:String, flValue1:Null<Float>, flValue2:Null<Float>, strumTime:Float)
 	{
 		switch (eventName)
 		{
+			//case "elephant":
+//
 			case "Lyrics":
 				lyricsBack.visible = true;
 				if (value1 == "")

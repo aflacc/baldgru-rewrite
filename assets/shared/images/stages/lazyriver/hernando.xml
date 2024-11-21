@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hernando.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Elephat0000" x="8" y="8" width="760" height="608"/>
+	<SubTexture name="Elephat0001" x="776" y="8" width="760" height="608"/>
+</TextureAtlas>
