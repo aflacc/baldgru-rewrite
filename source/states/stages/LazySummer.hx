@@ -121,7 +121,7 @@ class LazySummer extends BaseStage
 
 	override function stepHit(){
 		if (curStep == 1774){
-			FlxTween.tween(elephant, {x: -1670}, 0.1, {ease: FlxEase.linear});
+			FlxTween.tween(elephant, {x: -1670}, 0.2, {ease: FlxEase.linear});
 		}
 	}
 

@@ -1,169 +1,169 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				-5,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "idle",
 			"loop": false,
-			"name": "bf idle s"
+			"offsets": [
+				-11,
+				-1
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bf idle s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				7,
 				-9
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "bf left s"
+			"fps": 24,
+			"name": "bf left s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				7,
 				-20
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "bf down 2"
+			"fps": 24,
+			"name": "bf down 2",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-16,
 				27
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
-			"name": "bf up s"
+			"fps": 24,
+			"name": "bf up s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-33,
 				-7
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "bf right s"
+			"fps": 24,
+			"name": "bf right s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				19
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "bf miss s"
+			"fps": 24,
+			"name": "bf miss s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				19
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWNmiss",
-			"loop": false,
-			"name": "bf miss s"
+			"fps": 24,
+			"name": "bf miss s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				19
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUPmiss",
-			"loop": false,
-			"name": "bf miss s"
+			"fps": 24,
+			"name": "bf miss s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				19
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"loop": false,
-			"name": "bf miss s"
+			"fps": 24,
+			"name": "bf miss s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				126,
 				15
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "popsicle1",
-			"loop": false,
-			"name": "bf popsicle1"
+			"fps": 24,
+			"name": "bf popsicle1",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				126,
 				15
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "popsicle2",
-			"loop": false,
-			"name": "bf popsicle2"
+			"fps": 24,
+			"name": "bf popsicle2",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				126,
 				15
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "popsicle3",
-			"loop": false,
-			"name": "bf popsicle3"
+			"fps": 24,
+			"name": "bf popsicle3",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				126,
 				15
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "popsicle4",
-			"loop": false,
-			"name": "bf popsicle4"
+			"fps": 24,
+			"name": "bf popsicle4",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				127,
 				16
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "popsicle5",
-			"loop": false,
-			"name": "bf popsicle5"
+			"fps": 24,
+			"name": "bf popsicle5",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-4,
 				15
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "popsicle6",
-			"loop": false,
-			"name": "bf popsicle6"
+			"fps": 24,
+			"name": "bf popsicle6",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -173,12 +173,12 @@
 		50,
 		550
 	],
-	"healthicon": "bf",
+	"healthicon": "bfcool",
 	"flip_x": true,
 	"healthbar_colors": [
-		49,
-		176,
-		209
+		74,
+		115,
+		155
 	],
 	"camera_position": [
 		-20,
