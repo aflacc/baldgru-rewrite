@@ -1,177 +1,133 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				-11,
-				-1
+				0,
+				0
 			],
+			"loop": false,
+			"fps": 24,
+			"anim": "popsicle6",
+			"indices": [],
+			"name": "bf/bf popsicle6"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "popsicle5",
+			"indices": [],
+			"name": "bf/bf popsicle5"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "popsicle4",
+			"indices": [],
+			"name": "bf/bf popsicle4"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "popsicle3",
+			"indices": [],
+			"name": "bf/bf popsicle2"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "popsicle2",
+			"indices": [],
+			"name": "bf/bf popsicle2"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "popsicle1",
+			"indices": [],
+			"name": "bf/bf popsicle1"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "bf idle s",
-			"indices": []
+			"indices": [],
+			"name": "bf/bf idle s"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				7,
-				-9
+				0,
+				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "bf left s",
-			"indices": []
+			"indices": [],
+			"name": "bf copy/bf left s"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				7,
-				-20
+				0,
+				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "bf down 2",
-			"indices": []
+			"indices": [],
+			"name": "bf copy/bf down 2"
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-16,
-				27
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "bf up s",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-33,
-				-7
+				0,
+				0
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "bf right s",
+			"name": "bf copy/bf right s",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				2,
-				19
+				0,
+				0
 			],
-			"anim": "singLEFTmiss",
+			"anim": "singUP",
 			"fps": 24,
-			"name": "bf miss s",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				2,
-				19
-			],
-			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "bf miss s",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				2,
-				19
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "bf miss s",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				2,
-				19
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "bf miss s",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				126,
-				15
-			],
-			"anim": "popsicle1",
-			"fps": 24,
-			"name": "bf popsicle1",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				126,
-				15
-			],
-			"anim": "popsicle2",
-			"fps": 24,
-			"name": "bf popsicle2",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				126,
-				15
-			],
-			"anim": "popsicle3",
-			"fps": 24,
-			"name": "bf popsicle3",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				126,
-				15
-			],
-			"anim": "popsicle4",
-			"fps": 24,
-			"name": "bf popsicle4",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				127,
-				16
-			],
-			"anim": "popsicle5",
-			"fps": 24,
-			"name": "bf popsicle5",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-4,
-				15
-			],
-			"anim": "popsicle6",
-			"fps": 24,
-			"name": "bf popsicle6",
+			"name": "bf copy/bf up s",
 			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/summer/bfcool lazy popsicle",
+	"image": "characters/summer/bfcool summer popsicle",
 	"position": [
 		50,
-		550
+		480
 	],
 	"healthicon": "bfcool",
 	"flip_x": true,
@@ -181,10 +137,10 @@
 		155
 	],
 	"camera_position": [
-		-20,
-		250
+		0,
+		260
 	],
 	"sing_duration": 4,
-	"scale": 1,
+	"scale": 1.3,
 	"_editor_isPlayer": true
 }
