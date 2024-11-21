@@ -1,125 +1,125 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "popsicle6",
-			"indices": [],
-			"name": "bf/bf popsicle6"
+			"fps": 24,
+			"name": "bf/bf popsicle6",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "popsicle5",
-			"indices": [],
-			"name": "bf/bf popsicle5"
+			"fps": 24,
+			"name": "bf/bf popsicle5",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "popsicle4",
-			"indices": [],
-			"name": "bf/bf popsicle4"
+			"fps": 24,
+			"name": "bf/bf popsicle4",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "popsicle3",
-			"indices": [],
-			"name": "bf/bf popsicle2"
+			"fps": 24,
+			"name": "bf/bf popsicle2",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "popsicle2",
-			"indices": [],
-			"name": "bf/bf popsicle2"
+			"fps": 24,
+			"name": "bf/bf popsicle2",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "popsicle1",
-			"indices": [],
-			"name": "bf/bf popsicle1"
+			"fps": 24,
+			"name": "bf/bf popsicle1",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "bf/bf idle s"
+			"fps": 24,
+			"name": "bf/bf idle s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "bf copy/bf left s"
+			"fps": 24,
+			"name": "bf copy/bf left s",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "bf copy/bf down 2"
+			"fps": 24,
+			"name": "bf copy/bf down 2",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "bf copy/bf right s",
-			"indices": []
+			"indices": [],
+			"name": "bf copy/bf right s"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "bf copy/bf up s",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "bf copy/bf up s"
 		}
 	],
 	"vocals_file": "",
@@ -137,8 +137,8 @@
 		155
 	],
 	"camera_position": [
-		0,
-		260
+		-200,
+		350
 	],
 	"sing_duration": 4,
 	"scale": 1.3,

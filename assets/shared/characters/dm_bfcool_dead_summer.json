@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				242,
-				164
+				106,
+				427
 			],
 			"loop": false,
 			"fps": 24,
@@ -12,26 +12,35 @@
 			"name": "bf cooldown death instance 1"
 		},
 		{
-			"offsets": [
-				185,
-				-68
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "deathConfirm",
-			"indices": [],
-			"name": "bf cooldown death retry instance 1"
-		},
-		{
 			"loop": true,
 			"offsets": [
-				43,
-				-50
+				-209,
+				170
 			],
 			"anim": "deathLoop",
 			"fps": 24,
 			"name": "bf cooldown death hold instance 1",
 			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-406,
+				161
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "bf cooldown death retry instance 1",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
 		}
 	],
 	"vocals_file": "",
@@ -53,6 +62,6 @@
 		250
 	],
 	"sing_duration": 4,
-	"scale": 1,
+	"scale": 1.4,
 	"_editor_isPlayer": false
 }

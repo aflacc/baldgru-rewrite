@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
-				0
+				-8
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "Gandolfo idle",
-			"indices": []
+			"indices": [],
+			"name": "Gandolfo idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				264,
-				0
+				186,
+				-8
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "Gandolfo left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Gandolfo left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
-				-55
+				-45
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Gandolfo down",
-			"indices": []
+			"indices": [],
+			"name": "Gandolfo down"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				6,
-				158
+				4,
+				104
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "Gandolfo up",
-			"indices": []
+			"indices": [],
+			"name": "Gandolfo up"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-13,
-				-14
+				-11,
+				-19
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "Gandolfo right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Gandolfo right"
 		}
 	],
 	"vocals_file": "",
@@ -71,10 +71,10 @@
 		111
 	],
 	"camera_position": [
-		-180,
-		-70
+		-140,
+		80
 	],
 	"sing_duration": 6.1,
-	"scale": 1,
+	"scale": 0.7,
 	"_editor_isPlayer": false
 }

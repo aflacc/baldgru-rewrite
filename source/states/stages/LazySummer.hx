@@ -77,7 +77,7 @@ class LazySummer extends BaseStage
 		game.gfGroup.visible = false;
 		
 		game.dad.y += 100;
-		game.boyfriendCameraOffset[1] -= 100;
+		game.boyfriendCameraOffset[1] -= 200;
 
 		game.dadGroup.x -= 200;
 		game.boyfriend.y += 300; // camera purposes!

@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				0,
-				0
+				-13,
+				-57
 			],
 			"loop": false,
 			"fps": 24,
@@ -14,8 +14,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-48,
-				-3
+				-88,
+				-63
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -25,8 +25,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-17,
-				-45
+				-38,
+				-135
 			],
 			"anim": "singDOWN",
 			"fps": 24,
@@ -36,8 +36,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-11,
-				63
+				-38,
+				44
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -47,8 +47,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				59,
-				125
+				71,
+				149
 			],
 			"anim": "tpIn",
 			"fps": 24,
@@ -58,8 +58,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-2,
-				11
+				-16,
+				-38
 			],
 			"anim": "singLEFTmiss",
 			"fps": 24,
@@ -69,8 +69,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-2,
-				11
+				-16,
+				-38
 			],
 			"anim": "singDOWNmiss",
 			"fps": 24,
@@ -80,8 +80,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-2,
-				11
+				-16,
+				-38
 			],
 			"anim": "singUPmiss",
 			"fps": 24,
@@ -91,8 +91,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				43,
-				-33
+				32,
+				-120
 			],
 			"anim": "singLEFT",
 			"fps": 24,
@@ -102,8 +102,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-2,
-				10
+				-16,
+				-38
 			],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
@@ -111,70 +111,70 @@
 			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
-				20
+				24,
+				-22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle1",
-			"fps": 24,
-			"name": "bf cooldown instance 1",
-			"indices": []
+			"indices": [],
+			"name": "bf cool down instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
-				20
+				24,
+				-22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle2",
-			"fps": 24,
-			"name": "bf cooldown instance 1",
-			"indices": []
+			"indices": [],
+			"name": "bf cool down instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
-				20
+				24,
+				-22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle3",
-			"fps": 24,
-			"name": "bf cooldown instance 1",
-			"indices": []
+			"indices": [],
+			"name": "bf cool down instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
-				20
+				24,
+				-22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle4",
-			"fps": 24,
-			"name": "bf cooldown instance 1",
-			"indices": []
+			"indices": [],
+			"name": "bf cool down instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
-				20
+				24,
+				-22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "popsicle5",
-			"fps": 24,
-			"name": "bf cooldown instance 1",
-			"indices": []
+			"indices": [],
+			"name": "bf cool down instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
-				20
+				24,
+				-22
 			],
-			"anim": "popsicle6",
+			"loop": false,
 			"fps": 24,
-			"name": "bf cooldown instance 1",
-			"indices": []
+			"anim": "popsicle6",
+			"indices": [],
+			"name": "bf cool down instance"
 		}
 	],
 	"vocals_file": "",
@@ -189,13 +189,13 @@
 	"healthbar_colors": [
 		74,
 		115,
-		175
+		195
 	],
 	"camera_position": [
-		-70,
-		-70
+		-50,
+		-50
 	],
 	"sing_duration": 6.1,
-	"scale": 1,
+	"scale": 1.4,
 	"_editor_isPlayer": false
 }

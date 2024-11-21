@@ -28,7 +28,7 @@ class Dealtastic extends BaseStage
 			suffix = "-summer";
 		}
 
-		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", 150, -200, 0.1, 0.1);
+		var sky:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMsky", 150, 0, 0.1, 0.1);
 		sky.scale.set(1.5, 1.5);
 		add(sky);
 		var shutters:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMShutters", -380, -470, 0.5, 0.5);
@@ -37,7 +37,7 @@ class Dealtastic extends BaseStage
 		var stage:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/DMStage", -100, 200, 1, 1);
 		stage.scale.set(1, 1);
 		add(stage);
-		var borda:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/borda", -610, 230, 1, 1, ["acrtion bubble"], true);
+		var borda:BGSprite = new BGSprite("stages/dealtastic" + suffix + "/borda", -900, 230, 1, 1, ["acrtion bubble"], true);
 		borda.scale.set(1.5, 1.5);
 		add(borda);
 
@@ -229,14 +229,14 @@ class Dealtastic extends BaseStage
 		switch (curBeat)
 		{
 			case 29:
-				FlxTween.tween(PlayState.instance.camGame,{zoom: 1.4}, Conductor.crochet * 0.002, {ease: FlxEase.quadInOut});
-				defaultCamZoom = 1.4;
+				FlxTween.tween(PlayState.instance.camGame,{zoom: 1.8}, Conductor.crochet * 0.002, {ease: FlxEase.quadInOut});
+				defaultCamZoom = 2.0;
 			case 32:
 				FlxTween.tween(PlayState.instance.camGame,{zoom: 0.85}, Conductor.crochet * 0.026, {ease: FlxEase.quadInOut});
-					defaultCamZoom = 0.85;
+					defaultCamZoom = 1.00;
 			case 58:
 				FlxTween.tween(PlayState.instance.camGame,{zoom: 1.25}, Conductor.crochet * 0.005, {ease: FlxEase.quadInOut});
-					defaultCamZoom = 1.25;
+					defaultCamZoom = 1.50;
 			//case 64:
 			//	defaultCamZoom = 0.95;
 			case 65:
