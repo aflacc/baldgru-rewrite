@@ -736,7 +736,7 @@ class PlayState extends MusicBeatState
 			gfWaterBucket = new FlxSprite();
 			if (SONG.song.toLowerCase() == "dealtastic")
 			{
-				gfWaterBucket.frames = Paths.getSparrowAtlas('summer/gfHeadPat');
+				gfWaterBucket.frames = Paths.getSparrowAtlas('summer/GfHeadPat');
 				gfWaterBucket.animation.addByPrefix("water", 'GfHeadPat', 24, false);
 				gfWaterBucket.animation.play("water", true);
 				gfWaterBucket.scrollFactor.set(1, 1);

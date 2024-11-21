@@ -234,7 +234,7 @@ class BaldGlue extends BaseStage
 
 		// Bald Gru should have a dedicated gangnam style button
 		// i agree - beef
-		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -1025,-1180, 1, 1);
+		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -990,-1180, 1, 1);
 		gruDarkness.blend = MULTIPLY;
 		gruDarkness.scale.set(1, 1);
 		gruDarkness.scrollFactor.set(1, 0.5);
