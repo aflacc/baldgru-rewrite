@@ -634,7 +634,12 @@
 						"Camera_Flash",
 						"camHUD, true",
 						"255,255,255,1"
-					],
+					]
+				]
+			],
+			[
+				153876.404494382,
+				[
 					[
 						"Play Animation",
 						"turn around",

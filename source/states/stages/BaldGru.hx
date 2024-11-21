@@ -93,7 +93,7 @@ class BaldGlue extends BaseStage
 		fartherBg.scale.set(0.85,0.85);
 		fartherBg.antialiasing = ClientPrefs.data.antialiasing;
 
-		var bg:FlxSprite = new FlxSprite(-660,-430).loadGraphic(Paths.image("stages/baldGlue/background"));
+		var bg:FlxSprite = new FlxSprite(-960,-430).loadGraphic(Paths.image("stages/baldGlue/background"));
 		bg.scrollFactor.set(0.3, 0.3);
 		bg.scale.set(0.85,0.85);
 		bg.antialiasing = ClientPrefs.data.antialiasing;

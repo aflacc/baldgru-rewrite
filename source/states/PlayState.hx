@@ -285,7 +285,7 @@ class PlayState extends MusicBeatState
 	var summerDifficulty:Float = 1.5;
 	var tempIncrease:Bool = false;
 	var tempAmount:Float = 0;
-	var tempRate:Float = 2.00;
+	var tempRate:Float = 2.50;
 
 	var object:FlxSprite; // debug shit
 
@@ -504,7 +504,7 @@ class PlayState extends MusicBeatState
 		switch (SONG.song.toLowerCase())
 		{
 			case "lazy river":
-				tempRate = 2.75;
+				tempRate = 3.0;
 				summerDifficulty = 1.0;
 				summerTime = true;
 				boyfriend.y = 530;
