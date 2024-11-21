@@ -93,7 +93,7 @@ class BaldGlue extends BaseStage
 		fartherBg.scale.set(0.85,0.85);
 		fartherBg.antialiasing = ClientPrefs.data.antialiasing;
 
-		var bg:FlxSprite = new FlxSprite(-960,-430).loadGraphic(Paths.image("stages/baldGlue/background"));
+		var bg:FlxSprite = new FlxSprite(-540,-430).loadGraphic(Paths.image("stages/baldGlue/background"));
 		bg.scrollFactor.set(0.3, 0.3);
 		bg.scale.set(0.85,0.85);
 		bg.antialiasing = ClientPrefs.data.antialiasing;
@@ -152,7 +152,7 @@ class BaldGlue extends BaseStage
 		crowd2.dance();
 
 
-		crowd3 = new FlxSprite(-200,280);
+		crowd3 = new FlxSprite(-300,180);
 		crowd3.antialiasing = ClientPrefs.data.antialiasing;
 		crowd3.frames = Paths.getSparrowAtlas("stages/baldGlue/BGfront_minons");
 		crowd3.animation.addByPrefix("idle", "front minons instance 1", 24, false, false);
@@ -234,7 +234,7 @@ class BaldGlue extends BaseStage
 
 		// Bald Gru should have a dedicated gangnam style button
 		// i agree - beef
-		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -1000,-1180, 1, 1);
+		var gruDarkness = new BGSprite('stages/baldGlue/darkness', -1025,-1180, 1, 1);
 		gruDarkness.blend = MULTIPLY;
 		gruDarkness.scale.set(1, 1);
 		gruDarkness.scrollFactor.set(1, 0.5);
