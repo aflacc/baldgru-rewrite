@@ -152,7 +152,7 @@ class BaldGlue extends BaseStage
 		crowd2.dance();
 
 
-		crowd3 = new FlxSprite(-499,280);
+		crowd3 = new FlxSprite(-200,280);
 		crowd3.antialiasing = ClientPrefs.data.antialiasing;
 		crowd3.frames = Paths.getSparrowAtlas("stages/baldGlue/BGfront_minons");
 		crowd3.animation.addByPrefix("idle", "front minons instance 1", 24, false, false);

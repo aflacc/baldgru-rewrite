@@ -282,10 +282,10 @@ class PlayState extends MusicBeatState
 	var heatMeterBg:FlxSprite;
 	var gfWaterBucket:FlxSprite;
 
-	var summerDifficulty:Float = 1;
+	var summerDifficulty:Float = 1.5;
 	var tempIncrease:Bool = false;
 	var tempAmount:Float = 0;
-	var tempRate:Float = 1.5;
+	var tempRate:Float = 2.00;
 
 	var object:FlxSprite; // debug shit
 
@@ -504,13 +504,13 @@ class PlayState extends MusicBeatState
 		switch (SONG.song.toLowerCase())
 		{
 			case "lazy river":
-				tempRate = 2.0;
-				summerDifficulty = 0.5;
+				tempRate = 2.75;
+				summerDifficulty = 1.0;
 				summerTime = true;
 				boyfriend.y = 530;
 			case "lazy summer":
-				summerDifficulty = 1.5;
-				tempRate = 2.5;
+				summerDifficulty = 1.75;
+				tempRate = 3.75;
 		}
 
 		var camPos:FlxPoint = FlxPoint.get(girlfriendCameraOffset[0], girlfriendCameraOffset[1]);

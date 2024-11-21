@@ -43,7 +43,7 @@ class LazyRiver extends BaseStage
 		add(clouds);
 
 		var rocks:FlxBackdrop = new FlxBackdrop(Paths.image("stages/lazyriver/mc_foreground_rocks"), X, -18);
-		rocks.y = 240;
+		rocks.y = 280;
 		rocks.scrollFactor.set(0.9, 0.9);
 		rocks.velocity.set(-60, 0);
 		rocks.antialiasing = ClientPrefs.data.antialiasing;
@@ -63,7 +63,7 @@ class LazyRiver extends BaseStage
 	override function createPost()
 	{
 		var waterRocks:FlxBackdrop = new FlxBackdrop(Paths.image("stages/lazyriver/mc_waterRocks"), X, -18);
-		waterRocks.y = 720;
+		waterRocks.y = 900;
 		waterRocks.scrollFactor.set(1.1, 1.1);
 		waterRocks.velocity.set(-60, 0);
 		waterRocks.antialiasing = ClientPrefs.data.antialiasing;
@@ -164,15 +164,15 @@ class LazyRiver extends BaseStage
 					switch (boob)
 					{
 						case "beef":
-							passerby.y += 50;
-						case 'harvester':
-							passerby.y -= 140;
-						case 'george':
-							passerby.y -= 210;
+							passerby.y += 0;
 						case 'aflac':
 							passerby.y -= 140;
 						case 'trav':
 							passerby.y -= 170;
+						case 'george':
+							passerby.y -= 210;
+						case 'harvester':
+							passerby.y -= 140;
 					}
 					passerbyGrp.add(passerby);
 
