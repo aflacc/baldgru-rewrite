@@ -60,10 +60,10 @@ class LazySummer extends BaseStage
 		gfDead.antialiasing = ClientPrefs.data.antialiasing;
 		add(gfDead);
 		
-		elephant:FlxSprite = new FlxSprite(0,0);
-		elephant.scale.set(1,1);
+		elephant = new FlxSprite(2030,380);
+		elephant.scale.set(1.3,1.3);
 		elephant.frames = Paths.getSparrowAtlas("stages/lazyriver/hernando");
-		elephant.animation.addByPrefix("loop","Elephat",24,true);
+		elephant.animation.addByPrefix("loop","Elephat",60,true);
 		elephant.animation.play("loop");
 		elephant.antialiasing = false;
 		add(elephant);
@@ -119,7 +119,13 @@ class LazySummer extends BaseStage
 		}
 	}
 
-	override function Update(elapsed:Float){
+	override function stepHit(){
+		if (curStep == 1774){
+			FlxTween.tween(elephant, {x: -1670}, 0.1, {ease: FlxEase.linear});
+		}
+	}
+
+	override function update(elapsed:Float){
 		#if debug
 		debugShit();
 		#end
@@ -207,8 +213,6 @@ class LazySummer extends BaseStage
 	{
 		switch (eventName)
 		{
-			//case "elephant":
-//
 			case "Lyrics":
 				lyricsBack.visible = true;
 				if (value1 == "")
