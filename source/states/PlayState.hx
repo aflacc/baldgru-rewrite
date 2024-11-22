@@ -743,7 +743,7 @@ class PlayState extends MusicBeatState
 				gfWaterBucket.antialiasing = true;
 				gfWaterBucket.scale.set(1, 1);
 				gfWaterBucket.alpha = 0;
-				gfWaterBucket.setPosition(-990, -182);
+				gfWaterBucket.setPosition(-1400, -600);
 				add(gfWaterBucket);
 			}
 
