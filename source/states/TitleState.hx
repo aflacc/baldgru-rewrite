@@ -96,10 +96,19 @@ class TitleState extends MusicBeatState
 		}
 		else
 		{
-			FlxG.sound.playMusic(Paths.music(MainMenuState.nightCheck() ? 'nightTheme' : 'freakyMenu'), 0);
-			FlxG.sound.music.fadeIn(4, 0, 0.7);
-
-			MusicBeatState.switchState(new MainMenuState());
+			if (!ICantBelieveIHaveToAddABugWarningState.leftState)
+				{
+					FlxTransitionableState.skipNextTransIn = true;
+					FlxTransitionableState.skipNextTransOut = true;
+					MusicBeatState.switchState(new ICantBelieveIHaveToAddABugWarningState());
+				}
+				else
+				{
+					FlxG.sound.playMusic(Paths.music(MainMenuState.nightCheck() ? 'nightTheme' : 'freakyMenu'), 0);
+					FlxG.sound.music.fadeIn(4, 0, 0.7);
+		
+					MusicBeatState.switchState(new MainMenuState());
+				}
 		}
 	}
 
