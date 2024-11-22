@@ -135,8 +135,8 @@ class LoddyStage extends BaseStage
 
 		PlayState.instance.gfGroup.visible = false;
 
-		//if (isStoryMode)
-		//	{
+		if (ClientPrefs.data.cutscenes)
+			{
 				switch (songName.replace(" ","-"))
 				{
 					case "jingle-bald":
@@ -144,7 +144,7 @@ class LoddyStage extends BaseStage
 						if (!seenCutscene)
 							setStartCallback(videoCutscene.bind('lovewins'));
 				}
-		//	}
+			}
 	}
 
 	function placeFollow(x, y)

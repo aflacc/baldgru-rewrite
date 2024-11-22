@@ -2069,7 +2069,7 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
-		if (summerTime)
+		if (summerTime && !inCutscene)
 		{
 			if (FlxG.keys.justPressed.SPACE && !eatingPopsicle)
 			{
