@@ -66,7 +66,7 @@ class VideoSprite extends FlxSpriteGroup
 				}
 
 				trace("removing");
-				//PlayState.instance.remove(this);
+				PlayState.instance.remove(this);
 				trace("dfestroyingdfs");
 				destroy();
 				trace("uh");
@@ -97,15 +97,15 @@ class VideoSprite extends FlxSpriteGroup
 
 	override function destroy()
 	{
-	//	if (alreadyDestroyed)
-	//	{
+	if (alreadyDestroyed)
+	{
 			//trace("HELLO HI ALREADYDESTROYED");
-			//super.destroy();
-	//		return;
-	//	}
+			super.destroy();
+		return;
+	}
 
 		trace('Video destroyed');
-		if (cover != null)
+		if (cover != null && !alreadyDestroyed)
 		{
 			remove(cover);
 			cover.destroy();
@@ -120,8 +120,8 @@ class VideoSprite extends FlxSpriteGroup
 		onSkip = null;
 
 		trace("1");
-		//if (PlayState.instance != null) // make sure playstate isnt being destroyed already. prevents a crash
-		//	PlayState.instance.remove(this);
+		if (PlayState.instance != null) // make sure playstate isnt being destroyed already. prevents a crash
+			PlayState.instance.remove(this);
 		trace("2");
 		
 		// super.destroy() crash is due to the group line.
